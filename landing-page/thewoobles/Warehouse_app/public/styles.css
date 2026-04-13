@@ -1,0 +1,118 @@
+/* Custom Styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+}
+
+.tab-content {
+  margin-top: 20px;
+}
+
+#locateResults,
+#putawayResults {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  display: none;
+}
+
+.last-location-used {
+  font-size: 0.8em; /* Smaller font size */
+  color: #6c757d; /* Subtle gray color */
+  margin-top: 2px; /* Smaller margin */
+  font-style: italic; /* Optional: Make the text italic */
+}
+
+.form-text.text-muted {
+  font-size: 0.8em; /* Smaller font size */
+  color: #6c757d; /* Subtle gray color */
+}
+
+.nav-tabs {
+  display: flex;
+  flex-wrap: nowrap; /* Prevents wrapping onto multiple lines */
+  overflow-x: auto; /* Allows scrolling if tabs overflow */
+  white-space: nowrap; /* Prevents the tab text from breaking */
+}
+
+.nav-tabs .nav-item {
+  flex: 1; /* Ensures tabs take up equal space */
+  text-align: center; /* Centers the tab text */
+  margin-right: 2px; /* Adds a small space between tabs */
+}
+
+.nav-tabs .nav-link {
+  padding: 0.5rem 0.75rem; /* Adjusts padding to make tabs more compact */
+  font-size: 0.875rem; /* Slightly smaller font for better fit */
+}
+
+.nav-tabs .nav-link.active {
+  font-weight: bold; /* Keeps the active tab distinct */
+}
+
+.container.text-center {
+  text-align: center; /* Centers the logo and text */
+}
+
+.logo-text {
+  font-family: "Anton", sans-serif;
+  font-size: 2.5rem; /* Adjust font size as needed */
+  letter-spacing: 0.05em; /* Optional: Adjust letter spacing */
+  margin-top: 10px;
+  color: #000; /* Set text color, adjust as needed */
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Footer-like div only for All Items tab */
+#allItemsFooter {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 10; /* Ensures the footer stays on top of content */
+}
+
+.footer-link {
+  margin: 5px 10px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.875rem; /* Slightly smaller font size */
+  display: inline-block;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.carton-count-container {
+  display: inline-flex;
+  align-items: center; /* Vertically align the input and icon */
+}
+
+.carton-count-input {
+  width: 60px; /* Adjust the width of the input as needed */
+}
+
+.delete-icon {
+  font-size: 1rem; /* Adjust size as needed */
+  color: #dc3545; /* Danger color for the icon */
+  margin-left: 5px; /* Space between input and delete icon */
+}
+
+.delete-icon:hover {
+  color: #c82333; /* Darker red on hover */
+}

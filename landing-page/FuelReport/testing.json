@@ -1,0 +1,82 @@
+[
+    {
+      "Fueling Position": 1,
+      "Grade Name": "REGULAR",
+      "Close Money": 793649.93,
+      "Open Money": 793150.52,
+      "Metered Money": 499.41,
+      "Close Volume": 764932.13,
+      "Open Volume": 764758.85,
+      "Metered Volume": 173.28
+    },
+    {
+      "Fueling Position": 1,
+      "Grade Name": "PLUS",
+      "Close Money": 127983.01,
+      "Open Money": 127963.01,
+      "Metered Money": 20,
+      "Close Volume": 45340.79,
+      "Open Volume": 45335.23,
+      "Metered Volume": 5.56
+    },
+    {
+      "Fueling Position": 1,
+      "Grade Name": "SUPER",
+      "Close Money": 107314.7,
+      "Open Money": 107284.7,
+      "Metered Money": 30,
+      "Close Volume": 35608.58,
+      "Open Volume": 35600.68,
+      "Metered Volume": 7.9
+    },
+    {
+      "Fueling Position": 1,
+      "Grade Name": "Total",
+      "Close Money": 1028947.64,
+      "Open Money": 1028398.23,
+      "Metered Money": 549.41,
+      "Close Volume": 845881.5,
+      "Open Volume": 845694.76,
+      "Metered Volume": 186.74
+    },
+    {
+      "Fueling Position": 2,
+      "Grade Name": "REGULAR",
+      "Close Money": 786045.61,
+      "Open Money": 785812.03,
+      "Metered Money": 233.58,
+      "Close Volume": 329189.21,
+      "Open Volume": 329108.51,
+      "Metered Volume": 80.7
+    },
+    {
+      "Fueling Position": 2,
+      "Grade Name": "PLUS",
+      "Close Money": 62804.84,
+      "Open Money": 62804.84,
+      "Metered Money": 0,
+      "Close Volume": 21851.67,
+      "Open Volume": 21851.67,
+      "Metered Volume": 0
+    },
+    {
+      "Fueling Position": 2,
+      "Grade Name": "SUPER",
+      "Close Money": 115346.58,
+      "Open Money": 115286.01,
+      "Metered Money": 60.57,
+      "Close Volume": 37530.9,
+      "Open Volume": 37514.96,
+      "Metered Volume": 15.94
+    },
+    {
+      "Fueling Position": 2,
+      "Grade Name": "Total",
+      "Close Money": 964197.03,
+      "Open Money": 963902.88,
+      "Metered Money": 294.15,
+      "Close Volume": 388571.78,
+      "Open Volume": 388475.14,
+      "Metered Volume": 96.64
+    }
+]

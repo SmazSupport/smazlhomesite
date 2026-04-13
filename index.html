@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smazl - Operations & Technology Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Smazl</a>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="about.html">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"/>
+                    <line x1="12" y1="1" x2="12" y2="3"/>
+                    <line x1="12" y1="21" x2="12" y2="23"/>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                    <line x1="1" y1="12" x2="3" y2="12"/>
+                    <line x1="21" y1="12" x2="23" y2="12"/>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                </svg>
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="name">Smazl</span>
+                </h1>
+                <p class="hero-subtitle">Innovating Operations & Transportation</p>
+                <p class="hero-description">
+                    We drive efficiency and growth through data-driven operational analysis, 
+                    technology solutions, and strategic logistics optimization. Your partner in modernizing 
+                    business operations.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                    <a href="#services" class="btn btn-secondary">Our Services</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <div class="card-icon">📊</div>
+                    <div class="card-text">Data Analysis</div>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="card-icon">🚚</div>
+                    <div class="card-text">Logistics</div>
+                </div>
+                <div class="floating-card card-3">
+                    <div class="card-icon">💻</div>
+                    <div class="card-text">Technology</div>
+                </div>
+                <div class="floating-card card-4">
+                    <div class="card-icon">⚡</div>
+                    <div class="card-text">Optimization</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+            </svg>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive solutions to streamline your operations and accelerate growth</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <h3>Operational Analysis</h3>
+                    <p>We leverage data analytics and process mapping to identify inefficiencies and opportunities. Our comprehensive analysis helps streamline your operations and maximize profitability.</p>
+                    <ul class="service-features">
+                        <li>Process optimization</li>
+                        <li>Data-driven insights</li>
+                        <li>Performance metrics</li>
+                        <li>Efficiency improvements</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="1" y="3" width="15" height="13"/>
+                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                            <circle cx="5.5" cy="18.5" r="2.5"/>
+                            <circle cx="18.5" cy="18.5" r="2.5"/>
+                        </svg>
+                    </div>
+                    <h3>Transportation Solutions</h3>
+                    <p>Innovative routing strategies and logistics management designed for modern supply chain challenges. We optimize delivery routes, reduce costs, and improve service levels.</p>
+                    <ul class="service-features">
+                        <li>Route optimization</li>
+                        <li>Fleet management</li>
+                        <li>Cost reduction strategies</li>
+                        <li>Logistics consulting</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                    </div>
+                    <h3>Custom Development</h3>
+                    <p>Tailored technology solutions built to solve your specific business needs. From automation tools to full-stack web applications, we create software that works for you.</p>
+                    <ul class="service-features">
+                        <li>Web development</li>
+                        <li>Automation tools</li>
+                        <li>Browser extensions</li>
+                        <li>System integration</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3>IT Support & Infrastructure</h3>
+                    <p>Complete IT management including network administration, system architecture, and ongoing support. We ensure your technology infrastructure enables rather than hinders your business.</p>
+                    <ul class="service-features">
+                        <li>Network administration</li>
+                        <li>System architecture</li>
+                        <li>IT consulting</li>
+                        <li>Infrastructure planning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Showcasing our technical capabilities and problem-solving approach</p>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-card featured">
+                    <div class="card-badge">Featured</div>
+                    <div class="card-content">
+                        <div class="card-icon">🚀</div>
+                        <h3>FormJet</h3>
+                        <p>A powerful browser extension that revolutionizes data entry by automatically extracting information from PDFs and populating web forms. Built for efficiency and accuracy.</p>
+                        <div class="tech-tags">
+                            <span>JavaScript</span>
+                            <span>Web Extensions</span>
+                            <span>PDF.js</span>
+                            <span>Automation</span>
+                        </div>
+                        <a href="formjet/index.html" class="card-link">
+                            View Project →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="card-content">
+                        <div class="card-icon">🌐</div>
+                        <h3>NDS Logistics</h3>
+                        <p>Professional website design and development for a transportation and logistics company. Modern, responsive design with comprehensive service showcase.</p>
+                        <div class="tech-tags">
+                            <span>Web Design</span>
+                            <span>Business Site</span>
+                            <span>Responsive</span>
+                        </div>
+                        <a href="https://www.ndslog.net/" target="_blank" class="card-link">
+                            View Site →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="section-subtitle">Ready to optimize your operations or need a custom solution? Let's talk.</p>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </div>
+                    <h3>Email</h3>
+                    <a href="mailto:mstevens@smazl.com">mstevens@smazl.com</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                    </div>
+                    <h3>Phone</h3>
+                    <a href="tel:4129153010">412-915-3010</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/mark-stevens-541215116" target="_blank">Connect with us</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <h3>Location</h3>
+                    <p>Chapel Hill, NC</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Smazl. Driving efficiency through innovation.</p>
+            <p class="footer-note">Operations × Technology × Results</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

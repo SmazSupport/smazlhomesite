@@ -1,0 +1,6543 @@
+[
+  {
+    "itemNumber": "",
+    "locations": [
+      {
+        "locationId": "A-6-A",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "A-7-A",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "A-9-A",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "B-11-A",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "C-11-A",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "Z-26-A",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "Z-26-B",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "Z-27-A",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "Z-27-B",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "Z-28-A",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "Z-28-B",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "Z-29-A",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "Z-29-B",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "Z-42-A",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "Z-42-B",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "Z-43-A",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "Z-43-B",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "A-10-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "E-11-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "F-21-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "F-22-C",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "F-22-D",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "F-23-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "F-23-D",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-1-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-1-D",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-2-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-2-D",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-3-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-3-D",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-4-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-4-D",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-5-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-5-D",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-6-C",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "G-6-D",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-7-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-7-D",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-8-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-8-D",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-9-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-9-D",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-10-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-10-D",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-11-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-11-D",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-12-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-12-D",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-13-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-13-D",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-14-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-14-D",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-15-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-15-D",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-16-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-16-D",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-17-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-17-D",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-18-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-18-D",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-19-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-19-D",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-20-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-20-D",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-21-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-21-D",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "E-26-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "E-36-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "E-36-D",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "A-2-A",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "B-3-A",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "B-1-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "F-3-A",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "F-4-A",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "F-16-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "F-18-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-18-A",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-19-A",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-20-A",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "A-1-A",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "A-11-A",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "D-5-C",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "D-8-D",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "D-30-A",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "E-35-A",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "F-23-A",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "F-36-B",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "G-9-A",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "Z-11-A",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "Z-12-A",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "Z-13-A",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "Z-36-A",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "Z-38-A",
+        "cartonCount": 0,
+        "itemsPerCarton": null
+      },
+      {
+        "locationId": "A-10-D",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "C-8-A",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "C-10-A",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "C-6-C",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "C-10-D",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "C-11-C",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "C-29-C",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "C-29-D",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "D-1-A",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "D-4-A",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "D-29-A",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "D-29-B",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "D-29-C",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "D-29-D",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "E-4-A",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "E-5-A",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "E-6-A",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "E-8-A",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "E-13-C",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "E-18-A",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "E-19-A",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "E-22-C",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "E-29-A",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "E-29-B",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "E-29-C",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "E-29-D",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "E-30-C",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "F-1-A",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "F-1-D",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "F-2-C",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "F-3-C",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "F-5-C",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "F-6-C",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "F-15-A",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "F-20-C",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "F-20-D",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "F-27-C",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "F-29-A",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "F-29-B",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "F-29-C",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "F-29-D",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "F-30-C",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "F-31-C",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "F-32-C",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "F-33-C",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "F-33-D",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "F-34-C",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "F-34-D",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "F-35-A",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "F-35-C",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "F-35-D",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "F-36-A",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "F-36-C",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "F-36-D",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "G-2-A",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "G-9-B",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "G-12-A",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "G-12-B",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "G-13-A",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "Z-14-A",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "Z-32-B",
+        "cartonCount": 0
+      },
+      {
+        "locationId": "Z-33-A",
+        "cartonCount": 0
+      }
+    ]
+  },
+  {
+    "itemNumber": "11SINH",
+    "locations": [
+      {
+        "locationId": "A-1-B",
+        "cartonCount": 12,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-1-B",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "11CTNH",
+    "locations": [
+      {
+        "locationId": "A-2-B",
+        "cartonCount": 32,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "A-3-A",
+        "cartonCount": 18,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "A-3-B",
+        "cartonCount": 30,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "11UNRBWNH",
+    "locations": [
+      {
+        "locationId": "Z-10-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "22AVONH",
+    "locations": [
+      {
+        "locationId": "A-5-B",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "A-6-B",
+        "cartonCount": 28,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-20-B",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "11BNNH",
+    "locations": [
+      {
+        "locationId": "A-8-A",
+        "cartonCount": 33,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "A-8-B",
+        "cartonCount": 26,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "BNNH",
+    "locations": [
+      {
+        "locationId": "A-8-B",
+        "cartonCount": 9,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "CKNH",
+    "locations": [
+      {
+        "locationId": "A-10-A",
+        "cartonCount": 7,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "11CKNH",
+    "locations": [
+      {
+        "locationId": "A-10-A",
+        "cartonCount": 4,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "A-10-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "22DRARDNH",
+    "locations": []
+  },
+  {
+    "itemNumber": "33PM",
+    "locations": [
+      {
+        "locationId": "B-1-A",
+        "cartonCount": 0,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "B-1-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "11CK",
+    "locations": [
+      {
+        "locationId": "E-1-A",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-1-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "G-16-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "G-17-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "B-2-C",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-3-C",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-15-C",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-23-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-26-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "B-7-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-4-A",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "33BKWH",
+    "locations": [
+      {
+        "locationId": "B-2-B",
+        "cartonCount": 12,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "33PY",
+    "locations": [
+      {
+        "locationId": "B-3-B",
+        "cartonCount": 12,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "33IK",
+    "locations": [
+      {
+        "locationId": "B-8-A",
+        "cartonCount": 18,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "33CY",
+    "locations": [
+      {
+        "locationId": "B-7-A",
+        "cartonCount": 19,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "33BK",
+    "locations": [
+      {
+        "locationId": "B-6-A",
+        "cartonCount": 19,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "B-6-B",
+        "cartonCount": 34,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "33SK",
+    "locations": [
+      {
+        "locationId": "D-18-B",
+        "cartonCount": 14,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-19-B",
+        "cartonCount": 30,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-19-D",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "B-5-C",
+        "cartonCount": 20,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "33RJ",
+    "locations": [
+      {
+        "locationId": "C-13-B",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-14-B",
+        "cartonCount": 28,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-12-D",
+        "cartonCount": 15,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "B-8-C",
+        "cartonCount": 20,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "33KY",
+    "locations": [
+      {
+        "locationId": "D-16-B",
+        "cartonCount": 30,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-17-B",
+        "cartonCount": 30,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-16-D",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-17-D",
+        "cartonCount": 24,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "B-10-C",
+        "cartonCount": 9,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "33CO",
+    "locations": [
+      {
+        "locationId": "D-12-B",
+        "cartonCount": 27,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "D-13-B",
+        "cartonCount": 29,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-13-D",
+        "cartonCount": 30,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-14-D",
+        "cartonCount": 33,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "B-9-C",
+        "cartonCount": 15,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "33MG",
+    "locations": [
+      {
+        "locationId": "C-18-D",
+        "cartonCount": 25,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "B-4-C",
+        "cartonCount": 33,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "22PHX",
+    "locations": [
+      {
+        "locationId": "B-9-B",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-15-A",
+        "cartonCount": 26,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "22COW",
+    "locations": [
+      {
+        "locationId": "Z-30-B",
+        "cartonCount": 20,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "Z-40-A",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-40-B",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-41-A",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-41-B",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "22LMA",
+    "locations": [
+      {
+        "locationId": "B-8-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "B-12-C",
+        "cartonCount": 27,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "B-14-C",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "B-17-C",
+        "cartonCount": 25,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "B-4-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "B-5-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "B-4-A",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "B-5-A",
+        "cartonCount": 30,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "22DRA",
+    "locations": [
+      {
+        "locationId": "F-5-B",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": "133"
+      },
+      {
+        "locationId": "F-6-B",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": "133"
+      },
+      {
+        "locationId": "E-3-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": "133"
+      },
+      {
+        "locationId": "B-20-C",
+        "cartonCount": 23,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "B-18-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-2-B",
+        "cartonCount": 20,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "22SA",
+    "locations": [
+      {
+        "locationId": "B-21-B",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "B-9-A",
+        "cartonCount": 17,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "B-10-B",
+        "cartonCount": 34,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "B-10-A",
+        "cartonCount": 23,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "33ML",
+    "locations": [
+      {
+        "locationId": "C-1-A",
+        "cartonCount": 17,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "C-1-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-2-A",
+        "cartonCount": 6,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "C-2-B",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-3-A",
+        "cartonCount": 14,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-3-B",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-4-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-1-D",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-21-A",
+        "cartonCount": 4,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "33HK",
+    "locations": [
+      {
+        "locationId": "C-4-A",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-5-B",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-6-A",
+        "cartonCount": 7,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "C-6-B",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-7-A",
+        "cartonCount": 21,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "C-7-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-8-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-11-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "B-6-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "B-7-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "B-8-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "B-9-D",
+        "cartonCount": 32,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-5-D",
+        "cartonCount": 28,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-11-D",
+        "cartonCount": 10,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "33SY",
+    "locations": [
+      {
+        "locationId": "C-9-A",
+        "cartonCount": 28,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "C-9-B",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-10-B",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-3-B",
+        "cartonCount": 25,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "C-7-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-23-C",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-25-C",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-33-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-34-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-35-B",
+        "cartonCount": 31,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "33GF",
+    "locations": [
+      {
+        "locationId": "C-11-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "B-10-D",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "B-11-C",
+        "cartonCount": 30,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "B-11-D",
+        "cartonCount": 34,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-23-B",
+        "cartonCount": 31,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "E-24-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-25-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-26-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "93SAN",
+    "locations": [
+      {
+        "locationId": "E-32-A",
+        "cartonCount": 27,
+        "itemsPerCarton": 100,
+        "poNumber": null
+      },
+      {
+        "locationId": "C-21-B",
+        "cartonCount": 28,
+        "itemsPerCarton": 100,
+        "poNumber": "166"
+      }
+    ]
+  },
+  {
+    "itemNumber": "99SCT",
+    "locations": []
+  },
+  {
+    "itemNumber": "33DB",
+    "locations": [
+      {
+        "locationId": "C-12-B",
+        "cartonCount": 34,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-4-B",
+        "cartonCount": 33,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-19-D",
+        "cartonCount": 20,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-24-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "B-12-D",
+        "cartonCount": 21,
+        "itemsPerCarton": 50,
+        "poNumber": "142"
+      }
+    ]
+  },
+  {
+    "itemNumber": "93SCFGN",
+    "locations": [
+      {
+        "locationId": "C-13-A",
+        "cartonCount": 17,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "93FKS",
+    "locations": [
+      {
+        "locationId": "C-14-A",
+        "cartonCount": 9,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "93SCFBL",
+    "locations": [
+      {
+        "locationId": "C-15-A",
+        "cartonCount": 10,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "33TA",
+    "locations": [
+      {
+        "locationId": "C-15-B",
+        "cartonCount": 25,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-16-B",
+        "cartonCount": 31,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "B-2-D",
+        "cartonCount": 18,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "93SCFYL",
+    "locations": [
+      {
+        "locationId": "C-16-A",
+        "cartonCount": 14,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "93SCFRD",
+    "locations": [
+      {
+        "locationId": "C-17-A",
+        "cartonCount": 14,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "33WS",
+    "locations": [
+      {
+        "locationId": "C-17-B",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-18-B",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-14-B",
+        "cartonCount": 20,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "Z-15-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "B-15-C",
+        "cartonCount": 15,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "93HDW",
+    "locations": [
+      {
+        "locationId": "C-18-A",
+        "cartonCount": 21,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "D-36-C",
+        "cartonCount": 6,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "93NAG",
+    "locations": [
+      {
+        "locationId": "C-19-A",
+        "cartonCount": 10,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "11DN",
+    "locations": [
+      {
+        "locationId": "C-19-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-20-B",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-5-A",
+        "cartonCount": 24,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "G-15-A",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "G-16-A",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-33-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-34-A",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-34-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-7-C",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-19-C",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-19-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-25-C",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "93SCK",
+    "locations": [
+      {
+        "locationId": "C-20-A",
+        "cartonCount": 6,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "99SCF",
+    "locations": [
+      {
+        "locationId": "C-20-A",
+        "cartonCount": 1,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "99PAR",
+    "locations": [
+      {
+        "locationId": "C-21-A",
+        "cartonCount": 13,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "11PG",
+    "locations": [
+      {
+        "locationId": "F-3-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "G-19-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "B-21-D",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-6-C",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-28-D",
+        "cartonCount": 1,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-21-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "33HP",
+    "locations": [
+      {
+        "locationId": "D-1-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-2-A",
+        "cartonCount": 7,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "D-2-B",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-23-D",
+        "cartonCount": 11,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "33VN",
+    "locations": [
+      {
+        "locationId": "D-3-A",
+        "cartonCount": 14,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-3-A",
+        "cartonCount": 22,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-11-A",
+        "cartonCount": 18,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-2-C",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-3-C",
+        "cartonCount": 29,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "33RV",
+    "locations": [
+      {
+        "locationId": "D-4-B",
+        "cartonCount": 26,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "D-5-A",
+        "cartonCount": 32,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "D-5-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-26-D",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-27-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-28-D",
+        "cartonCount": 30,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "D-30-D",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-31-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "33MF",
+    "locations": [
+      {
+        "locationId": "D-6-A",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-7-A",
+        "cartonCount": 9,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "D-7-B",
+        "cartonCount": 29,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "33BC",
+    "locations": [
+      {
+        "locationId": "D-8-A",
+        "cartonCount": 17,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "D-8-B",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-19-A",
+        "cartonCount": 20,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-19-B",
+        "cartonCount": 30,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-20-A",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-20-B",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "33MJ",
+    "locations": [
+      {
+        "locationId": "D-9-A",
+        "cartonCount": 21,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "D-9-B",
+        "cartonCount": 27,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-24-A",
+        "cartonCount": 22,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-24-B",
+        "cartonCount": 20,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "Z-25-A",
+        "cartonCount": 18,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-25-B",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "93CTD",
+    "locations": [
+      {
+        "locationId": "D-10-A",
+        "cartonCount": 13,
+        "itemsPerCarton": 500,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "33BB",
+    "locations": [
+      {
+        "locationId": "D-10-B",
+        "cartonCount": 12,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "Z-16-A",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-16-B",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-17-A",
+        "cartonCount": 20,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-17-B",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-18-A",
+        "cartonCount": 20,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-18-B",
+        "cartonCount": 26,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "93SWD",
+    "locations": [
+      {
+        "locationId": "D-11-A",
+        "cartonCount": 8,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "11SW",
+    "locations": []
+  },
+  {
+    "itemNumber": "ROYALCLOAK",
+    "locations": [
+      {
+        "locationId": "D-12-A",
+        "cartonCount": 3,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "99HRT",
+    "locations": [
+      {
+        "locationId": "E-3-C",
+        "cartonCount": 13,
+        "itemsPerCarton": 500,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "99FLY",
+    "locations": [
+      {
+        "locationId": "F-12-C",
+        "cartonCount": 16,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "33CH",
+    "locations": [
+      {
+        "locationId": "D-14-B",
+        "cartonCount": 24,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-15-B",
+        "cartonCount": 18,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "B-1-D",
+        "cartonCount": 26,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "C-15-D",
+        "cartonCount": 19,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "99FPT",
+    "locations": [
+      {
+        "locationId": "D-15-A",
+        "cartonCount": 14,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "99TLI",
+    "locations": [
+      {
+        "locationId": "D-16-A",
+        "cartonCount": 11,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "99FIE",
+    "locations": [
+      {
+        "locationId": "D-17-A",
+        "cartonCount": 18,
+        "itemsPerCarton": 250,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "99FLO",
+    "locations": [
+      {
+        "locationId": "D-18-A",
+        "cartonCount": 11,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "99TDO",
+    "locations": [
+      {
+        "locationId": "D-19-A",
+        "cartonCount": 9,
+        "itemsPerCarton": 250,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "99FBL",
+    "locations": [
+      {
+        "locationId": "D-20-A",
+        "cartonCount": 6,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "99TFO",
+    "locations": [
+      {
+        "locationId": "D-21-A",
+        "cartonCount": 10,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "22AVO",
+    "locations": [
+      {
+        "locationId": "D-21-B",
+        "cartonCount": 7,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-13-B",
+        "cartonCount": 28,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "C-20-D",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-21-D",
+        "cartonCount": 29,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-13-D",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "11BN",
+    "locations": [
+      {
+        "locationId": "E-2-A",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-2-B",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-3-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "G-14-A",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-1-C",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-1-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-2-D",
+        "cartonCount": 27,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-3-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-4-C",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-15-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-27-D",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-31-C",
+        "cartonCount": 34,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-16-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-25-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-20-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "33CR",
+    "locations": [
+      {
+        "locationId": "E-10-B",
+        "cartonCount": 23,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "E-11-B",
+        "cartonCount": 10,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "11JF",
+    "locations": [
+      {
+        "locationId": "E-4-B",
+        "cartonCount": 32,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "G-14-B",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-4-D",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-6-C",
+        "cartonCount": 31,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-12-D",
+        "cartonCount": 11,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "11MK",
+    "locations": [
+      {
+        "locationId": "E-5-B",
+        "cartonCount": 23,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-7-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-13-C",
+        "cartonCount": 9,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-14-D",
+        "cartonCount": 27,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "99TEN",
+    "locations": [
+      {
+        "locationId": "E-7-A",
+        "cartonCount": 21,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "E-9-A",
+        "cartonCount": 29,
+        "itemsPerCarton": 250,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "11NW",
+    "locations": [
+      {
+        "locationId": "E-6-B",
+        "cartonCount": 21,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-1-B",
+        "cartonCount": 28,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-10-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-20-A",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-20-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-5-D",
+        "cartonCount": 27,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-8-C",
+        "cartonCount": 20,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "E-9-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-20-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-31-B",
+        "cartonCount": 33,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-31-A",
+        "cartonCount": 11,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "11PGPUL",
+    "locations": [
+      {
+        "locationId": "E-7-B",
+        "cartonCount": 25,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "E-8-B",
+        "cartonCount": 0,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "G-21-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-7-D",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-4-D",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-34-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-28-A",
+        "cartonCount": 9,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "33PI",
+    "locations": [
+      {
+        "locationId": "E-18-B",
+        "cartonCount": 31,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-19-B",
+        "cartonCount": 29,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-20-B",
+        "cartonCount": 30,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-21-B",
+        "cartonCount": 9,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "11ST",
+    "locations": [
+      {
+        "locationId": "E-9-B",
+        "cartonCount": 33,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "D-9-D",
+        "cartonCount": 34,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "E-7-D",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-14-C",
+        "cartonCount": 8,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "D-36-A",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "33VA",
+    "locations": [
+      {
+        "locationId": "E-10-A",
+        "cartonCount": 27,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "99CON",
+    "locations": [
+      {
+        "locationId": "E-12-A",
+        "cartonCount": 3,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "11SU",
+    "locations": [
+      {
+        "locationId": "D-12-D",
+        "cartonCount": 17,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "D-14-D",
+        "cartonCount": 12,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "99CWN",
+    "locations": [
+      {
+        "locationId": "F-34-B",
+        "cartonCount": 3,
+        "itemsPerCarton": 1000,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "99CAU",
+    "locations": [
+      {
+        "locationId": "E-21-A",
+        "cartonCount": 11,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-24-A",
+        "cartonCount": 31,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "99CRN",
+    "locations": [
+      {
+        "locationId": "E-13-A",
+        "cartonCount": 3,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-34-B",
+        "cartonCount": 20,
+        "itemsPerCarton": 250,
+        "poNumber": "20240603"
+      }
+    ]
+  },
+  {
+    "itemNumber": "99BBE",
+    "locations": [
+      {
+        "locationId": "E-14-A",
+        "cartonCount": 7,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "11TG",
+    "locations": [
+      {
+        "locationId": "E-14-B",
+        "cartonCount": 2,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "E-15-B",
+        "cartonCount": 27,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "D-15-D",
+        "cartonCount": 29,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "D-16-D",
+        "cartonCount": 34,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-7-C",
+        "cartonCount": 32,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "99BHT",
+    "locations": [
+      {
+        "locationId": "E-15-A",
+        "cartonCount": 4,
+        "itemsPerCarton": 300,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "93CHR",
+    "locations": [
+      {
+        "locationId": "E-16-A",
+        "cartonCount": 5,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "33WN",
+    "locations": [
+      {
+        "locationId": "E-16-B",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-17-B",
+        "cartonCount": 19,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "D-17-D",
+        "cartonCount": 22,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-18-D",
+        "cartonCount": 22,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "99BAS",
+    "locations": [
+      {
+        "locationId": "E-17-A",
+        "cartonCount": 5,
+        "itemsPerCarton": 500,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "99BRF",
+    "locations": [
+      {
+        "locationId": "E-17-A",
+        "cartonCount": 8,
+        "itemsPerCarton": 250,
+        "poNumber": "91"
+      }
+    ]
+  },
+  {
+    "itemNumber": "99BOK",
+    "locations": [
+      {
+        "locationId": "E-5-C",
+        "cartonCount": 12,
+        "itemsPerCarton": 500,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "99BEN",
+    "locations": [
+      {
+        "locationId": "E-20-A",
+        "cartonCount": 7,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "11DNRBW",
+    "locations": [
+      {
+        "locationId": "F-2-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "D-24-C",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-26-C",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-36-B",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-32-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-34-C",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-34-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "11FX",
+    "locations": [
+      {
+        "locationId": "Z-32-A",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-35-A",
+        "cartonCount": 24,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-35-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-18-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-32-C",
+        "cartonCount": 29,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-27-A",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-24-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "11BE",
+    "locations": [
+      {
+        "locationId": "F-6-A",
+        "cartonCount": 26,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-7-A",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "G-6-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "G-7-A",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-9-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "E-6-A",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "D-4-A",
+        "cartonCount": 34,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "D-7-C",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": "137"
+      },
+      {
+        "locationId": "D-8-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "11CT",
+    "locations": [
+      {
+        "locationId": "F-8-A",
+        "cartonCount": 22,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-10-A",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-27-C",
+        "cartonCount": 20,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "D-30-C",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-12-A",
+        "cartonCount": 6,
+        "itemsPerCarton": 50,
+        "poNumber": "146"
+      },
+      {
+        "locationId": "G-13-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "G-12-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "G-12-A",
+        "cartonCount": 10,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "G-18-B",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "11TU",
+    "locations": [
+      {
+        "locationId": "F-8-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-10-D",
+        "cartonCount": 0,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "D-11-D",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-19-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-20-D",
+        "cartonCount": 29,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-21-D",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-6-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "11NWRBW",
+    "locations": [
+      {
+        "locationId": "E-2-D",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-35-C",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": "137"
+      }
+    ]
+  },
+  {
+    "itemNumber": "11GT",
+    "locations": [
+      {
+        "locationId": "F-11-A",
+        "cartonCount": 37,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-21-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-21-C",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-21-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-1-A",
+        "cartonCount": 8,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-23-A",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "E-13-C",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "E-18-A",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "E-19-A",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "11SI",
+    "locations": [
+      {
+        "locationId": "F-12-A",
+        "cartonCount": 25,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-12-B",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-10-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-12-C",
+        "cartonCount": 0,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "D-28-C",
+        "cartonCount": 28,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-31-C",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-32-C",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-16-C",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "11IG",
+    "locations": [
+      {
+        "locationId": "F-13-A",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-13-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-14-A",
+        "cartonCount": 20,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "E-13-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "G-13-A",
+        "cartonCount": 20,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "33SN",
+    "locations": [
+      {
+        "locationId": "F-14-B",
+        "cartonCount": 22,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-15-B",
+        "cartonCount": 35,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-16-B",
+        "cartonCount": 33,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-17-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-12-B",
+        "cartonCount": 19,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "Z-13-B",
+        "cartonCount": 30,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "E-14-D",
+        "cartonCount": 17,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "E-20-C",
+        "cartonCount": 17,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "11EL",
+    "locations": [
+      {
+        "locationId": "F-16-A",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-17-A",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-18-A",
+        "cartonCount": 20,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "E-10-C",
+        "cartonCount": 23,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-17-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-18-C",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "MYSTERY",
+    "locations": [
+      {
+        "locationId": "F-18-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 222,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-19-A",
+        "cartonCount": 36,
+        "itemsPerCarton": 222,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-19-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 222,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "22HED",
+    "locations": [
+      {
+        "locationId": "G-19-A",
+        "cartonCount": 13,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "E-4-A",
+        "cartonCount": 26,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "D-1-A",
+        "cartonCount": 35,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "11AX",
+    "locations": [
+      {
+        "locationId": "F-3-A",
+        "cartonCount": 8,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-21-C",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-9-A",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "D-5-C",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "11UN",
+    "locations": [
+      {
+        "locationId": "G-18-A",
+        "cartonCount": 14,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "G-21-A",
+        "cartonCount": 22,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "E-9-C",
+        "cartonCount": 27,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "11LNNH",
+    "locations": [
+      {
+        "locationId": "G-15-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-2-A",
+        "cartonCount": 19,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "Z-5-B",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "11LN",
+    "locations": [
+      {
+        "locationId": "G-17-A",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-13-D",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-17-C",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-24-C",
+        "cartonCount": 12,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-33-C",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-27-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "33DE",
+    "locations": [
+      {
+        "locationId": "G-20-B",
+        "cartonCount": 28,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-11-D",
+        "cartonCount": 18,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-19-C",
+        "cartonCount": 34,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "D-25-D",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "22ROONH",
+    "locations": [
+      {
+        "locationId": "Z-1-A",
+        "cartonCount": 4,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "11DNRBWNH",
+    "locations": [
+      {
+        "locationId": "Z-2-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-7-A",
+        "cartonCount": 6,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "Z-10-A",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "A-4-A",
+        "cartonCount": 5,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "22PHXNH",
+    "locations": [
+      {
+        "locationId": "Z-3-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-9-A",
+        "cartonCount": 25,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-9-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-4-B",
+        "cartonCount": 8,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "A-4-B",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "22LMANH",
+    "locations": [
+      {
+        "locationId": "Z-7-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "A-11-B",
+        "cartonCount": 30,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "11SWNH",
+    "locations": [
+      {
+        "locationId": "Z-4-A",
+        "cartonCount": 12,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "11PGNH",
+    "locations": [
+      {
+        "locationId": "Z-6-B",
+        "cartonCount": 27,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-4-B",
+        "cartonCount": 0,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "11SUNH",
+    "locations": []
+  },
+  {
+    "itemNumber": "11PANH",
+    "locations": []
+  },
+  {
+    "itemNumber": "11NWNH",
+    "locations": [
+      {
+        "locationId": "Z-8-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "A-4-A",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-11-A",
+        "cartonCount": 8,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "33BL",
+    "locations": [
+      {
+        "locationId": "Z-15-A",
+        "cartonCount": 27,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-21-A",
+        "cartonCount": 34,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-21-B",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-22-A",
+        "cartonCount": 19,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "Z-22-B",
+        "cartonCount": 30,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-23-A",
+        "cartonCount": 21,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-23-B",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "11FG",
+    "locations": [
+      {
+        "locationId": "Z-30-A",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-10-C",
+        "cartonCount": 19,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "E-12-D",
+        "cartonCount": 28,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "88WWW",
+    "locations": [
+      {
+        "locationId": "Z-31-A",
+        "cartonCount": 36,
+        "itemsPerCarton": 28,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-39-A",
+        "cartonCount": 36,
+        "itemsPerCarton": 28,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-39-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 28,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "11RC",
+    "locations": [
+      {
+        "locationId": "Z-31-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "Z-36-B",
+        "cartonCount": 29,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-9-C",
+        "cartonCount": 9,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "11CM",
+    "locations": []
+  },
+  {
+    "itemNumber": "22SCC",
+    "locations": [
+      {
+        "locationId": "Z-38-B",
+        "cartonCount": 23,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "11RCNH",
+    "locations": []
+  },
+  {
+    "itemNumber": "",
+    "locations": []
+  },
+  {
+    "itemNumber": "11MKNH",
+    "locations": [
+      {
+        "locationId": "Z-5-A",
+        "cartonCount": 26,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "11DNNH",
+    "locations": [
+      {
+        "locationId": "Z-3-A",
+        "cartonCount": 2,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "Z-6-A",
+        "cartonCount": 24,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "11ELNH",
+    "locations": [
+      {
+        "locationId": "Z-8-A",
+        "cartonCount": 25,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "11NWRBWNH",
+    "locations": [
+      {
+        "locationId": "Z-4-B",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "A-5-A",
+        "cartonCount": 28,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "11IGNH",
+    "locations": [
+      {
+        "locationId": "Z-11-B",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "A-4-A",
+        "cartonCount": 0,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "11PGPULNH",
+    "locations": [
+      {
+        "locationId": "A-9-B",
+        "cartonCount": 21,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "A-7-B",
+        "cartonCount": 31,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "33CN",
+    "locations": [
+      {
+        "locationId": "B-3-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "B-4-D",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "B-5-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-33-C",
+        "cartonCount": 5,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "D-34-C",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "B-3-C",
+        "cartonCount": 1,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "93MLK",
+    "locations": [
+      {
+        "locationId": "B-6-C",
+        "cartonCount": 21,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-4-C",
+        "cartonCount": 12,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "93RSE",
+    "locations": [
+      {
+        "locationId": "B-7-C",
+        "cartonCount": 7,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "99COF",
+    "locations": [
+      {
+        "locationId": "D-16-C",
+        "cartonCount": 17,
+        "itemsPerCarton": 500,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "93STR",
+    "locations": [
+      {
+        "locationId": "E-2-C",
+        "cartonCount": 15,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "22EF",
+    "locations": [
+      {
+        "locationId": "B-13-C",
+        "cartonCount": 8,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "B-13-D",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "B-14-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "B-15-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-36-A",
+        "cartonCount": 10,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "11GB",
+    "locations": [
+      {
+        "locationId": "B-16-C",
+        "cartonCount": 8,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "B-16-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-34-A",
+        "cartonCount": 15,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "22ROO",
+    "locations": [
+      {
+        "locationId": "B-17-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "B-19-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "B-20-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "B-19-C",
+        "cartonCount": 12,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "99POL",
+    "locations": [
+      {
+        "locationId": "B-21-C",
+        "cartonCount": 11,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "33HF",
+    "locations": [
+      {
+        "locationId": "C-1-C",
+        "cartonCount": 33,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "C-1-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-2-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-3-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-27-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-28-B",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "E-30-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-31-B",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-32-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "33SH",
+    "locations": [
+      {
+        "locationId": "C-4-C",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-4-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-5-C",
+        "cartonCount": 30,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-5-D",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-6-D",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-32-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-33-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-34-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-35-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-36-D",
+        "cartonCount": 29,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "D-13-A",
+        "cartonCount": 5,
+        "itemsPerCarton": 50,
+        "poNumber": "122"
+      }
+    ]
+  },
+  {
+    "itemNumber": "33VT",
+    "locations": [
+      {
+        "locationId": "C-8-C",
+        "cartonCount": 11,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "C-8-D",
+        "cartonCount": 30,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-9-D",
+        "cartonCount": 25,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "99LPP",
+    "locations": [
+      {
+        "locationId": "C-12-C",
+        "cartonCount": 15,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "C-14-C",
+        "cartonCount": 16,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "99PBK",
+    "locations": [
+      {
+        "locationId": "C-13-C",
+        "cartonCount": 9,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "99QWN",
+    "locations": [
+      {
+        "locationId": "C-15-C",
+        "cartonCount": 5,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "99ICE",
+    "locations": [
+      {
+        "locationId": "C-15-C",
+        "cartonCount": 6,
+        "itemsPerCarton": 500,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-16-C",
+        "cartonCount": 11,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "99IGW",
+    "locations": [
+      {
+        "locationId": "C-16-C",
+        "cartonCount": 8,
+        "itemsPerCarton": 715,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "99SHA",
+    "locations": [
+      {
+        "locationId": "C-17-C",
+        "cartonCount": 2,
+        "itemsPerCarton": 250,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "99SLM",
+    "locations": [
+      {
+        "locationId": "C-17-C",
+        "cartonCount": 5,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "99SVL",
+    "locations": [
+      {
+        "locationId": "C-17-C",
+        "cartonCount": 1,
+        "itemsPerCarton": 500,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "99EGG",
+    "locations": [
+      {
+        "locationId": "C-18-C",
+        "cartonCount": 11,
+        "itemsPerCarton": 183,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "99ENV",
+    "locations": [
+      {
+        "locationId": "C-19-C",
+        "cartonCount": 6,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "99TTC",
+    "locations": [
+      {
+        "locationId": "C-20-C",
+        "cartonCount": 11,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "99CHT",
+    "locations": [
+      {
+        "locationId": "C-21-C",
+        "cartonCount": 8,
+        "itemsPerCarton": 250,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "33BRLT",
+    "locations": [
+      {
+        "locationId": "C-22-C",
+        "cartonCount": 14,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "C-22-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-23-C",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-23-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-24-D",
+        "cartonCount": 29,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "33BRDK",
+    "locations": [
+      {
+        "locationId": "C-24-C",
+        "cartonCount": 31,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "33BRTN",
+    "locations": [
+      {
+        "locationId": "C-25-C",
+        "cartonCount": 8,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "C-25-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "93BARBD",
+    "locations": [
+      {
+        "locationId": "C-26-C",
+        "cartonCount": 23,
+        "itemsPerCarton": 120,
+        "poNumber": null
+      },
+      {
+        "locationId": "C-26-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 120,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "93BARBR",
+    "locations": [
+      {
+        "locationId": "C-27-C",
+        "cartonCount": 7,
+        "itemsPerCarton": 127,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "93BARBK",
+    "locations": [
+      {
+        "locationId": "C-27-D",
+        "cartonCount": 8,
+        "itemsPerCarton": 127,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "93BARRD",
+    "locations": [
+      {
+        "locationId": "C-28-C",
+        "cartonCount": 7,
+        "itemsPerCarton": 127,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "33KNLT",
+    "locations": [
+      {
+        "locationId": "C-30-C",
+        "cartonCount": 18,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-30-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-31-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-32-C",
+        "cartonCount": 17,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "C-32-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "33KNDK",
+    "locations": [
+      {
+        "locationId": "C-31-C",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "33KNTN",
+    "locations": [
+      {
+        "locationId": "C-33-C",
+        "cartonCount": 16,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "C-33-D",
+        "cartonCount": 22,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "93KENBR",
+    "locations": [
+      {
+        "locationId": "C-34-C",
+        "cartonCount": 2,
+        "itemsPerCarton": 267,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "83BAR",
+    "locations": [
+      {
+        "locationId": "C-34-D",
+        "cartonCount": 27,
+        "itemsPerCarton": 4,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-35-D",
+        "cartonCount": 27,
+        "itemsPerCarton": 4,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-36-D",
+        "cartonCount": 27,
+        "itemsPerCarton": 4,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-22-B",
+        "cartonCount": 27,
+        "itemsPerCarton": 4,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-23-A",
+        "cartonCount": 17,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-23-B",
+        "cartonCount": 27,
+        "itemsPerCarton": 4,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-24-A",
+        "cartonCount": 20,
+        "itemsPerCarton": 4,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-24-B",
+        "cartonCount": 27,
+        "itemsPerCarton": 4,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-25-A",
+        "cartonCount": 27,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-25-B",
+        "cartonCount": 27,
+        "itemsPerCarton": 4,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-26-A",
+        "cartonCount": 27,
+        "itemsPerCarton": 4,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-26-B",
+        "cartonCount": 27,
+        "itemsPerCarton": 4,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-27-A",
+        "cartonCount": 27,
+        "itemsPerCarton": 4,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-27-B",
+        "cartonCount": 27,
+        "itemsPerCarton": 4,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-28-A",
+        "cartonCount": 27,
+        "itemsPerCarton": 4,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-28-B",
+        "cartonCount": 27,
+        "itemsPerCarton": 4,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-30-B",
+        "cartonCount": 27,
+        "itemsPerCarton": 4,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-31-A",
+        "cartonCount": 27,
+        "itemsPerCarton": 4,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-31-B",
+        "cartonCount": 27,
+        "itemsPerCarton": 4,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-32-A",
+        "cartonCount": 27,
+        "itemsPerCarton": 4,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-32-B",
+        "cartonCount": 27,
+        "itemsPerCarton": 4,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-33-A",
+        "cartonCount": 27,
+        "itemsPerCarton": 4,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-33-B",
+        "cartonCount": 27,
+        "itemsPerCarton": 4,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-34-A",
+        "cartonCount": 27,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-34-B",
+        "cartonCount": 27,
+        "itemsPerCarton": 4,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-35-A",
+        "cartonCount": 27,
+        "itemsPerCarton": 4,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-35-B",
+        "cartonCount": 27,
+        "itemsPerCarton": 4,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-36-B",
+        "cartonCount": 27,
+        "itemsPerCarton": 4,
+        "poNumber": ""
+      },
+      {
+        "locationId": "C-28-D",
+        "cartonCount": 27,
+        "itemsPerCarton": 4,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "93KENBK",
+    "locations": [
+      {
+        "locationId": "C-35-C",
+        "cartonCount": 3,
+        "itemsPerCarton": 267,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "93KENBD",
+    "locations": [
+      {
+        "locationId": "C-36-C",
+        "cartonCount": 20,
+        "itemsPerCarton": 255,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "11PD",
+    "locations": [
+      {
+        "locationId": "D-6-D",
+        "cartonCount": 20,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "99TNR",
+    "locations": []
+  },
+  {
+    "itemNumber": "99BCH",
+    "locations": [
+      {
+        "locationId": "D-11-C",
+        "cartonCount": 2,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "93SAD",
+    "locations": [
+      {
+        "locationId": "D-9-C",
+        "cartonCount": 16,
+        "itemsPerCarton": 400,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "99BRM",
+    "locations": [
+      {
+        "locationId": "D-10-C",
+        "cartonCount": 6,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "11DO",
+    "locations": []
+  },
+  {
+    "itemNumber": "99TRY",
+    "locations": [
+      {
+        "locationId": "D-12-C",
+        "cartonCount": 4,
+        "itemsPerCarton": 725,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "99TCH",
+    "locations": [
+      {
+        "locationId": "D-13-C",
+        "cartonCount": 6,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "99TTB",
+    "locations": [
+      {
+        "locationId": "D-14-C",
+        "cartonCount": 6,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "99BST",
+    "locations": [
+      {
+        "locationId": "D-15-C",
+        "cartonCount": 7,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "99WKT",
+    "locations": [
+      {
+        "locationId": "D-17-C",
+        "cartonCount": 14,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "99CAK",
+    "locations": [
+      {
+        "locationId": "D-18-C",
+        "cartonCount": 14,
+        "itemsPerCarton": 200,
+        "poNumber": ""
+      },
+      {
+        "locationId": "D-19-C",
+        "cartonCount": 17,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "99BWL",
+    "locations": []
+  },
+  {
+    "itemNumber": "99WCK",
+    "locations": [
+      {
+        "locationId": "D-20-C",
+        "cartonCount": 7,
+        "itemsPerCarton": 500,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "99BHB",
+    "locations": [
+      {
+        "locationId": "D-21-C",
+        "cartonCount": 4,
+        "itemsPerCarton": 500,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "99APL",
+    "locations": [
+      {
+        "locationId": "D-21-C",
+        "cartonCount": 2,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "99RSE",
+    "locations": [
+      {
+        "locationId": "E-1-C",
+        "cartonCount": 11,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "11UNRBW",
+    "locations": [
+      {
+        "locationId": "E-8-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-28-C",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-31-D",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-33-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-32-B",
+        "cartonCount": 12,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "MYSTYACC",
+    "locations": [
+      {
+        "locationId": "E-14-C",
+        "cartonCount": 10,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-15-C",
+        "cartonCount": 36,
+        "itemsPerCarton": 222,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-15-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 222,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-16-C",
+        "cartonCount": 36,
+        "itemsPerCarton": 222,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-16-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 222,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-17-C",
+        "cartonCount": 36,
+        "itemsPerCarton": 222,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-17-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 222,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-18-C",
+        "cartonCount": 36,
+        "itemsPerCarton": 222,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-18-D",
+        "cartonCount": 36,
+        "itemsPerCarton": 222,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "GKITSNH",
+    "locations": [
+      {
+        "locationId": "D-22-A",
+        "cartonCount": 13,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "55WSP",
+    "locations": [
+      {
+        "locationId": "D-22-D",
+        "cartonCount": 6,
+        "itemsPerCarton": 99,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "MYSTIN",
+    "locations": [
+      {
+        "locationId": "E-22-A",
+        "cartonCount": 17,
+        "itemsPerCarton": 500,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "99BEL",
+    "locations": [
+      {
+        "locationId": "D-35-C",
+        "cartonCount": 24,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "93WWS",
+    "locations": [
+      {
+        "locationId": "E-22-B",
+        "cartonCount": 8,
+        "itemsPerCarton": 151,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-30-A",
+        "cartonCount": 36,
+        "itemsPerCarton": 151,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "11DKBR",
+    "locations": [
+      {
+        "locationId": "E-23-A",
+        "cartonCount": 21,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "E-25-A",
+        "cartonCount": 27,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-26-A",
+        "cartonCount": 29,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-27-A",
+        "cartonCount": 28,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-28-A",
+        "cartonCount": 28,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "11DKGN",
+    "locations": [
+      {
+        "locationId": "E-24-A",
+        "cartonCount": 14,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-23-D",
+        "cartonCount": 22,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "E-25-D",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-27-C",
+        "cartonCount": 25,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "93ACE",
+    "locations": [
+      {
+        "locationId": "E-31-A",
+        "cartonCount": 22,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "93SCT",
+    "locations": [
+      {
+        "locationId": "E-33-A",
+        "cartonCount": 35,
+        "itemsPerCarton": 151,
+        "poNumber": null
+      },
+      {
+        "locationId": "D-22-C",
+        "cartonCount": 11,
+        "itemsPerCarton": 151,
+        "poNumber": "166"
+      }
+    ]
+  },
+  {
+    "itemNumber": "11GS",
+    "locations": [
+      {
+        "locationId": "E-22-D",
+        "cartonCount": 16,
+        "itemsPerCarton": null,
+        "poNumber": null
+      },
+      {
+        "locationId": "E-23-C",
+        "cartonCount": 17,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-24-D",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "E-26-D",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-22-B",
+        "cartonCount": 15,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "11MWRBW",
+    "locations": []
+  },
+  {
+    "itemNumber": "11XX",
+    "itemName": "New Item",
+    "locations": []
+  },
+  {
+    "itemNumber": "10X13MAILER",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "F-24-D",
+        "cartonCount": 30,
+        "itemsPerCarton": 1200,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-26-D",
+        "cartonCount": 24,
+        "itemsPerCarton": 1200,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-26-C",
+        "cartonCount": 21,
+        "itemsPerCarton": 1200,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "12X165MAILER",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "F-24-C",
+        "cartonCount": 18,
+        "itemsPerCarton": 800,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-25-D",
+        "cartonCount": 20,
+        "itemsPerCarton": 800,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-25-C",
+        "cartonCount": 28,
+        "itemsPerCarton": 800,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-28-C",
+        "cartonCount": 20,
+        "itemsPerCarton": 800,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "MAILERLARGE",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "F-27-D",
+        "cartonCount": 24,
+        "itemsPerCarton": 500,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "145X19MAILERULINE",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "F-28-D",
+        "cartonCount": 43,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "WATERTAPE",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "F-30-D",
+        "cartonCount": 22,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "55EYE",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "F-31-D",
+        "cartonCount": 5,
+        "itemsPerCarton": 500,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "55STC",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "F-31-D",
+        "cartonCount": 3,
+        "itemsPerCarton": 500,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "55PIN",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "F-32-D",
+        "cartonCount": 6,
+        "itemsPerCarton": 500,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "11FR",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "E-35-D",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-28-B",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "11HC",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "E-30-D",
+        "cartonCount": 36,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-22-A",
+        "cartonCount": 22,
+        "itemsPerCarton": 50,
+        "poNumber": "188"
+      }
+    ]
+  },
+  {
+    "itemNumber": "11BT",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "F-25-A",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      },
+      {
+        "locationId": "F-26-A",
+        "cartonCount": 26,
+        "itemsPerCarton": null,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "99KIN",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "F-30-B",
+        "cartonCount": 21,
+        "itemsPerCarton": null,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "99WCH",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "F-30-A",
+        "cartonCount": 7,
+        "itemsPerCarton": 500,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "22LMAPST",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "F-20-C",
+        "cartonCount": 4,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "11BNPST",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "F-32-A",
+        "cartonCount": 5,
+        "itemsPerCarton": 50,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "99TTCPST",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "F-33-B",
+        "cartonCount": 9,
+        "itemsPerCarton": 250,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "99PKN",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "F-35-B",
+        "cartonCount": 21,
+        "itemsPerCarton": 150,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "99HRTPST",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "F-34-A",
+        "cartonCount": 2,
+        "itemsPerCarton": 500,
+        "poNumber": ""
+      }
+    ]
+  },
+  {
+    "itemNumber": "33PO",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "G-20-A",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      },
+      {
+        "locationId": "G-6-A",
+        "cartonCount": 22,
+        "itemsPerCarton": 50,
+        "poNumber": "193"
+      },
+      {
+        "locationId": "G-10-C",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": "193"
+      },
+      {
+        "locationId": "G-3-D",
+        "cartonCount": 29,
+        "itemsPerCarton": 50,
+        "poNumber": "193"
+      },
+      {
+        "locationId": "G-4-D",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": "193"
+      },
+      {
+        "locationId": "G-8-D",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": "193"
+      }
+    ]
+  },
+  {
+    "itemNumber": "33BJ",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "F-2-A",
+        "cartonCount": 23,
+        "itemsPerCarton": 50,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "22PDL",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "C-2-C",
+        "cartonCount": 6,
+        "itemsPerCarton": 50,
+        "poNumber": "146"
+      }
+    ]
+  },
+  {
+    "itemNumber": "99LIL",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "D-14-A",
+        "cartonCount": 16,
+        "itemsPerCarton": 250,
+        "poNumber": "166"
+      }
+    ]
+  },
+  {
+    "itemNumber": "88ZTH",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "A-1-C",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-1-D",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-2-C",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-2-D",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-3-C",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-3-D",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-4-C",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-4-D",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-5-C",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-5-D",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-6-C",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-6-D",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-7-C",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-7-D",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-8-C",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-8-D",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-9-C",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-9-D",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-11-C",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-11-D",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-12-C",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-12-D",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-13-C",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-13-D",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-14-C",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-14-D",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-15-C",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-15-D",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-16-C",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-16-D",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-17-C",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-17-D",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-18-C",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-18-D",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-19-C",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-19-D",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-20-C",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-20-D",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-21-C",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "A-21-D",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "B-12-A",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "B-12-B",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "B-13-A",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "B-13-B",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "B-14-A",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "B-14-B",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "B-15-A",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "B-15-B",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "B-16-A",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "B-16-B",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "B-17-A",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "B-17-B",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "B-18-A",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "B-18-B",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "B-19-A",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "B-19-B",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "B-20-A",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "B-20-B",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "B-21-A",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      },
+      {
+        "locationId": "B-21-B",
+        "cartonCount": 12,
+        "itemsPerCarton": 8,
+        "poNumber": "176"
+      }
+    ]
+  },
+  {
+    "itemNumber": "11XT",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "F-1-D",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": "194"
+      },
+      {
+        "locationId": "F-1-C",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": "194"
+      },
+      {
+        "locationId": "F-10-C",
+        "cartonCount": 14,
+        "itemsPerCarton": 50,
+        "poNumber": "194"
+      }
+    ]
+  },
+  {
+    "itemNumber": "TOTE",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "F-2-D",
+        "cartonCount": 18,
+        "itemsPerCarton": 20,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-2-C",
+        "cartonCount": 24,
+        "itemsPerCarton": 20,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-5-D",
+        "cartonCount": 23,
+        "itemsPerCarton": 20,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-5-C",
+        "cartonCount": 19,
+        "itemsPerCarton": 20,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-6-D",
+        "cartonCount": 24,
+        "itemsPerCarton": 20,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-6-C",
+        "cartonCount": 24,
+        "itemsPerCarton": 20,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-9-D",
+        "cartonCount": 20,
+        "itemsPerCarton": 20,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-9-C",
+        "cartonCount": 25,
+        "itemsPerCarton": 20,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-10-D",
+        "cartonCount": 21,
+        "itemsPerCarton": 20,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "HOOKPOUCH",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "F-3-D",
+        "cartonCount": 26,
+        "itemsPerCarton": 20,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-3-C",
+        "cartonCount": 24,
+        "itemsPerCarton": 20,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-4-C",
+        "cartonCount": 57,
+        "itemsPerCarton": 20,
+        "poNumber": null
+      },
+      {
+        "locationId": "F-7-D",
+        "cartonCount": 30,
+        "itemsPerCarton": 20,
+        "poNumber": null
+      }
+    ]
+  },
+  {
+    "itemNumber": "33PH",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "F-8-D",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": "193"
+      },
+      {
+        "locationId": "G-5-C",
+        "cartonCount": 14,
+        "itemsPerCarton": 50,
+        "poNumber": "193"
+      },
+      {
+        "locationId": "G-2-D",
+        "cartonCount": 21,
+        "itemsPerCarton": 50,
+        "poNumber": "193"
+      }
+    ]
+  },
+  {
+    "itemNumber": "33KR",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "F-8-C",
+        "cartonCount": 25,
+        "itemsPerCarton": 50,
+        "poNumber": "193"
+      },
+      {
+        "locationId": "G-6-D",
+        "cartonCount": 21,
+        "itemsPerCarton": 50,
+        "poNumber": "193"
+      }
+    ]
+  },
+  {
+    "itemNumber": "33PU",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "F-11-D",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": "179"
+      },
+      {
+        "locationId": "G-4-B",
+        "cartonCount": 28,
+        "itemsPerCarton": 50,
+        "poNumber": "179"
+      },
+      {
+        "locationId": "G-8-B",
+        "cartonCount": 21,
+        "itemsPerCarton": 50,
+        "poNumber": "179"
+      },
+      {
+        "locationId": "G-9-B",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": "179"
+      },
+      {
+        "locationId": "G-11-B",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": "179"
+      },
+      {
+        "locationId": "G-3-C",
+        "cartonCount": 26,
+        "itemsPerCarton": 50,
+        "poNumber": "179"
+      }
+    ]
+  },
+  {
+    "itemNumber": "33SM",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "F-11-C",
+        "cartonCount": 26,
+        "itemsPerCarton": 50,
+        "poNumber": "179"
+      },
+      {
+        "locationId": "G-3-A",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": "179"
+      },
+      {
+        "locationId": "G-5-A",
+        "cartonCount": 26,
+        "itemsPerCarton": 50,
+        "poNumber": "179"
+      },
+      {
+        "locationId": "G-6-B",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": "179"
+      },
+      {
+        "locationId": "G-7-B",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": "179"
+      },
+      {
+        "locationId": "G-8-A",
+        "cartonCount": 26,
+        "itemsPerCarton": 50,
+        "poNumber": "179"
+      },
+      {
+        "locationId": "G-11-A",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": "179"
+      }
+    ]
+  },
+  {
+    "itemNumber": "33PP",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "G-1-B",
+        "cartonCount": 20,
+        "itemsPerCarton": 50,
+        "poNumber": "179"
+      },
+      {
+        "locationId": "G-1-A",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": "179"
+      },
+      {
+        "locationId": "G-2-B",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": "179"
+      },
+      {
+        "locationId": "G-2-A",
+        "cartonCount": 36,
+        "itemsPerCarton": 50,
+        "poNumber": "179"
+      },
+      {
+        "locationId": "G-3-B",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": "179"
+      },
+      {
+        "locationId": "G-4-A",
+        "cartonCount": 25,
+        "itemsPerCarton": 50,
+        "poNumber": "179"
+      },
+      {
+        "locationId": "G-5-B",
+        "cartonCount": 21,
+        "itemsPerCarton": 50,
+        "poNumber": "179"
+      },
+      {
+        "locationId": "G-9-A",
+        "cartonCount": 27,
+        "itemsPerCarton": 50,
+        "poNumber": "179"
+      }
+    ]
+  },
+  {
+    "itemNumber": "11GO",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "G-7-A",
+        "cartonCount": 26,
+        "itemsPerCarton": 50,
+        "poNumber": "188"
+      },
+      {
+        "locationId": "G-10-B",
+        "cartonCount": 26,
+        "itemsPerCarton": 50,
+        "poNumber": "188"
+      },
+      {
+        "locationId": "G-10-A",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": "188"
+      }
+    ]
+  },
+  {
+    "itemNumber": "33TS01",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "G-1-C",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": "193"
+      },
+      {
+        "locationId": "G-7-C",
+        "cartonCount": 18,
+        "itemsPerCarton": 50,
+        "poNumber": "193"
+      },
+      {
+        "locationId": "G-9-C",
+        "cartonCount": 28,
+        "itemsPerCarton": 50,
+        "poNumber": "193"
+      },
+      {
+        "locationId": "G-5-D",
+        "cartonCount": 19,
+        "itemsPerCarton": 50,
+        "poNumber": "193"
+      },
+      {
+        "locationId": "G-7-D",
+        "cartonCount": 23,
+        "itemsPerCarton": 50,
+        "poNumber": "193"
+      }
+    ]
+  },
+  {
+    "itemNumber": "33TS02",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "G-2-C",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": "193"
+      },
+      {
+        "locationId": "G-4-C",
+        "cartonCount": 30,
+        "itemsPerCarton": 50,
+        "poNumber": "193"
+      },
+      {
+        "locationId": "G-8-C",
+        "cartonCount": 25,
+        "itemsPerCarton": 50,
+        "poNumber": "193"
+      },
+      {
+        "locationId": "G-1-D",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": "193"
+      },
+      {
+        "locationId": "G-9-D",
+        "cartonCount": 24,
+        "itemsPerCarton": 50,
+        "poNumber": "193"
+      }
+    ]
+  },
+  {
+    "itemNumber": "33LD",
+    "itemName": "New Item",
+    "locations": [
+      {
+        "locationId": "G-6-C",
+        "cartonCount": 18,
+        "itemsPerCarton": 50,
+        "poNumber": "190"
+      }
+    ]
+  }
+]

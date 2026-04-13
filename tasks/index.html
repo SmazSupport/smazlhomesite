@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager - Smazl</title>
+    <link rel="stylesheet" href="tasks.css">
+</head>
+<body>
+    <!-- Login Screen -->
+    <div id="login-screen" class="login-container">
+        <div class="login-box">
+            <h1>🔒 Task Manager</h1>
+            <p>Enter password to access</p>
+            <form id="login-form">
+                <input type="password" id="password-input" placeholder="Password" autocomplete="off">
+                <button type="submit">Login</button>
+            </form>
+            <p class="error-message" id="login-error"></p>
+        </div>
+    </div>
+
+    <!-- Main App -->
+    <div id="app" class="hidden">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-left">
+                <h1>📋 Task Manager</h1>
+                <button id="theme-toggle" class="icon-btn" title="Toggle theme">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="header-right">
+                <select id="user-filter" class="user-select parent-only">
+                    <option value="all">All Users</option>
+                </select>
+                <select id="view-mode" class="view-select">
+                    <option value="kids">👶 Kids View</option>
+                    <option value="card">🎴 Card View</option>
+                    <option value="table">📊 Table View</option>
+                    <option value="network">🕸️ Network View</option>
+                    <option value="calendar">📅 Calendar View</option>
+                    <option value="archive">📦 Archive</option>
+                </select>
+                <button id="parent-controls-btn" class="icon-btn parent-only" title="Parent Controls">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M12 1v6m0 6v6"/>
+                        <text x="12" y="12" text-anchor="middle" fill="currentColor" font-size="8" dy=".3em">⭐</text>
+                    </svg>
+                </button>
+                <button id="settings-btn" class="icon-btn parent-only" title="Settings">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M12 1v6m0 6v6m0-6h6m-6 0H6"/>
+                    </svg>
+                </button>
+                <button id="logout-btn" class="icon-btn parent-only" title="Logout">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+                        <polyline points="16 17 21 12 16 7"/>
+                        <line x1="21" y1="12" x2="9" y2="12"/>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- Toolbar -->
+        <div class="toolbar" id="toolbar">
+            <div class="toolbar-left">
+                <button id="add-task-btn" class="btn btn-primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="5" x2="12" y2="19"/>
+                        <line x1="5" y1="12" x2="19" y2="12"/>
+                    </svg>
+                    New Task
+                </button>
+                <div class="quick-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="today">Today</button>
+                    <button class="filter-btn" data-filter="week">This Week</button>
+                    <button class="filter-btn" data-filter="overdue">Overdue</button>
+                </div>
+            </div>
+            <div class="toolbar-right">
+                <input type="text" id="search-input" placeholder="🔍 Search tasks..." class="search-input">
+            </div>
+        </div>
+
+        <!-- Task Container -->
+        <main id="task-container" class="task-container">
+            <!-- Tasks will be rendered here -->
+        </main>
+    </div>
+
+    <!-- Task Modal -->
+    <div id="task-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Create Task</h2>
+                <button class="close-btn" id="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="task-form">
+                    <input type="hidden" id="task-id">
+                    
+                    <div class="form-group">
+                        <label for="task-title">Task Title *</label>
+                        <input type="text" id="task-title" required placeholder="Enter task title">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="task-assignee">Assign To *</label>
+                            <select id="task-assignee" required>
+                                <option value="">Select person</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="task-priority">Priority</label>
+                            <select id="task-priority">
+                                <option value="low">Low</option>
+                                <option value="medium" selected>Medium</option>
+                                <option value="high">High</option>
+                                <option value="urgent">Urgent</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="task-due-date">Due Date</label>
+                            <input type="date" id="task-due-date">
+                        </div>
+                        <div class="form-group">
+                            <label for="task-due-time">Due Time</label>
+                            <input type="time" id="task-due-time">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="task-status">Status</label>
+                        <select id="task-status">
+                            <option value="todo">To Do</option>
+                            <option value="in-progress">In Progress</option>
+                            <option value="blocked">Blocked</option>
+                            <option value="completed">Completed</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="task-points">Points (for kids) <small style="color: var(--text-secondary);">Leave empty for auto-calculated</small></label>
+                        <input type="number" id="task-points" min="0" max="1000" placeholder="Auto">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="task-parent">Parent Task (Subtask of)</label>
+                        <select id="task-parent">
+                            <option value="">None (Main Task)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="task-tags">Tags (comma separated)</label>
+                        <input type="text" id="task-tags" placeholder="e.g., chore, school, important">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="task-notes">Notes</label>
+                        <textarea id="task-notes" rows="4" placeholder="Add notes or description..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="task-recurring">
+                            Recurring Task
+                        </label>
+                    </div>
+
+                    <div id="recurring-options" class="hidden">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="recurring-frequency">Frequency</label>
+                                <select id="recurring-frequency">
+                                    <option value="daily">Daily</option>
+                                    <option value="weekly">Weekly</option>
+                                    <option value="monthly">Monthly</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="recurring-interval">Every</label>
+                                <input type="number" id="recurring-interval" min="1" value="1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" id="cancel-task">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Save Task</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="settings-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Settings</h2>
+                <button class="close-btn" id="close-settings">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="settings-password">Change Password</label>
+                    <input type="password" id="settings-password" placeholder="Enter new password">
+                </div>
+
+                <div class="form-group">
+                    <label for="auto-archive-days">Auto-Archive Completed Tasks After (days)</label>
+                    <input type="number" id="auto-archive-days" min="0" value="30">
+                    <small style="color: var(--text-secondary);">Set to 0 to disable auto-archive</small>
+                </div>
+
+                <div class="form-group">
+                    <h3 style="margin-bottom: 1rem;">Manage Users</h3>
+                    <div id="users-list"></div>
+                    <button type="button" class="btn btn-secondary" id="add-user-btn" style="margin-top: 0.5rem;">
+                        Add User
+                    </button>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" id="export-data-btn">
+                        📥 Export Data
+                    </button>
+                    <button type="button" class="btn btn-secondary" id="import-data-btn">
+                        📤 Import Data
+                    </button>
+                    <button type="button" class="btn btn-primary" id="save-settings">
+                        Save Settings
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Parent Controls Modal -->
+    <div id="parent-controls-modal" class="modal hidden">
+        <div class="modal-content" style="max-width: 900px;">
+            <div class="modal-header">
+                <h2>⭐ Parent Controls - Point Management</h2>
+                <button class="close-btn" id="close-parent-controls">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="parent-controls-content">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <input type="file" id="import-file-input" accept=".json" style="display: none;">
+
+    <script src="tasks.js"></script>
+</body>
+</html>

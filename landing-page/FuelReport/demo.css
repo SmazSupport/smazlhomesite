@@ -1,0 +1,143 @@
+/* Universal selector for box-sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 30px; /* Spacing between the header and the rest of the content */
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px; /* Space below subheadings */
+}
+
+/* Navigation bar styling */
+.nav-bar {
+    background-color: #007bff;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    overflow: auto; /* Clear the float */
+}
+
+.nav-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Center the navigation items */
+}
+
+.nav-bar li {
+    display: inline-block;
+    margin-right: 10px; /* Adjusted spacing between items */
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block; /* Make the entire area clickable */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-bar a:hover {
+    background-color: #0056b3;
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* File input styling */
+input[type="file"] {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: calc(100% - 40px); /* Full-width taking padding into account */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Button styling */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block; /* Allows buttons to be side by side */
+    margin: 5px;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Content container styling */
+#pdfText, #jsonData, #tableContent {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Adds space between the table and any content above */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Section and collapsible button styling */
+.section {
+    margin-bottom: 20px;
+}
+
+.collapse-button {
+    cursor: pointer;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    text-align: right;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.collapse-button:hover {
+    background-color: #e0e0e0;
+}

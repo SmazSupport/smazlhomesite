@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormJet - PDF to Form Automation | Smazl</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        .project-hero {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            padding: 8rem 2rem 4rem;
+            background: var(--bg-secondary);
+        }
+        
+        .project-header {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .project-badge {
+            display: inline-block;
+            background: var(--accent-gradient);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+        
+        .project-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .project-subtitle {
+            font-size: 1.3rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+        
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .demo-section {
+            background: var(--bg-primary);
+            padding: 6rem 0;
+        }
+        
+        .demo-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .demo-video {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 3rem;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .demo-placeholder {
+            background: var(--bg-tertiary);
+            border-radius: 8px;
+            padding: 4rem 2rem;
+            border: 2px dashed var(--border-color);
+        }
+        
+        .demo-placeholder svg {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .feature-box {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 2px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+        
+        .feature-box:hover {
+            border-color: var(--accent-primary);
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-box h3 {
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .tech-section {
+            background: var(--bg-secondary);
+            padding: 6rem 0;
+        }
+        
+        .tech-stack-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+        
+        .tech-item {
+            background: var(--bg-primary);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 2px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+        
+        .tech-item:hover {
+            border-color: var(--accent-primary);
+            transform: scale(1.05);
+        }
+        
+        .tech-item h4 {
+            margin-top: 0.5rem;
+            font-size: 1rem;
+        }
+        
+        .use-cases {
+            background: var(--bg-primary);
+            padding: 6rem 0;
+        }
+        
+        .use-case {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--accent-primary);
+        }
+        
+        .use-case h3 {
+            margin-bottom: 1rem;
+            color: var(--accent-primary);
+        }
+        
+        .cta-section {
+            background: var(--accent-gradient);
+            padding: 4rem 2rem;
+            text-align: center;
+            color: white;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .cta-section .btn {
+            background: white;
+            color: var(--accent-primary);
+        }
+        
+        @media (max-width: 768px) {
+            .project-title {
+                font-size: 2.5rem;
+            }
+            
+            .project-subtitle {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Smazl</a>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#services">Services</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../about.html">About</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"/>
+                    <line x1="12" y1="1" x2="12" y2="3"/>
+                    <line x1="12" y1="21" x2="12" y2="23"/>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                    <line x1="1" y1="12" x2="3" y2="12"/>
+                    <line x1="21" y1="12" x2="23" y2="12"/>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                </svg>
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div class="project-header">
+            <span class="project-badge">Browser Extension</span>
+            <h1 class="project-title">FormJet</h1>
+            <p class="project-subtitle">
+                Eliminate manual data entry with intelligent PDF-to-form automation. 
+                Extract data from PDFs and automatically populate web forms with precision and speed.
+            </p>
+            <div class="project-links">
+                <a href="#demo" class="btn btn-primary">See Demo</a>
+                <a href="../index.html#contact" class="btn btn-secondary">Request Access</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo" class="demo-section">
+        <div class="demo-container">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Three simple steps to transform your data entry workflow</p>
+            
+            <div class="demo-video">
+                <div class="demo-placeholder">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="5 3 19 12 5 21 5 3"/>
+                    </svg>
+                    <h3>Interactive Demo Coming Soon</h3>
+                    <p style="color: var(--text-secondary); margin-top: 1rem;">
+                        Watch FormJet automatically extract data from PDFs and populate forms in seconds
+                    </p>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon">📄</div>
+                    <h3>1. Upload PDF</h3>
+                    <p>Select the PDF document containing your data. FormJet intelligently parses and extracts structured information.</p>
+                </div>
+                
+                <div class="feature-box">
+                    <div class="feature-icon">🎯</div>
+                    <h3>2. Map Fields</h3>
+                    <p>FormJet automatically detects form fields and maps PDF data. Smart matching ensures accuracy.</p>
+                </div>
+                
+                <div class="feature-box">
+                    <div class="feature-icon">✨</div>
+                    <h3>3. Auto-Fill</h3>
+                    <p>Watch as FormJet instantly populates all fields with precision. Save hours of manual typing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-section">
+        <div class="container">
+            <h2 class="section-title">Technology Stack</h2>
+            <p class="section-subtitle">Built with modern web technologies for reliability and performance</p>
+            
+            <div class="tech-stack-grid">
+                <div class="tech-item">
+                    <div class="feature-icon" style="font-size: 2rem;">⚡</div>
+                    <h4>JavaScript</h4>
+                </div>
+                
+                <div class="tech-item">
+                    <div class="feature-icon" style="font-size: 2rem;">📱</div>
+                    <h4>Web Extensions API</h4>
+                </div>
+                
+                <div class="tech-item">
+                    <div class="feature-icon" style="font-size: 2rem;">📄</div>
+                    <h4>PDF.js</h4>
+                </div>
+                
+                <div class="tech-item">
+                    <div class="feature-icon" style="font-size: 2rem;">🗄️</div>
+                    <h4>Chrome Storage</h4>
+                </div>
+                
+                <div class="tech-item">
+                    <div class="feature-icon" style="font-size: 2rem;">🎨</div>
+                    <h4>Modern UI</h4>
+                </div>
+                
+                <div class="tech-item">
+                    <div class="feature-icon" style="font-size: 2rem;">🔒</div>
+                    <h4>Secure</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="use-cases">
+        <div class="container">
+            <h2 class="section-title">Perfect For</h2>
+            <p class="section-subtitle">Real-world applications across industries</p>
+            
+            <div class="use-case">
+                <h3>Logistics & Transportation</h3>
+                <p>Automatically populate shipping manifests, delivery reports, and route information from PDF documents. Eliminate transcription errors and save hours daily.</p>
+            </div>
+            
+            <div class="use-case">
+                <h3>Healthcare Administration</h3>
+                <p>Transfer patient data from PDF reports to medical forms quickly and accurately. Reduce administrative burden while maintaining data integrity.</p>
+            </div>
+            
+            <div class="use-case">
+                <h3>Financial Services</h3>
+                <p>Streamline loan applications, account openings, and compliance forms by extracting data from PDF statements and documents.</p>
+            </div>
+            
+            <div class="use-case">
+                <h3>Legal & Compliance</h3>
+                <p>Speed up contract processing and form completion by automatically extracting key information from PDF agreements and documents.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Ready to Eliminate Manual Data Entry?</h2>
+        <p>Get in touch to learn how FormJet can transform your workflow</p>
+        <a href="../index.html#contact" class="btn">Contact Us Today</a>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Smazl. Driving efficiency through innovation.</p>
+            <p class="footer-note">Operations × Technology × Results</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

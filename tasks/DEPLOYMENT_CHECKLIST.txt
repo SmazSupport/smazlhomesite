@@ -1,0 +1,54 @@
+✅ RAILWAY DEPLOYMENT CHECKLIST
+================================
+
+Before You Start:
+□ GitHub account created
+□ Git installed on your computer
+□ GoDaddy domain ready (optional)
+
+Step 1: GitHub Setup
+□ Create new repository on GitHub (private)
+□ Name it something like "family-task-manager"
+
+Step 2: Push Code
+□ Open PowerShell in tasks folder
+□ Run: git init
+□ Run: git add .
+□ Run: git commit -m "Initial commit"
+□ Run: git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
+□ Run: git branch -M main
+□ Run: git push -u origin main
+
+Step 3: Railway Deployment
+□ Go to railway.app
+□ Login with GitHub
+□ Click "New Project"
+□ Choose "Deploy from GitHub repo"
+□ Select your repository
+□ Wait for deployment (2-3 minutes)
+
+Step 4: Test Your App
+□ Click "Generate Domain" in Railway
+□ Copy the URL
+□ Visit: YOUR_URL/tasks/
+□ Test login, create task, add points
+□ Refresh and verify data persists
+
+Step 5: Custom Domain (Optional)
+□ In Railway: Settings → Domains → Add Custom Domain
+□ Enter: tasks.yourdomain.com
+□ Copy the CNAME record Railway gives you
+□ In GoDaddy: DNS → Add CNAME record
+□ Wait 10-30 minutes for DNS to update
+
+DONE! 🎉
+
+Your Task Manager is now live on the internet!
+
+Next time you make changes:
+  git add .
+  git commit -m "describe your changes"
+  git push
+  (Railway auto-deploys!)
+
+Questions? Check RAILWAY_DEPLOYMENT.md for detailed help!

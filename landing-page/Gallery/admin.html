@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+  </head>
+  <body>
+    <h1>Admin Panel</h1>
+    <form id="upload-form">
+      <input type="file" id="photo" multiple />
+      <input type="text" id="caption" placeholder="Photo caption" />
+      <button type="button" id="upload">Upload</button>
+    </form>
+    <div id="preview"></div>
+    <button id="save-gallery">Save Gallery</button>
+    <script>
+      const gallery = [];
+
+      document.getElementById("upload").addEventListener("click", () => {
+        const fileInput = document.getElementById("photo");
+        const caption = document.getElementById("caption").value;
+
+        Array.from(fileInput.files).forEach((file) => {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            gallery.push({ large: e.target.result, caption });
+            document.getElementById("preview").innerHTML += `
+                        <div>
+                            <img src="${e.target.result}" alt="${caption}" style="width: 100px;">
+                            <p>${caption}</p>
+                        </div>`;
+          };
+          reader.readAsDataURL(file);
+        });
+      });
+
+      document.getElementById("save-gallery").addEventListener("click", () => {
+        fetch("/gallery.json", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ photos: gallery }),
+        }).then((response) => {
+          if (response.ok) alert("Gallery saved!");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Smazl Team</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Smazl</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#resume">Resume</a>
+                <a href="#portfolio">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"/>
+                    <line x1="12" y1="1" x2="12" y2="3"/>
+                    <line x1="12" y1="21" x2="12" y2="23"/>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                    <line x1="1" y1="12" x2="3" y2="12"/>
+                    <line x1="21" y1="12" x2="23" y2="12"/>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                </svg>
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="greeting">Hey, I'm</span>
+                    <span class="name">Mark Stevens</span>
+                </h1>
+                <p class="hero-subtitle">Logistics & Operations Leader × Data Analytics × Systems Builder</p>
+                <p class="hero-description">
+                    I blend 20+ years of warehouse and transportation operations with data analytics and technical innovation to build systems that actually work in the real world.
+                </p>
+                <div class="hero-cta">
+                    <a href="#resume" class="btn btn-primary">View Resume</a>
+                    <a href="#portfolio" class="btn btn-secondary">See Projects</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-value">20+</span>
+                        <span class="stat-label">Years in Logistics</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">$3M+</span>
+                        <span class="stat-label">Contract Wins</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">120%</span>
+                        <span class="stat-label">Profit Increase</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <div class="card-icon">💻</div>
+                    <div class="card-text">Full Stack Dev</div>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="card-icon">📊</div>
+                    <div class="card-text">Data Analytics</div>
+                </div>
+                <div class="floating-card card-3">
+                    <div class="card-icon">🚚</div>
+                    <div class="card-text">Logistics</div>
+                </div>
+                <div class="floating-card card-4">
+                    <div class="card-icon">⚡</div>
+                    <div class="card-text">Automation</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+            </svg>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">I'm not your typical operations guy or your typical developer. I'm somewhere in between, and that's my superpower.</p>
+                    
+                    <p>My foundation is <strong>logistics and operations</strong>—over 20 years across both transportation and warehouse management. I've managed carrier networks and negotiated national freight contracts, coordinated multi-state delivery operations and 3PL relationships, and optimized high-volume warehouse fulfillment from receiving to shipping. From managing transportation across 65 locations to running eCommerce operations processing 13,000 orders daily, I've lived the full spectrum of logistics—both the movement of goods and the warehouse operations that make it possible.</p>
+                    
+                    <p>Early in my career, I worked on the warehouse floor with SAP systems, managing shipping operations and optimizing workflows. I've coordinated receiving, putaway, picking, packing, and shipping processes. I've negotiated LTL and FTL carrier rates, built 3PL partnerships, and designed delivery networks. I understand logistics from both angles: the warehouse operations that prepare shipments and the transportation networks that move them.</p>
+                    
+                    <p>But managing operations without data is just guesswork. That's where <strong>analytics</strong> transformed my approach. I started building systems to track everything—freight costs, carrier performance, warehouse efficiency, SKU demand patterns, labor utilization, and order throughput. I created demand forecasting models, optimized bin placement strategies, analyzed cost per mile across carrier networks, and built performance dashboards. Whether it's identifying bottlenecks in pick-pack workflows or optimizing routing efficiency, I use data to drive every decision.</p>
+                    
+                    <p>Here's where it gets interesting: I realized the best way to solve logistics problems was to <strong>build the technology myself</strong>. So I taught myself to code. Not to become a software engineer, but to bridge the gap between operations and IT. Now I build custom automation tools for order processing, integrate carrier APIs and warehouse systems, design inventory optimization algorithms, and develop internal tools that logistics teams can actually use. From Shopify automation to webhook-based fulfillment workflows, I create solutions that connect warehouse operations with technology.</p>
+                    
+                    <p>The results speak for themselves: 120% freight profit increase through process redesign and smarter carrier negotiations. $3M in national transportation contracts secured through data-driven RFP responses. Custom delivery management software that reduced dispatch time by 40%. eCommerce fulfillment operations that scaled from 2,000 to 13,000 daily orders without proportional headcount increases through smart automation and optimized workflows.</p>
+                    
+                    <p>What makes me different? I don't just write code or analyze spreadsheets from an office. I've worked on the warehouse floor, negotiated carrier contracts, coordinated emergency freight at 2am, optimized picking routes, managed transportation networks across multiple states, built IT infrastructure for logistics companies, and debugged systems when orders absolutely had to ship. My solutions work because they're built by someone who's lived the problems firsthand—someone who understands that in logistics, efficiency impacts the bottom line and delays cost customers.</p>
+                    
+                    <div class="highlight-box">
+                        <h3>Current Focus</h3>
+                        <ul>
+                            <li>📦 Managing high-volume eCommerce operations at The Woobles (2K-13K orders/day)</li>
+                            <li>🛠️ Building custom automation tools and API integrations for operational efficiency</li>
+                            <li>� Developing data analytics systems for demand forecasting and performance optimization</li>
+                            <li>🎓 BS in Information Networking & Telecommunications from Fort Hays State University</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Logistics & Operations</h3>
+                        <div class="skill-tags">
+                            <span class="tag">Warehouse Management</span>
+                            <span class="tag">Transportation & Freight</span>
+                            <span class="tag">Carrier Negotiations</span>
+                            <span class="tag">Fulfillment Operations</span>
+                            <span class="tag">Routing Optimization</span>
+                            <span class="tag">Inventory Management</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Technical Skills</h3>
+                        <div class="skill-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">SQL/Databases</span>
+                            <span class="tag">Web Development</span>
+                            <span class="tag">IT Infrastructure</span>
+                            <span class="tag">Network Admin</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Platforms</h3>
+                        <div class="skill-tags">
+                            <span class="tag">Microsoft Office Suite</span>
+                            <span class="tag">Excel (Advanced)</span>
+                            <span class="tag">SAP ERP</span>
+                            <span class="tag">Office 365</span>
+                            <span class="tag">Git/GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="resume-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Resume</h2>
+                <button id="print-resume" class="btn btn-outline">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 6 2 18 2 18 9"/>
+                        <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+                        <rect x="6" y="14" width="12" height="8"/>
+                    </svg>
+                    Print Resume
+                </button>
+            </div>
+            
+            <div id="resume-content">
+                <div class="resume-header">
+                    <h1>Mark Stevens</h1>
+                    <div class="contact-info">
+                        <a href="mailto:mstevens@smazl.com">mstevens@smazl.com</a>
+                        <span>|</span>
+                        <span>412-915-3010</span>
+                        <span>|</span>
+                        <a href="https://www.linkedin.com/in/mark-stevens-541215116" target="_blank">LinkedIn</a>
+                        <span>|</span>
+                        <span>Chapel Hill, NC</span>
+                    </div>
+                    <p class="resume-summary">Logistics and operations professional with 20+ years of experience across warehouse management and transportation operations—optimizing fulfillment workflows, carrier networks, and delivery systems through data analytics and custom technology solutions.</p>
+                </div>
+
+                <div class="resume-body">
+                    <div class="resume-section-block">
+                        <h2>Experience</h2>
+                        
+                        <div class="job">
+                            <div class="job-header">
+                                <div>
+                                    <h3>Operations Manager (Analytics & Systems Focus)</h3>
+                                    <p class="company">The Woobles • Durham, NC</p>
+                                </div>
+                                <span class="date">June 2024 – Present</span>
+                            </div>
+                            <ul class="basic-details">
+                                <li>Manage high-volume eCommerce fulfillment operations (2,000–13,000 orders/day), overseeing multi-zone warehouse workflows and ensuring efficient order throughput across picking and packing stations</li>
+                                <li>Analyze operational data to identify bottlenecks, balance labor distribution, and improve warehouse efficiency through demand forecasting models and SKU placement strategies</li>
+                                <li>Built custom automation tools using Shopify APIs, Python, and JavaScript to streamline order processing, routing logic, and inventory management</li>
+                                <li>Designed batch picking optimization strategies and data-driven workflows for inventory placement and replenishment, maximizing space utilization and reducing handling time</li>
+                                <li>Implemented webhook-based workflows and event-driven processing across Shopify, ShipBlink, and third-party integrations to ensure reliable fulfillment execution</li>
+                            </ul>
+                        </div>
+
+                        <div class="job">
+                            <div class="job-header">
+                                <div>
+                                    <h3>Independent Consultant</h3>
+                                    <p class="company">Self-employed • Remote United States</p>
+                                </div>
+                                <span class="date">Sept 2021 – Present</span>
+                            </div>
+                            <ul class="basic-details">
+                                <li>Provide comprehensive consulting services in logistics, operations, IT support, routing optimization, and web design</li>
+                                <li>Develop and implement strategies to streamline operations and enhance efficiency</li>
+                                <li>Lead implementation of new systems to automate processes and improve productivity</li>
+                            </ul>
+                        </div>
+
+                        <div class="job">
+                            <div class="job-header">
+                                <div>
+                                    <h3>Director of Information Technology</h3>
+                                    <p class="company">Urban Shipper Technology • Houston, TX</p>
+                                </div>
+                                <span class="date">Dec 2021 – Mar 2023</span>
+                            </div>
+                            <ul class="basic-details">
+                                <li>Led planning and development of new logistics software platform</li>
+                                <li>Conducted financial analysis to inform strategic decision-making</li>
+                                <li>Managed Office 365, domain infrastructure, and email systems</li>
+                            </ul>
+                        </div>
+
+                        <div class="job company-group">
+                            <div class="job-header">
+                                <div>
+                                    <h3>Diligent Delivery Systems</h3>
+                                    <p class="company">Houston, TX / Raleigh, NC</p>
+                                </div>
+                                <span class="date">Dec 2016 – Sept 2021</span>
+                            </div>
+                            
+                            <div class="role">
+                                <div class="role-header">
+                                    <h4>National Director of Operations</h4>
+                                    <span class="role-date">May 2017 – Sept 2021</span>
+                                </div>
+                                <ul class="basic-details">
+                                    <li>Increased freight net profit by 120% within 3 months through process improvements and negotiations</li>
+                                    <li>Secured $3M national bid across 65 locations through strategic RFP development</li>
+                                    <li>Led implementation of new courier management software</li>
+                                </ul>
+                            </div>
+
+                            <div class="role">
+                                <div class="role-header">
+                                    <h4>Director of Business Intelligence</h4>
+                                    <span class="role-date">Aug 2019 – Sept 2021 (concurrent)</span>
+                                </div>
+                                <ul class="basic-details">
+                                    <li>Managed IT department including software engineers and business analysts</li>
+                                    <li>Directed development and overhaul of proprietary delivery management software</li>
+                                    <li>Orchestrated consolidation of three buildings into unified facility</li>
+                                </ul>
+                            </div>
+
+                            <div class="role">
+                                <div class="role-header">
+                                    <h4>North Carolina Operations Manager</h4>
+                                    <span class="role-date">Dec 2016 – May 2017</span>
+                                </div>
+                                <ul class="basic-details">
+                                    <li>Coordinated logistics operations across North Carolina</li>
+                                    <li>Managed driver routes and customer relationships</li>
+                                    <li>Pursued and established new business partnerships</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="job">
+                            <div class="job-header">
+                                <div>
+                                    <h3>Third Party Logistics Specialist</h3>
+                                    <p class="company">Courier Express US • Greensboro, NC</p>
+                                </div>
+                                <span class="date">Dec 2015 – Dec 2016</span>
+                            </div>
+                            <ul class="basic-details">
+                                <li>Coordinated shipments with multiple vendors across the Southeast</li>
+                                <li>Developed nationwide logistics network (FTL, LTL, Final Mile)</li>
+                                <li>Engineered competitive bids to maximize profit margins</li>
+                            </ul>
+                        </div>
+
+                        <div class="job">
+                            <div class="job-header">
+                                <div>
+                                    <h3>Key Account Shipping Supervisor</h3>
+                                    <p class="company">Vietri Inc. • Hillsborough, NC</p>
+                                </div>
+                                <span class="date">Feb 2013 – Dec 2015</span>
+                            </div>
+                            <ul class="basic-details">
+                                <li>Managed EDI documentation and shipping operations using SAP Business One</li>
+                                <li>Negotiated LTL carrier pricing through data analysis</li>
+                                <li>Supervised warehouse productivity and time-sensitive distribution</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="resume-section-block">
+                        <h2>Education</h2>
+                        <div class="education-item">
+                            <h3>Bachelor of Science in Information Networking & Telecommunications</h3>
+                            <p>Fort Hays State University • Hays, KS</p>
+                        </div>
+                        <div class="education-item">
+                            <h3>General Studies</h3>
+                            <p>Henry Ford Community College • Dearborn, MI</p>
+                            <p class="date">Aug 2002 – Dec 2005</p>
+                            <p>Completed 66 Credits</p>
+                        </div>
+                    </div>
+
+                    <div class="resume-section-block">
+                        <h2>Featured Projects</h2>
+                        <div class="project-item">
+                            <h3><a href="formjet/index.html">FormJet Browser Extension</a></h3>
+                            <p>Developed a browser extension for automated form-filling from PDF data, enhancing efficiency and accuracy without requiring site code alterations.</p>
+                        </div>
+                    </div>
+
+                    <div class="resume-section-block">
+                        <h2>Skills & Technologies</h2>
+                        <div class="skills-resume">
+                            <div class="skill-group">
+                                <h4>Programming & Development</h4>
+                                <p>Python, JavaScript, HTML5, CSS3, SQL, API Integration, Web Extensions, Webhook-Based Systems, JSON Data Structures</p>
+                            </div>
+                            <div class="skill-group">
+                                <h4>Operations & Analytics</h4>
+                                <p>Operations Management, Data Analysis, Demand Forecasting, Performance Metrics, Process Optimization, Warehouse Management, Labor Planning</p>
+                            </div>
+                            <div class="skill-group">
+                                <h4>Platforms & Systems</h4>
+                                <p>Shopify (Admin & APIs), ShipBlink, Mechanic, SAP ERP, Office 365, Git/GitHub, Cloudflare Workers, Airtable, REST APIs</p>
+                            </div>
+                            <div class="skill-group">
+                                <h4>IT & Infrastructure</h4>
+                                <p>Network Administration, System Architecture, IT Support, Process Automation, Database Design, Third-Party Integration</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <p class="section-subtitle">A selection of projects that showcase my technical skills and problem-solving approach</p>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-card featured">
+                    <div class="card-badge">Featured</div>
+                    <div class="card-content">
+                        <div class="card-icon">🚀</div>
+                        <h3>FormJet</h3>
+                        <p>Browser extension that automates form-filling from PDF data. Saves hours of manual data entry work.</p>
+                        <div class="tech-tags">
+                            <span>JavaScript</span>
+                            <span>Web Extensions</span>
+                            <span>PDF.js</span>
+                        </div>
+                        <a href="formjet/index.html" class="card-link">
+                            View Project →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="card-content">
+                        <div class="card-icon">🌐</div>
+                        <h3>NDS Logistics</h3>
+                        <p>Professional logistics company website. Full web design and development for transportation and logistics services.</p>
+                        <div class="tech-tags">
+                            <span>Web Design</span>
+                            <span>Business Site</span>
+                        </div>
+                        <a href="https://www.ndslog.net/" target="_blank" class="card-link">
+                            View Site →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-subtitle">Whether you need consulting, have a project in mind, or just want to chat about tech and logistics</p>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </div>
+                    <h3>Email</h3>
+                    <a href="mailto:mstevens@smazl.com">mstevens@smazl.com</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                    </div>
+                    <h3>Phone</h3>
+                    <a href="tel:4129153010">412-915-3010</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/mark-stevens-541215116" target="_blank">Connect with me</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <h3>Location</h3>
+                    <p>Chapel Hill, NC</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Mark Stevens. Built with curiosity and caffeine.</p>
+            <p class="footer-note">Operations × Technology × Innovation</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

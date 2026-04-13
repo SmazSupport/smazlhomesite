@@ -1,0 +1,37 @@
+{
+  "title": "Pumpkin Carving with Goats",
+  "images": [
+    {
+      "src": "images/1.jpg",
+      "description": "Found a table and a goat to start our carvings."
+    },
+    {
+      "src": "images/2.jpg",
+      "description": "Pumpkin carving in progress, with a very curious goat."
+    },
+    {
+      "src": "images/3.jpg",
+      "description": "A goat sneaking a little pumpkin snack."
+    },
+    {
+      "src": "images/4.jpg",
+      "description": "Turns out goats like carrots too!"
+    },
+    {
+      "src": "images/5.jpg",
+      "description": "Time for a selfie!"
+    },
+    {
+      "src": "images/6.jpg",
+      "description": "A quick group photo of the whole crew."
+    },
+    {
+      "src": "images/7.jpg",
+      "description": "Our goat friend giving a final inspection."
+    },
+    {
+      "src": "images/8.jpg",
+      "description": "The final carvings—goat approved!"
+    }
+  ]
+}

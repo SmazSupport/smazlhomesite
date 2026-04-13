@@ -1,0 +1,1264 @@
+<!-- report-3-positions.html  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pump Totals Report - 3 Positions</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="nav-bar">
+    <ul>
+      <li><a href="ReportTesting.html">Home</a></li>
+      <li><a href="report-3-positions.html">3 Positions</a></li>
+      <li><a href="report-4-positions.html">4 Positions</a></li>
+      <li><a href="report-5-positions.html">5 Positions</a></li>
+      <li><a href="report-6-positions.html">6 Positions</a></li>
+      <li><a href="report-14-positions.html">14 Positions</a></li>
+      <li><a href="pdftotext.html">PDF to Text</a></li>
+      <li><a href="test_report.html">Test Report</a></li>
+    </ul>
+  </div>
+<h1>Test Report</h1>
+
+<!-- File input for uploading JSON -->
+<input type="file" id="pdfUpload" accept="application/pdf">
+<button id="extractText">Extract Text from PDF</button>
+
+
+
+
+
+<table border="0" class="tableStyle" cellspacing="0" cellpadding="0">
+												
+    <tbody><tr>
+        <td class="tdStyle" align="center" width="60">
+        
+            
+                <span class="boldTextStyle">Fueling<br>Position<br>1</span>
+                
+        
+            
+            <input type="hidden" name="FuelingPositionReading.fuelingPositionID" value="2951">
+            <input type="hidden" name="FuelingPositionReading.multiProductDispenserID" value="1480">
+            <input type="hidden" name="FuelingPositionReading.multiProductDispenserReadingID" value="2433988">
+            
+            <input type="hidden" name="FuelingPositionReading.fuelingPositionReadingID" value="4856241">
+            <input type="hidden" name="FuelingPositionReading.fuelingPositionNumber" value="1">
+        </td>
+        <td>
+            <table border="0" class="tableStyle" cellspacing="0" cellpadding="0">
+                <tbody><tr class="boldTextStyle">
+                    <td class="tdStyle" width="60">
+                        Grade
+                    </td>
+                    <td colspan="3" class="tdStyle" align="center">
+                        Inside Readings 
+                    </td>
+                    <td class="tdStyle" align="center"> 
+                        Outside Readings
+                    </td>
+                </tr>
+                
+                        
+                        <tr>
+                            <td class="tdStyle">
+                                <!-- 1928 -->
+                                
+                                    <span title="Click to add test gallons" class="boldTextStyle" style="cursor:pointer" onclick="toggleTest('0_0_0')">Unleaded</span>
+                                                                                            
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionID" value="2951">
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionProductReadingID" value="13708903">
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionReadingID" value="4856241">
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionProductID" value="1928">
+                                <input type="hidden" name="FuelingPositionProductReading.gradeID" value="1">
+                                <input type="hidden" name="FuelingPositionProductReading.difference" value="9789999955605708">
+                                
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionProductNumber" value="0">
+                                
+                                            
+                                        <input type="hidden" name="BlendRatioReading.blendRatioReadingID" value="20921524">																	
+                                        <input type="hidden" name="BlendRatioReading.blendRatioID" value="12379">
+                                        <input type="hidden" name="BlendRatioReading.fuelingPositionProductID" value="1928">
+                                        <input type="hidden" name="BlendRatioReading.tankID" value="359">
+                                        <input type="hidden" name="BlendRatioReading.percentage" value="100.0">
+                                        <input type="hidden" name="BlendRatioReading.fuelingPositionProductReadingID" value="13708903">
+                                                                                                            
+                                
+                            </td>
+                            
+                            
+                                <td class="tdStyle">
+                                    <table>
+                                        <tbody><tr>
+                                            <td class="textStyle" nowrap="">
+                                                Dollar Now
+                                            </td>
+                                            <td>
+                                                <input type="text" name="FuelingPositionProductReading.insideDollarReadingNow" onchange="reportChanged=true" value="" size="8" class="textBoxStyle">
+                                            </td>
+                                        </tr>
+                                        
+                                        
+                                        
+                                         <tr style="display:none" id="dollarTest_0_0_0">
+                                            <td class="textStyle" nowrap="">
+                                                Dollar Test
+                                            </td>
+                                            <td>
+                                                <input type="text" readonly="" tabindex="-1" name="FuelingPositionProductReading.insideDollarTestNow" value="0.00" size="8" class="readOnlyTextBoxStyle">
+                                            </td>
+                                        </tr>
+                                        
+                                        
+                                        
+                                        <tr>
+                                            <td class="textStyle" nowrap="">
+                                                Dollars Last
+                                            </td>
+                                            <td>
+                                                <input type="text" tabindex="-1" readonly="" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideDollarReadingLast" value="" size="8">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <hr>
+                                            </td>																			
+                                        </tr>
+                                        <tr>
+                                            <td class="textStyle" nowrap="">
+                                                Dollar Sales
+                                            </td>
+                                            <td class="textStyle">
+                                                <input type="text" readonly="" tabindex="-1" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideDollarSales" value="" size="8">
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                </td>
+                                
+                                <!--  differnece -->
+                                <td class="tdStyle" align="center" valign="center">																				
+                                    <span class="boldTextStyle">Dif</span><br>
+                                    <input type="text" readonly="" tabindex="-1" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.difference" value="" size="4">																			
+                                </td>
+                            
+                            
+                            
+                            
+                            
+                            
+                            <td class="tdStyle">
+                                <table>
+                                    <tbody><tr>
+                                        <td class="textStyle" nowrap="">
+                                            Gallons Now
+                                        </td>
+                                        <td>
+                                            <input type="text" onchange="reportChanged=true" name="FuelingPositionProductReading.insideGallonReadingNow" value="" size="8" class="textBoxStyle">
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr style="display:none" id="gallonsTest_0_0_0">
+                                        <td class="textStyle" nowrap="">
+                                            Gallons Test
+                                        </td>
+                                        <td>
+                                            <input type="text" tabindex="-1" name="FuelingPositionProductReading.insideGallonTestNow" value="0.000" size="8" class="textBoxStyle">
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="textStyle" nowrap="">
+                                            Gallons Last
+                                        </td>
+                                        <td>
+                                            <input type="text" tabindex="-1" readonly="" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideGallonReadingLast" value="" size="8">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <hr>
+                                        </td>																			
+                                    </tr>
+                                    <tr>
+                                        <td class="textStyle" nowrap="">
+                                            Gallons Sold
+                                        </td>
+                                        <td class="textStyle" nowrap="">
+                                            <input type="text" readonly="" tabindex="-1" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideGallonsSold" value="" size="8">
+                                            $<input type="text" readonly="" tabindex="-1" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideRetailPrice" value="" size="5">
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                                
+                                
+                                 
+                            </td>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <!-- double retailPriceOfGas; -->
+                            
+                            <td class="tdStyle">
+                                
+                                            <table>
+                                                <tbody><tr>
+                                                    <td class="textStyle" nowrap="">
+                                                        Gallons Now
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" name="FuelingPositionProductReading.outsideGallonReadingNow" value="" size="8" class="textBoxStyle">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="textStyle" nowrap="">
+                                                        Gallons Last
+                                                    </td>
+                                                    <td>
+                                                        <input tabindex="-1" readonly="" class="readOnlyTextBoxStyle" type="text" name="FuelingPositionProductReading.outsideGallonReadingLast" value="" size="8">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <hr>
+                                                    </td>																			
+                                                </tr>
+                                                <tr>
+                                                    <td class="textStyle" nowrap="">
+                                                        Gallons Sold
+                                                    </td>
+                                                    <td class="textStyle" nowrap="">
+                                                        <input type="text" name="FuelingPositionProductReading.outsideGallonsSold" value="" size="8" readonly="" tabindex="-1" class="readOnlyTextBoxStyle">
+                                                        $<input type="text" name="FuelingPositionProductReading.outsideRetailPrice" value="" size="5" readonly="" tabindex="-1" class="readOnlyTextBoxStyle">
+                                                    </td>
+                                                </tr>
+                                            </tbody></table> 
+                                
+                            </td>
+                        </tr>
+                    
+                    
+                
+                        
+                        <tr>
+                            <td class="tdStyle">
+                                <!-- 1926 -->
+                                
+                                    <span title="Click to add test gallons" class="boldTextStyle" style="cursor:pointer" onclick="toggleTest('0_0_1')">Plus</span>
+                                                                                            
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionID" value="2951">
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionProductReadingID" value="13708904">
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionReadingID" value="4856241">
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionProductID" value="1926">
+                                <input type="hidden" name="FuelingPositionProductReading.gradeID" value="2">
+                                <input type="hidden" name="FuelingPositionProductReading.difference" value="-0.0017800000044303488">
+                                
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionProductNumber" value="0">
+                                
+                                            
+                                        <input type="hidden" name="BlendRatioReading.blendRatioReadingID" value="20921525">																	
+                                        <input type="hidden" name="BlendRatioReading.blendRatioID" value="12376">
+                                        <input type="hidden" name="BlendRatioReading.fuelingPositionProductID" value="1926">
+                                        <input type="hidden" name="BlendRatioReading.tankID" value="359">
+                                        <input type="hidden" name="BlendRatioReading.percentage" value="65.0">
+                                        <input type="hidden" name="BlendRatioReading.fuelingPositionProductReadingID" value="13708904">
+                                            
+                                        <input type="hidden" name="BlendRatioReading.blendRatioReadingID" value="20921526">																	
+                                        <input type="hidden" name="BlendRatioReading.blendRatioID" value="12377">
+                                        <input type="hidden" name="BlendRatioReading.fuelingPositionProductID" value="1926">
+                                        <input type="hidden" name="BlendRatioReading.tankID" value="360">
+                                        <input type="hidden" name="BlendRatioReading.percentage" value="35.0">
+                                        <input type="hidden" name="BlendRatioReading.fuelingPositionProductReadingID" value="13708904">
+                                                                                                            
+                                
+                            </td>
+                            
+                            
+                                <td class="tdStyle">
+                                    <table>
+                                        <tbody><tr>
+                                            <td class="textStyle" nowrap="">
+                                                Dollar Now
+                                            </td>
+                                            <td>
+                                                <input type="text" name="FuelingPositionProductReading.insideDollarReadingNow" onchange="reportChanged=true" value="" size="8" class="textBoxStyle">
+                                            </td>
+                                        </tr>
+                                        
+                                        
+                                        
+                                         <tr style="display:none" id="dollarTest_0_0_1">
+                                            <td class="textStyle" nowrap="">
+                                                Dollar Test
+                                            </td>
+                                            <td>
+                                                <input type="text" readonly="" tabindex="-1" name="FuelingPositionProductReading.insideDollarTestNow" value="0.00" size="8" class="readOnlyTextBoxStyle">
+                                            </td>
+                                        </tr>
+                                        
+                                        
+                                        
+                                        <tr>
+                                            <td class="textStyle" nowrap="">
+                                                Dollars Last
+                                            </td>
+                                            <td>
+                                                <input type="text" tabindex="-1" readonly="" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideDollarReadingLast" value="" size="8">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <hr>
+                                            </td>																			
+                                        </tr>
+                                        <tr>
+                                            <td class="textStyle" nowrap="">
+                                                Dollar Sales
+                                            </td>
+                                            <td class="textStyle">
+                                                <input type="text" readonly="" tabindex="-1" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideDollarSales" value="" size="8">
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                </td>
+                                
+                                <!--  differnece -->
+                                <td class="tdStyle" align="center" valign="center">																				
+                                    <span class="boldTextStyle">Dif</span><br>
+                                    <input type="text" readonly="" tabindex="-1" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.difference" value="" size="4">																			
+                                </td>
+                            
+                            
+                            
+                            
+                            
+                            
+                            <td class="tdStyle">
+                                <table>
+                                    <tbody><tr>
+                                        <td class="textStyle" nowrap="">
+                                            Gallons Now
+                                        </td>
+                                        <td>
+                                            <input type="text" onchange="reportChanged=true" name="FuelingPositionProductReading.insideGallonReadingNow" value="" size="8" class="textBoxStyle">
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr style="display:none" id="gallonsTest_0_0_1">
+                                        <td class="textStyle" nowrap="">
+                                            Gallons Test
+                                        </td>
+                                        <td>
+                                            <input type="text" tabindex="-1" name="FuelingPositionProductReading.insideGallonTestNow" value="0.000" size="8" class="textBoxStyle">
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="textStyle" nowrap="">
+                                            Gallons Last
+                                        </td>
+                                        <td>
+                                            <input type="text" tabindex="-1" readonly="" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideGallonReadingLast" value="" size="8">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <hr>
+                                        </td>																			
+                                    </tr>
+                                    <tr>
+                                        <td class="textStyle" nowrap="">
+                                            Gallons Sold
+                                        </td>
+                                        <td class="textStyle" nowrap="">
+                                            <input type="text" readonly="" tabindex="-1" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideGallonsSold" value="" size="8">
+                                            $<input type="text" readonly="" tabindex="-1" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideRetailPrice" value="" size="5">
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                                
+                                
+                                 
+                            </td>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <!-- double retailPriceOfGas; -->
+                            
+                            <td class="tdStyle">
+                                
+                                        <table style="visibility:hidden">
+                                        <tbody><tr>
+                                            <td class="textStyle" nowrap="">
+                                                Gallons Now
+                                            </td>
+                                            <td>
+                                                <input type="text" size="16" class="textBoxStyle" tabindex="-1">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="textStyle" nowrap="">
+                                                Gallons Last
+                                            </td>
+                                            <td>
+                                                <input type="text" size="16" class="textBoxStyle" tabindex="-1">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <hr>
+                                            </td>																			
+                                        </tr>
+                                        <tr>
+                                            <td class="textStyle" nowrap="">
+                                                Gallons Sold
+                                            </td>
+                                            <td class="textStyle" nowrap="">
+                                                <input type="text" size="8" readonly="" tabindex="-1" class="readOnlyTextBoxStyle">
+                                                <span style="visibility:hidden">$<input type="text" size="5" readonly="" tabindex="-1" class="readOnlyTextBoxStyle"></span>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    <input type="hidden" name="FuelingPositionProductReading.outsideGallonReadingNow" value="0.0">
+                                    <input type="hidden" name="FuelingPositionProductReading.outsideGallonReadingLast" value="0.0">
+                                    <input type="hidden" name="FuelingPositionProductReading.outsideGallonsSold" value="0.0">
+                                    <input type="hidden" name="FuelingPositionProductReading.outsideRetailPrice" value="0.0">
+                                        
+                                
+                            </td>
+                        </tr>
+                    
+                    
+                
+                        
+                        <tr>
+                            <td class="tdStyle">
+                                <!-- 1927 -->
+                                
+                                    <span title="Click to add test gallons" class="boldTextStyle" style="cursor:pointer" onclick="toggleTest('0_0_2')">Super</span>
+                                                                                            
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionID" value="2951">
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionProductReadingID" value="13708905">
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionReadingID" value="4856241">
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionProductID" value="1927">
+                                <input type="hidden" name="FuelingPositionProductReading.gradeID" value="3">
+                                <input type="hidden" name="FuelingPositionProductReading.difference" value="0170000000002233">
+                                
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionProductNumber" value="0">
+                                
+                                            
+                                        <input type="hidden" name="BlendRatioReading.blendRatioReadingID" value="20921527">																	
+                                        <input type="hidden" name="BlendRatioReading.blendRatioID" value="12378">
+                                        <input type="hidden" name="BlendRatioReading.fuelingPositionProductID" value="1927">
+                                        <input type="hidden" name="BlendRatioReading.tankID" value="360">
+                                        <input type="hidden" name="BlendRatioReading.percentage" value="100.0">
+                                        <input type="hidden" name="BlendRatioReading.fuelingPositionProductReadingID" value="13708905">
+                                                                                                            
+                                
+                            </td>
+                            
+                            
+                                <td class="tdStyle">
+                                    <table>
+                                        <tbody><tr>
+                                            <td class="textStyle" nowrap="">
+                                                Dollar Now
+                                            </td>
+                                            <td>
+                                                <input type="text" name="FuelingPositionProductReading.insideDollarReadingNow" onchange="reportChanged=true" value="" size="8" class="textBoxStyle">
+                                            </td>
+                                        </tr>
+                                        
+                                        
+                                        
+                                         <tr style="display:none" id="dollarTest_0_0_2">
+                                            <td class="textStyle" nowrap="">
+                                                Dollar Test
+                                            </td>
+                                            <td>
+                                                <input type="text" readonly="" tabindex="-1" name="FuelingPositionProductReading.insideDollarTestNow" value="0.00" size="8" class="readOnlyTextBoxStyle">
+                                            </td>
+                                        </tr>
+                                        
+                                        
+                                        
+                                        <tr>
+                                            <td class="textStyle" nowrap="">
+                                                Dollars Last
+                                            </td>
+                                            <td>
+                                                <input type="text" tabindex="-1" readonly="" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideDollarReadingLast" value="" size="8">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <hr>
+                                            </td>																			
+                                        </tr>
+                                        <tr>
+                                            <td class="textStyle" nowrap="">
+                                                Dollar Sales
+                                            </td>
+                                            <td class="textStyle">
+                                                <input type="text" readonly="" tabindex="-1" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideDollarSales" value="" size="8">
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                </td>
+                                
+                                <!--  differnece -->
+                                <td class="tdStyle" align="center" valign="center">																				
+                                    <span class="boldTextStyle">Dif</span><br>
+                                    <input type="text" readonly="" tabindex="-1" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.difference" value="" size="4">																			
+                                </td>
+                            
+                            
+                            
+                            
+                            
+                            
+                            <td class="tdStyle">
+                                <table>
+                                    <tbody><tr>
+                                        <td class="textStyle" nowrap="">
+                                            Gallons Now
+                                        </td>
+                                        <td>
+                                            <input type="text" onchange="reportChanged=true" name="FuelingPositionProductReading.insideGallonReadingNow" value="" size="8" class="textBoxStyle">
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr style="display:none" id="gallonsTest_0_0_2">
+                                        <td class="textStyle" nowrap="">
+                                            Gallons Test
+                                        </td>
+                                        <td>
+                                            <input type="text" tabindex="-1" name="FuelingPositionProductReading.insideGallonTestNow" value="0.000" size="8" class="textBoxStyle">
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="textStyle" nowrap="">
+                                            Gallons Last
+                                        </td>
+                                        <td>
+                                            <input type="text" tabindex="-1" readonly="" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideGallonReadingLast" value="" size="8">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <hr>
+                                        </td>																			
+                                    </tr>
+                                    <tr>
+                                        <td class="textStyle" nowrap="">
+                                            Gallons Sold
+                                        </td>
+                                        <td class="textStyle" nowrap="">
+                                            <input type="text" readonly="" tabindex="-1" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideGallonsSold" value="" size="8">
+                                            $<input type="text" readonly="" tabindex="-1" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideRetailPrice" value="" size="5">
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                                
+                                
+                                 
+                            </td>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <!-- double retailPriceOfGas; -->
+                            
+                            <td class="tdStyle">
+                                
+                                            <table>
+                                                <tbody><tr>
+                                                    <td class="textStyle" nowrap="">
+                                                        Gallons Now
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" name="FuelingPositionProductReading.outsideGallonReadingNow" value="" size="8" class="textBoxStyle">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="textStyle" nowrap="">
+                                                        Gallons Last
+                                                    </td>
+                                                    <td>
+                                                        <input tabindex="-1" readonly="" class="readOnlyTextBoxStyle" type="text" name="FuelingPositionProductReading.outsideGallonReadingLast" value="" size="8">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <hr>
+                                                    </td>																			
+                                                </tr>
+                                                <tr>
+                                                    <td class="textStyle" nowrap="">
+                                                        Gallons Sold
+                                                    </td>
+                                                    <td class="textStyle" nowrap="">
+                                                        <input type="text" name="FuelingPositionProductReading.outsideGallonsSold" value="" size="8" readonly="" tabindex="-1" class="readOnlyTextBoxStyle">
+                                                        $<input type="text" name="FuelingPositionProductReading.outsideRetailPrice" value="" size="5" readonly="" tabindex="-1" class="readOnlyTextBoxStyle">
+                                                    </td>
+                                                </tr>
+                                            </tbody></table> 
+                                
+                            </td>
+                        </tr>
+                    
+                    
+                
+                
+                
+            </tbody></table>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="tdStyle" align="center" width="60">
+        
+            
+                <span class="boldTextStyle">Fueling<br>Position<br>2</span>
+                
+        
+            
+            <input type="hidden" name="FuelingPositionReading.fuelingPositionID" value="2952">
+            <input type="hidden" name="FuelingPositionReading.multiProductDispenserID" value="1480">
+            <input type="hidden" name="FuelingPositionReading.multiProductDispenserReadingID" value="2433988">
+            
+            <input type="hidden" name="FuelingPositionReading.fuelingPositionReadingID" value="4856242">
+            <input type="hidden" name="FuelingPositionReading.fuelingPositionNumber" value="2">
+        </td>
+        <td>
+            <table border="0" class="tableStyle" cellspacing="0" cellpadding="0">
+                <tbody><tr class="boldTextStyle">
+                    <td class="tdStyle" width="60">
+                        Grade
+                    </td>
+                    <td colspan="3" class="tdStyle" align="center">
+                        Inside Readings 
+                    </td>
+                    <td class="tdStyle" align="center"> 
+                        Outside Readings
+                    </td>
+                </tr>
+                
+                        
+                        <tr>
+                            <td class="tdStyle">
+                                <!-- 1931 -->
+                                
+                                    <span title="Click to add test gallons" class="boldTextStyle" style="cursor:pointer" onclick="toggleTest('0_1_0')">Unleaded</span>
+                                                                                            
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionID" value="2952">
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionProductReadingID" value="13708906">
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionReadingID" value="4856242">
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionProductID" value="1931">
+                                <input type="hidden" name="FuelingPositionProductReading.gradeID" value="1">
+                                <input type="hidden" name="FuelingPositionProductReading.difference" value="0.006279999973912709">
+                                
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionProductNumber" value="0">
+                                
+                                            
+                                        <input type="hidden" name="BlendRatioReading.blendRatioReadingID" value="20921528">																	
+                                        <input type="hidden" name="BlendRatioReading.blendRatioID" value="12383">
+                                        <input type="hidden" name="BlendRatioReading.fuelingPositionProductID" value="1931">
+                                        <input type="hidden" name="BlendRatioReading.tankID" value="359">
+                                        <input type="hidden" name="BlendRatioReading.percentage" value="100.0">
+                                        <input type="hidden" name="BlendRatioReading.fuelingPositionProductReadingID" value="13708906">
+                                                                                                            
+                                
+                            </td>
+                            
+                            
+                                <td class="tdStyle">
+                                    <table>
+                                        <tbody><tr>
+                                            <td class="textStyle" nowrap="">
+                                                Dollar Now
+                                            </td>
+                                            <td>
+                                                <input type="text" name="FuelingPositionProductReading.insideDollarReadingNow" onchange="reportChanged=true" value="" size="8" class="textBoxStyle">
+                                            </td>
+                                        </tr>
+                                        
+                                        
+                                        
+                                         <tr style="display:none" id="dollarTest_0_1_0">
+                                            <td class="textStyle" nowrap="">
+                                                Dollar Test
+                                            </td>
+                                            <td>
+                                                <input type="text" readonly="" tabindex="-1" name="FuelingPositionProductReading.insideDollarTestNow" value="0.00" size="8" class="readOnlyTextBoxStyle">
+                                            </td>
+                                        </tr>
+                                        
+                                        
+                                        
+                                        <tr>
+                                            <td class="textStyle" nowrap="">
+                                                Dollars Last
+                                            </td>
+                                            <td>
+                                                <input type="text" tabindex="-1" readonly="" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideDollarReadingLast" value="" size="8">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <hr>
+                                            </td>																			
+                                        </tr>
+                                        <tr>
+                                            <td class="textStyle" nowrap="">
+                                                Dollar Sales
+                                            </td>
+                                            <td class="textStyle">
+                                                <input type="text" readonly="" tabindex="-1" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideDollarSales" value="" size="8">
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                </td>
+                                
+                                <!--  differnece -->
+                                <td class="tdStyle" align="center" valign="center">																				
+                                    <span class="boldTextStyle">Dif</span><br>
+                                    <input type="text" readonly="" tabindex="-1" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.difference" value="" size="4">																			
+                                </td>
+                            
+                            
+                            
+                            
+                            
+                            
+                            <td class="tdStyle">
+                                <table>
+                                    <tbody><tr>
+                                        <td class="textStyle" nowrap="">
+                                            Gallons Now
+                                        </td>
+                                        <td>
+                                            <input type="text" onchange="reportChanged=true" name="FuelingPositionProductReading.insideGallonReadingNow" value="" size="8" class="textBoxStyle">
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr style="display:none" id="gallonsTest_0_1_0">
+                                        <td class="textStyle" nowrap="">
+                                            Gallons Test
+                                        </td>
+                                        <td>
+                                            <input type="text" tabindex="-1" name="FuelingPositionProductReading.insideGallonTestNow" value="0.000" size="8" class="textBoxStyle">
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="textStyle" nowrap="">
+                                            Gallons Last
+                                        </td>
+                                        <td>
+                                            <input type="text" tabindex="-1" readonly="" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideGallonReadingLast" value="" size="8">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <hr>
+                                        </td>																			
+                                    </tr>
+                                    <tr>
+                                        <td class="textStyle" nowrap="">
+                                            Gallons Sold
+                                        </td>
+                                        <td class="textStyle" nowrap="">
+                                            <input type="text" readonly="" tabindex="-1" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideGallonsSold" value="" size="8">
+                                            $<input type="text" readonly="" tabindex="-1" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideRetailPrice" value="" size="5">
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                                
+                                
+                                 
+                            </td>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <!-- double retailPriceOfGas; -->
+                            
+                            <td class="tdStyle">
+                                
+                                            <table>
+                                                <tbody><tr>
+                                                    <td class="textStyle" nowrap="">
+                                                        Gallons Now
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" name="FuelingPositionProductReading.outsideGallonReadingNow" value="" size="8" class="textBoxStyle">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="textStyle" nowrap="">
+                                                        Gallons Last
+                                                    </td>
+                                                    <td>
+                                                        <input tabindex="-1" readonly="" class="readOnlyTextBoxStyle" type="text" name="FuelingPositionProductReading.outsideGallonReadingLast" value="" size="8">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <hr>
+                                                    </td>																			
+                                                </tr>
+                                                <tr>
+                                                    <td class="textStyle" nowrap="">
+                                                        Gallons Sold
+                                                    </td>
+                                                    <td class="textStyle" nowrap="">
+                                                        <input type="text" name="FuelingPositionProductReading.outsideGallonsSold" value="" size="8" readonly="" tabindex="-1" class="readOnlyTextBoxStyle">
+                                                        $<input type="text" name="FuelingPositionProductReading.outsideRetailPrice" value="" size="5" readonly="" tabindex="-1" class="readOnlyTextBoxStyle">
+                                                    </td>
+                                                </tr>
+                                            </tbody></table> 
+                                
+                            </td>
+                        </tr>
+                    
+                    
+                
+                        
+                        <tr>
+                            <td class="tdStyle">
+                                <!-- 1929 -->
+                                
+                                    <span title="Click to add test gallons" class="boldTextStyle" style="cursor:pointer" onclick="toggleTest('0_1_1')">Plus</span>
+                                                                                            
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionID" value="2952">
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionProductReadingID" value="13708907">
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionReadingID" value="4856242">
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionProductID" value="1929">
+                                <input type="hidden" name="FuelingPositionProductReading.gradeID" value="2">
+                                <input type="hidden" name="FuelingPositionProductReading.difference" value="0159999986740331">
+                                
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionProductNumber" value="0">
+                                
+                                            
+                                        <input type="hidden" name="BlendRatioReading.blendRatioReadingID" value="20921529">																	
+                                        <input type="hidden" name="BlendRatioReading.blendRatioID" value="12380">
+                                        <input type="hidden" name="BlendRatioReading.fuelingPositionProductID" value="1929">
+                                        <input type="hidden" name="BlendRatioReading.tankID" value="359">
+                                        <input type="hidden" name="BlendRatioReading.percentage" value="65.0">
+                                        <input type="hidden" name="BlendRatioReading.fuelingPositionProductReadingID" value="13708907">
+                                            
+                                        <input type="hidden" name="BlendRatioReading.blendRatioReadingID" value="20921530">																	
+                                        <input type="hidden" name="BlendRatioReading.blendRatioID" value="12381">
+                                        <input type="hidden" name="BlendRatioReading.fuelingPositionProductID" value="1929">
+                                        <input type="hidden" name="BlendRatioReading.tankID" value="360">
+                                        <input type="hidden" name="BlendRatioReading.percentage" value="35.0">
+                                        <input type="hidden" name="BlendRatioReading.fuelingPositionProductReadingID" value="13708907">
+                                                                                                            
+                                
+                            </td>
+                            
+                            
+                                <td class="tdStyle">
+                                    <table>
+                                        <tbody><tr>
+                                            <td class="textStyle" nowrap="">
+                                                Dollar Now
+                                            </td>
+                                            <td>
+                                                <input type="text" name="FuelingPositionProductReading.insideDollarReadingNow" onchange="reportChanged=true" value="" size="8" class="textBoxStyle">
+                                            </td>
+                                        </tr>
+                                        
+                                        
+                                        
+                                         <tr style="display:none" id="dollarTest_0_1_1">
+                                            <td class="textStyle" nowrap="">
+                                                Dollar Test
+                                            </td>
+                                            <td>
+                                                <input type="text" readonly="" tabindex="-1" name="FuelingPositionProductReading.insideDollarTestNow" value="0.00" size="8" class="readOnlyTextBoxStyle">
+                                            </td>
+                                        </tr>
+                                        
+                                        
+                                        
+                                        <tr>
+                                            <td class="textStyle" nowrap="">
+                                                Dollars Last
+                                            </td>
+                                            <td>
+                                                <input type="text" tabindex="-1" readonly="" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideDollarReadingLast" value="" size="8">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <hr>
+                                            </td>																			
+                                        </tr>
+                                        <tr>
+                                            <td class="textStyle" nowrap="">
+                                                Dollar Sales
+                                            </td>
+                                            <td class="textStyle">
+                                                <input type="text" readonly="" tabindex="-1" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideDollarSales" value="" size="8">
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                </td>
+                                
+                                <!--  differnece -->
+                                <td class="tdStyle" align="center" valign="center">																				
+                                    <span class="boldTextStyle">Dif</span><br>
+                                    <input type="text" readonly="" tabindex="-1" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.difference" value="" size="4">																			
+                                </td>
+                            
+                            
+                            
+                            
+                            
+                            
+                            <td class="tdStyle">
+                                <table>
+                                    <tbody><tr>
+                                        <td class="textStyle" nowrap="">
+                                            Gallons Now
+                                        </td>
+                                        <td>
+                                            <input type="text" onchange="reportChanged=true" name="FuelingPositionProductReading.insideGallonReadingNow" value="" size="8" class="textBoxStyle">
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr style="display:none" id="gallonsTest_0_1_1">
+                                        <td class="textStyle" nowrap="">
+                                            Gallons Test
+                                        </td>
+                                        <td>
+                                            <input type="text" tabindex="-1" name="FuelingPositionProductReading.insideGallonTestNow" value="0.000" size="8" class="textBoxStyle">
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="textStyle" nowrap="">
+                                            Gallons Last
+                                        </td>
+                                        <td>
+                                            <input type="text" tabindex="-1" readonly="" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideGallonReadingLast" value="" size="8">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <hr>
+                                        </td>																			
+                                    </tr>
+                                    <tr>
+                                        <td class="textStyle" nowrap="">
+                                            Gallons Sold
+                                        </td>
+                                        <td class="textStyle" nowrap="">
+                                            <input type="text" readonly="" tabindex="-1" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideGallonsSold" value="" size="8">
+                                            $<input type="text" readonly="" tabindex="-1" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideRetailPrice" value="" size="5">
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                                
+                                
+                                 
+                            </td>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <!-- double retailPriceOfGas; -->
+                            
+                            <td class="tdStyle">
+                                
+                                        <table style="visibility:hidden">
+                                        <tbody><tr>
+                                            <td class="textStyle" nowrap="">
+                                                Gallons Now
+                                            </td>
+                                            <td>
+                                                <input type="text" size="16" class="textBoxStyle" tabindex="-1">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="textStyle" nowrap="">
+                                                Gallons Last
+                                            </td>
+                                            <td>
+                                                <input type="text" size="16" class="textBoxStyle" tabindex="-1">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <hr>
+                                            </td>																			
+                                        </tr>
+                                        <tr>
+                                            <td class="textStyle" nowrap="">
+                                                Gallons Sold
+                                            </td>
+                                            <td class="textStyle" nowrap="">
+                                                <input type="text" size="8" readonly="" tabindex="-1" class="readOnlyTextBoxStyle">
+                                                <span style="visibility:hidden">$<input type="text" size="5" readonly="" tabindex="-1" class="readOnlyTextBoxStyle"></span>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    <input type="hidden" name="FuelingPositionProductReading.outsideGallonReadingNow" value="0.0">
+                                    <input type="hidden" name="FuelingPositionProductReading.outsideGallonReadingLast" value="0.0">
+                                    <input type="hidden" name="FuelingPositionProductReading.outsideGallonsSold" value="0.0">
+                                    <input type="hidden" name="FuelingPositionProductReading.outsideRetailPrice" value="0.0">
+                                        
+                                
+                            </td>
+                        </tr>
+                    
+                    
+                
+                        
+                        <tr>
+                            <td class="tdStyle">
+                                <!-- 1930 -->
+                                
+                                    <span title="Click to add test gallons" class="boldTextStyle" style="cursor:pointer" onclick="toggleTest('0_1_2')">Super</span>
+                                                                                            
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionID" value="2952">
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionProductReadingID" value="13708908">
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionReadingID" value="4856242">
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionProductID" value="1930">
+                                <input type="hidden" name="FuelingPositionProductReading.gradeID" value="3">
+                                <input type="hidden" name="FuelingPositionProductReading.difference" value="-1.465879999995927">
+                                
+                                <input type="hidden" name="FuelingPositionProductReading.fuelingPositionProductNumber" value="0">
+                                
+                                            
+                                        <input type="hidden" name="BlendRatioReading.blendRatioReadingID" value="20921531">																	
+                                        <input type="hidden" name="BlendRatioReading.blendRatioID" value="12382">
+                                        <input type="hidden" name="BlendRatioReading.fuelingPositionProductID" value="1930">
+                                        <input type="hidden" name="BlendRatioReading.tankID" value="360">
+                                        <input type="hidden" name="BlendRatioReading.percentage" value="100.0">
+                                        <input type="hidden" name="BlendRatioReading.fuelingPositionProductReadingID" value="13708908">
+                                                                                                            
+                                
+                            </td>
+                            
+                            
+                                <td class="tdStyle">
+                                    <table>
+                                        <tbody><tr>
+                                            <td class="textStyle" nowrap="">
+                                                Dollar Now
+                                            </td>
+                                            <td>
+                                                <input type="text" name="FuelingPositionProductReading.insideDollarReadingNow" onchange="reportChanged=true" value="" size="8" class="textBoxStyle">
+                                            </td>
+                                        </tr>
+                                        
+                                        
+                                        
+                                         <tr style="display:none" id="dollarTest_0_1_2">
+                                            <td class="textStyle" nowrap="">
+                                                Dollar Test
+                                            </td>
+                                            <td>
+                                                <input type="text" readonly="" tabindex="-1" name="FuelingPositionProductReading.insideDollarTestNow" value="0.00" size="8" class="readOnlyTextBoxStyle">
+                                            </td>
+                                        </tr>
+                                        
+                                        
+                                        
+                                        <tr>
+                                            <td class="textStyle" nowrap="">
+                                                Dollars Last
+                                            </td>
+                                            <td>
+                                                <input type="text" tabindex="-1" readonly="" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideDollarReadingLast" value="" size="8">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <hr>
+                                            </td>																			
+                                        </tr>
+                                        <tr>
+                                            <td class="textStyle" nowrap="">
+                                                Dollar Sales
+                                            </td>
+                                            <td class="textStyle">
+                                                <input type="text" readonly="" tabindex="-1" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideDollarSales" value="" size="8">
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                </td>
+                                
+                                <!--  differnece -->
+                                <td class="tdStyle" align="center" valign="center">																				
+                                    <span class="boldTextStyle">Dif</span><br>
+                                    <input type="text" readonly="" tabindex="-1" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.difference" value="" size="4">																			
+                                </td>
+                            
+                            
+                            
+                            
+                            
+                            
+                            <td class="tdStyle">
+                                <table>
+                                    <tbody><tr>
+                                        <td class="textStyle" nowrap="">
+                                            Gallons Now
+                                        </td>
+                                        <td>
+                                            <input type="text" onchange="reportChanged=true" name="FuelingPositionProductReading.insideGallonReadingNow" value="" size="8" class="textBoxStyle">
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr style="display:none" id="gallonsTest_0_1_2">
+                                        <td class="textStyle" nowrap="">
+                                            Gallons Test
+                                        </td>
+                                        <td>
+                                            <input type="text" tabindex="-1" name="FuelingPositionProductReading.insideGallonTestNow" value="0.000" size="8" class="textBoxStyle">
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="textStyle" nowrap="">
+                                            Gallons Last
+                                        </td>
+                                        <td>
+                                            <input type="text" tabindex="-1" readonly="" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideGallonReadingLast" value="" size="8">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <hr>
+                                        </td>																			
+                                    </tr>
+                                    <tr>
+                                        <td class="textStyle" nowrap="">
+                                            Gallons Sold
+                                        </td>
+                                        <td class="textStyle" nowrap="">
+                                            <input type="text" readonly="" tabindex="-1" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideGallonsSold" value="" size="8">
+                                            $<input type="text" readonly="" tabindex="-1" class="readOnlyTextBoxStyle" name="FuelingPositionProductReading.insideRetailPrice" value="" size="5">
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                                
+                                
+                                 
+                            </td>
+
+                            
+                            <!-- double retailPriceOfGas; -->
+                            
+                            <td class="tdStyle">
+                                
+                                            <table>
+                                                <tbody><tr>
+                                                    <td class="textStyle" nowrap="">
+                                                        Gallons Now
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" name="FuelingPositionProductReading.outsideGallonReadingNow" value="" size="8" class="textBoxStyle">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="textStyle" nowrap="">
+                                                        Gallons Last
+                                                    </td>
+                                                    <td>
+                                                        <input tabindex="-1" readonly="" class="readOnlyTextBoxStyle" type="text" name="FuelingPositionProductReading.outsideGallonReadingLast" value="" size="8">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <hr>
+                                                    </td>																			
+                                                </tr>
+                                                <tr>
+                                                    <td class="textStyle" nowrap="">
+                                                        Gallons Sold
+                                                    </td>
+                                                    <td class="textStyle" nowrap="">
+                                                        <input type="text" name="FuelingPositionProductReading.outsideGallonsSold" value="" size="8" readonly="" tabindex="-1" class="readOnlyTextBoxStyle">
+                                                        $<input type="text" name="FuelingPositionProductReading.outsideRetailPrice" value="" size="5" readonly="" tabindex="-1" class="readOnlyTextBoxStyle">
+                                                    </td>
+                                                </tr>
+                                            </tbody></table> 
+                                
+                            </td>
+                        </tr>
+                    
+                    
+                
+                
+                
+            </tbody></table>
+        </td>
+    </tr>
+                            
+
+
+
+        <tr>
+            <td class="tdStyle" align="center">
+                <span class="boldTextStyle">Audit</span>
+            </td>
+            <td align="center" class="tdStyle" %="">
+                <span class="boldTextStyle">Inside Gallons Sold:</span><span class="textStyle"> 458.940</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="boldTextStyle">Outside Gallons Sold:</span><span class="textStyle"> 458.000</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="boldTextStyle">Difference:</span><span class="textStyle"> 0.940</span> 
+            </td>
+        </tr>										
+
+</tbody></table>
+
+<script type="module" src="pdf.min.js"></script>
+<script src="formfilling.js" defer></script>
+
+<script data-goatcounter="https://smazlweb.goatcounter.com/count"
+        async src="//smazl.sharepoint.com///gc.zgo.at/count.js"></script>
+
+</body>
+
+</html>
+

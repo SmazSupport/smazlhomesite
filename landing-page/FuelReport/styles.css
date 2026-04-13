@@ -1,0 +1,168 @@
+/* Ensure the Universal Selector is not causing any unexpected behaviors */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Added a background color for the body */
+  padding-bottom: 20px;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px; /* Space below the main title */
+}
+
+/* Navigation Bar */
+.nav-bar {
+  background-color: #007bff;
+  padding: 10px 0;
+  overflow: auto; /* Clear the float */
+}
+
+.nav-bar ul {
+  list-style: none;
+  padding-left: 0; /* Remove default padding */
+  text-align: center; /* Center the navigation items */
+}
+
+.nav-bar li {
+  display: inline-block; /* Display items inline */
+  margin-right: -4px; /* Fix for inline-block spacing */
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block; /* Make the entire area clickable */
+}
+
+.nav-bar a:hover {
+  background-color: #0056b3; /* Color change on hover */
+  border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* Styles for content below the navigation bar */
+.content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+/* Button and Link Styles */
+button, .button-link {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px 0px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+button:hover, .button-link:hover {
+  background-color: #0056b3;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+
+
+
+
+
+.fuel-position {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.grade-section,
+.total-section {
+  margin-bottom: 10px;
+}
+
+.label,
+.grades,
+.total-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.grades div,
+.total-section div {
+  width: 20%;
+  text-align: left;
+}
+
+input[type="text"] {
+  width: 30%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  width: fit-content;
+  margin: 20px auto 0;
+}
+
+a:hover {
+  background-color: #0056b3;
+}
+
+.input-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.grade-name-label,
+.close-money-label, 
+.close-volume-label {
+  width: 30%; /* Adjust as necessary */
+  text-align: center;
+}
+
+  
+

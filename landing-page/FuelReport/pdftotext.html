@@ -1,0 +1,57 @@
+<!-- pdftotext.html  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PDF Text Extraction and Parsing</title>
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <ul>
+          <li><a href="ReportTesting.html">Home</a></li>
+          <li><a href="report-3-positions.html">3 Positions</a></li>
+          <li><a href="report-4-positions.html">4 Positions</a></li>
+          <li><a href="report-5-positions.html">5 Positions</a></li>
+          <li><a href="report-6-positions.html">6 Positions</a></li>
+          <li><a href="report-14-positions.html">14 Positions</a></li>
+          <li><a href="pdftotext.html">PDF to Text</a></li>
+          <li><a href="test_report.html">Test Report</a></li>
+        </ul>
+      </div>
+    <header>
+        <h1>PDF Data Extractor and Analyzer</h1>
+    </header>
+    <div id="uploadSection">
+        <h2>Upload PDF</h2>
+        <input type="file" id="pdfUpload" accept="application/pdf">
+        <button id="extractText">Extract Text from PDF</button>
+    </div>
+    
+    <div id="textSection" style="display:none;">
+        <h2>Extracted Text <button onclick="toggleSection('textContent')">Collapse</button></h2>
+        <div id="textContent">
+            <div id="pdfText"></div>
+            <button id="nextParse" style="display:none;">Next, Parse Data</button>
+        </div>
+    </div>
+    
+    <div id="parseSection" style="display:none;">
+        <h2>Parsed Data <button onclick="toggleSection('parsedContent')">Collapse</button></h2>
+        <div id="parsedContent">
+            <pre id="jsonData"></pre>
+            <button id="nextTable" style="display:none;">Next, Show Table</button>
+        </div>
+    </div>
+    
+    <div id="tableSection" style="display:none;">
+        <h2>Data Table <button onclick="toggleSection('tableContent')">Collapse</button></h2>
+        <div id="tableContent" style="display:none;"></div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.7.570/pdf.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
+

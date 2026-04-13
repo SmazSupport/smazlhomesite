@@ -1,0 +1,510 @@
+<!-- report-14-positions.html  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pump Totals Report - 14 Positions</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="nav-bar">
+    <ul>
+      <li><a href="ReportTesting.html">Home</a></li>
+      <li><a href="report-3-positions.html">3 Positions</a></li>
+      <li><a href="report-4-positions.html">4 Positions</a></li>
+      <li><a href="report-5-positions.html">5 Positions</a></li>
+      <li><a href="report-6-positions.html">6 Positions</a></li>
+      <li><a href="report-14-positions.html">14 Positions</a></li>
+      <li><a href="pdftotext.html">PDF to Text</a></li>
+      <li><a href="test_report.html">Test Report</a></li>
+    </ul>
+  </div>
+<h1>Pump Totals Report - 14 Positions</h1>
+
+<!-- PDF Upload Section -->
+<div class="pdf-upload-container">
+    <input type="file" id="pdfUpload" accept="application/pdf">
+    <button id="extractText">Upload and Process PDF</button>
+</div>
+
+
+<!-- Start of fuel position sections -->
+<div class="fuel-position-container">
+
+  <!-- Fuel Positions 1 to 12 -->
+  <!-- Begin fuel position section -->
+
+  
+  <!-- Fuel Positions 1 -->
+  <div class="fuel-position" id="fuel-position-1">
+    <h2>Fueling Position 1</h2>
+    <div class="grade-section">
+
+        <div class="input-labels">
+            <div class="grade-name-label">Grade Name</div>
+            <div class="close-money-label">Close Money</div>
+            <div class="close-volume-label">Close Volume</div>
+        </div>
+
+      <div class="grades">
+        <div>REGULAR</div>
+        <input type="text" id="fuel-position-1-regular-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-1-regular-close-volume" placeholder="Close Volume">
+      </div>
+      <div class="grades">
+        <div>PLUS</div>
+        <input type="text" id="fuel-position-1-plus-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-1-plus-close-volume" placeholder="Close Volume">
+      </div>
+      <div class="grades">
+        <div>SUPER</div>
+        <input type="text" id="fuel-position-1-super-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-1-super-close-volume" placeholder="Close Volume">
+      </div>
+    </div>
+    <div class="total-section">
+      <div>Total</div>
+      <input type="text" id="fuel-position-1-total-close-money" placeholder="Total Close Money">
+      <input type="text" id="fuel-position-1-total-close-volume" placeholder="Total Close Volume">
+    </div>
+  </div>
+ 
+  <!-- Fuel Positions 2 -->
+  <div class="fuel-position" id="fuel-position-2">
+    <h2>Fueling Position 2</h2>
+    <div class="grade-section">
+
+        <div class="input-labels">
+            <div class="grade-name-label">Grade Name</div>
+            <div class="close-money-label">Close Money</div>
+            <div class="close-volume-label">Close Volume</div>
+        </div>
+
+      <div class="grades">
+        <div>REGULAR</div>
+        <input type="text" id="fuel-position-2-regular-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-2-regular-close-volume" placeholder="Close Volume">
+      </div>
+      <div class="grades">
+        <div>PLUS</div>
+        <input type="text" id="fuel-position-2-plus-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-2-plus-close-volume" placeholder="Close Volume">
+      </div>
+      <div class="grades">
+        <div>SUPER</div>
+        <input type="text" id="fuel-position-2-super-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-2-super-close-volume" placeholder="Close Volume">
+      </div>
+    </div>
+    <div class="total-section">
+      <div>Total</div>
+      <input type="text" id="fuel-position-2-total-close-money" placeholder="Total Close Money">
+      <input type="text" id="fuel-position-2-total-close-volume" placeholder="Total Close Volume">
+    </div>
+  </div>
+
+<!-- Fuel Positions 3 -->
+<div class="fuel-position" id="fuel-position-3">
+    <h2>Fueling Position 3</h2>
+    <div class="grade-section">
+
+        <div class="input-labels">
+            <div class="grade-name-label">Grade Name</div>
+            <div class="close-money-label">Close Money</div>
+            <div class="close-volume-label">Close Volume</div>
+        </div>
+
+      <div class="grades">
+        <div>REGULAR</div>
+        <input type="text" id="fuel-position-3-regular-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-3-regular-close-volume" placeholder="Close Volume">
+      </div>
+      <div class="grades">
+        <div>PLUS</div>
+        <input type="text" id="fuel-position-3-plus-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-3-plus-close-volume" placeholder="Close Volume">
+      </div>
+      <div class="grades">
+        <div>SUPER</div>
+        <input type="text" id="fuel-position-3-super-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-3-super-close-volume" placeholder="Close Volume">
+      </div>
+    </div>
+    <div class="total-section">
+      <div>Total</div>
+      <input type="text" id="fuel-position-3-total-close-money" placeholder="Total Close Money">
+      <input type="text" id="fuel-position-3-total-close-volume" placeholder="Total Close Volume">
+    </div>
+  </div>
+ 
+<!-- Fuel Positions 4 -->
+<div class="fuel-position" id="fuel-position-4">
+    <h2>Fueling Position 4</h2>
+    <div class="grade-section">
+
+        <div class="input-labels">
+            <div class="grade-name-label">Grade Name</div>
+            <div class="close-money-label">Close Money</div>
+            <div class="close-volume-label">Close Volume</div>
+        </div>
+
+      <div class="grades">
+        <div>REGULAR</div>
+        <input type="text" id="fuel-position-4-regular-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-4-regular-close-volume" placeholder="Close Volume">
+      </div>
+      <div class="grades">
+        <div>PLUS</div>
+        <input type="text" id="fuel-position-4-plus-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-4-plus-close-volume" placeholder="Close Volume">
+      </div>
+      <div class="grades">
+        <div>SUPER</div>
+        <input type="text" id="fuel-position-4-super-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-4-super-close-volume" placeholder="Close Volume">
+      </div>
+    </div>
+    <div class="total-section">
+      <div>Total</div>
+      <input type="text" id="fuel-position-4-total-close-money" placeholder="Total Close Money">
+      <input type="text" id="fuel-position-4-total-close-volume" placeholder="Total Close Volume">
+    </div>
+  </div>
+ 
+<!-- Fuel Positions 5 -->
+<div class="fuel-position" id="fuel-position-5">
+    <h2>Fueling Position 5</h2>
+    <div class="grade-section">
+
+        <div class="input-labels">
+            <div class="grade-name-label">Grade Name</div>
+            <div class="close-money-label">Close Money</div>
+            <div class="close-volume-label">Close Volume</div>
+        </div>
+
+      <div class="grades">
+        <div>REGULAR</div>
+        <input type="text" id="fuel-position-5-regular-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-5-regular-close-volume" placeholder="Close Volume">
+      </div>
+      <div class="grades">
+        <div>PLUS</div>
+        <input type="text" id="fuel-position-5-plus-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-5-plus-close-volume" placeholder="Close Volume">
+      </div>
+      <div class="grades">
+        <div>SUPER</div>
+        <input type="text" id="fuel-position-5-super-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-5-super-close-volume" placeholder="Close Volume">
+      </div>
+    </div>
+    <div class="total-section">
+      <div>Total</div>
+      <input type="text" id="fuel-position-5-total-close-money" placeholder="Total Close Money">
+      <input type="text" id="fuel-position-5-total-close-volume" placeholder="Total Close Volume">
+    </div>
+  </div>
+ 
+<!-- Fuel Positions 6 -->
+<div class="fuel-position" id="fuel-position-6">
+    <h2>Fueling Position 6</h2>
+    <div class="grade-section">
+
+        <div class="input-labels">
+            <div class="grade-name-label">Grade Name</div>
+            <div class="close-money-label">Close Money</div>
+            <div class="close-volume-label">Close Volume</div>
+        </div>
+
+      <div class="grades">
+        <div>REGULAR</div>
+        <input type="text" id="fuel-position-6-regular-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-6-regular-close-volume" placeholder="Close Volume">
+      </div>
+      <div class="grades">
+        <div>PLUS</div>
+        <input type="text" id="fuel-position-6-plus-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-6-plus-close-volume" placeholder="Close Volume">
+      </div>
+      <div class="grades">
+        <div>SUPER</div>
+        <input type="text" id="fuel-position-6-super-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-6-super-close-volume" placeholder="Close Volume">
+      </div>
+    </div>
+    <div class="total-section">
+      <div>Total</div>
+      <input type="text" id="fuel-position-6-total-close-money" placeholder="Total Close Money">
+      <input type="text" id="fuel-position-6-total-close-volume" placeholder="Total Close Volume">
+    </div>
+  </div>
+ 
+<!-- Fuel Positions 7 -->
+<div class="fuel-position" id="fuel-position-7">
+    <h2>Fueling Position 7</h2>
+    <div class="grade-section">
+
+        <div class="input-labels">
+            <div class="grade-name-label">Grade Name</div>
+            <div class="close-money-label">Close Money</div>
+            <div class="close-volume-label">Close Volume</div>
+        </div>
+
+      <div class="grades">
+        <div>REGULAR</div>
+        <input type="text" id="fuel-position-7-regular-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-7-regular-close-volume" placeholder="Close Volume">
+      </div>
+      <div class="grades">
+        <div>PLUS</div>
+        <input type="text" id="fuel-position-7-plus-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-7-plus-close-volume" placeholder="Close Volume">
+      </div>
+      <div class="grades">
+        <div>SUPER</div>
+        <input type="text" id="fuel-position-7-super-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-7-super-close-volume" placeholder="Close Volume">
+      </div>
+    </div>
+    <div class="total-section">
+      <div>Total</div>
+      <input type="text" id="fuel-position-7-total-close-money" placeholder="Total Close Money">
+      <input type="text" id="fuel-position-7-total-close-volume" placeholder="Total Close Volume">
+    </div>
+  </div>
+ 
+<!-- Fuel Positions 8 -->
+<div class="fuel-position" id="fuel-position-8">
+    <h2>Fueling Position 8</h2>
+    <div class="grade-section">
+
+        <div class="input-labels">
+            <div class="grade-name-label">Grade Name</div>
+            <div class="close-money-label">Close Money</div>
+            <div class="close-volume-label">Close Volume</div>
+        </div>
+
+      <div class="grades">
+        <div>REGULAR</div>
+        <input type="text" id="fuel-position-8-regular-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-8-regular-close-volume" placeholder="Close Volume">
+      </div>
+      <div class="grades">
+        <div>PLUS</div>
+        <input type="text" id="fuel-position-8-plus-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-8-plus-close-volume" placeholder="Close Volume">
+      </div>
+      <div class="grades">
+        <div>SUPER</div>
+        <input type="text" id="fuel-position-8-super-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-8-super-close-volume" placeholder="Close Volume">
+      </div>
+    </div>
+    <div class="total-section">
+      <div>Total</div>
+      <input type="text" id="fuel-position-8-total-close-money" placeholder="Total Close Money">
+      <input type="text" id="fuel-position-8-total-close-volume" placeholder="Total Close Volume">
+    </div>
+  </div>
+ 
+<!-- Fuel Positions 9 -->
+<div class="fuel-position" id="fuel-position-9">
+    <h2>Fueling Position 9</h2>
+    <div class="grade-section">
+
+        <div class="input-labels">
+            <div class="grade-name-label">Grade Name</div>
+            <div class="close-money-label">Close Money</div>
+            <div class="close-volume-label">Close Volume</div>
+        </div>
+
+      <div class="grades">
+        <div>REGULAR</div>
+        <input type="text" id="fuel-position-9-regular-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-9-regular-close-volume" placeholder="Close Volume">
+      </div>
+      <div class="grades">
+        <div>PLUS</div>
+        <input type="text" id="fuel-position-9-plus-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-9-plus-close-volume" placeholder="Close Volume">
+      </div>
+      <div class="grades">
+        <div>SUPER</div>
+        <input type="text" id="fuel-position-9-super-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-9-super-close-volume" placeholder="Close Volume">
+      </div>
+    </div>
+    <div class="total-section">
+      <div>Total</div>
+      <input type="text" id="fuel-position-9-total-close-money" placeholder="Total Close Money">
+      <input type="text" id="fuel-position-9-total-close-volume" placeholder="Total Close Volume">
+    </div>
+  </div>
+ 
+<!-- Fuel Positions 10 -->
+<div class="fuel-position" id="fuel-position-10">
+    <h2>Fueling Position 10</h2>
+    <div class="grade-section">
+
+        <div class="input-labels">
+            <div class="grade-name-label">Grade Name</div>
+            <div class="close-money-label">Close Money</div>
+            <div class="close-volume-label">Close Volume</div>
+        </div>
+
+      <div class="grades">
+        <div>REGULAR</div>
+        <input type="text" id="fuel-position-10-regular-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-10-regular-close-volume" placeholder="Close Volume">
+      </div>
+      <div class="grades">
+        <div>PLUS</div>
+        <input type="text" id="fuel-position-10-plus-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-10-plus-close-volume" placeholder="Close Volume">
+      </div>
+      <div class="grades">
+        <div>SUPER</div>
+        <input type="text" id="fuel-position-10-super-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-10-super-close-volume" placeholder="Close Volume">
+      </div>
+    </div>
+    <div class="total-section">
+      <div>Total</div>
+      <input type="text" id="fuel-position-10-total-close-money" placeholder="Total Close Money">
+      <input type="text" id="fuel-position-10-total-close-volume" placeholder="Total Close Volume">
+    </div>
+  </div>
+ 
+<!-- Fuel Positions 11 -->
+<div class="fuel-position" id="fuel-position-11">
+    <h2>Fueling Position 11</h2>
+    <div class="grade-section">
+
+        <div class="input-labels">
+            <div class="grade-name-label">Grade Name</div>
+            <div class="close-money-label">Close Money</div>
+            <div class="close-volume-label">Close Volume</div>
+        </div>
+
+      <div class="grades">
+        <div>REGULAR</div>
+        <input type="text" id="fuel-position-11-regular-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-11-regular-close-volume" placeholder="Close Volume">
+      </div>
+      <div class="grades">
+        <div>PLUS</div>
+        <input type="text" id="fuel-position-11-plus-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-11-plus-close-volume" placeholder="Close Volume">
+      </div>
+      <div class="grades">
+        <div>SUPER</div>
+        <input type="text" id="fuel-position-11-super-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-11-super-close-volume" placeholder="Close Volume">
+      </div>
+    </div>
+    <div class="total-section">
+      <div>Total</div>
+      <input type="text" id="fuel-position-11-total-close-money" placeholder="Total Close Money">
+      <input type="text" id="fuel-position-11-total-close-volume" placeholder="Total Close Volume">
+    </div>
+  </div>
+ 
+<!-- Fuel Positions 12 -->
+<div class="fuel-position" id="fuel-position-12">
+    <h2>Fueling Position 12</h2>
+    <div class="grade-section">
+
+        <div class="input-labels">
+            <div class="grade-name-label">Grade Name</div>
+            <div class="close-money-label">Close Money</div>
+            <div class="close-volume-label">Close Volume</div>
+        </div>
+
+      <div class="grades">
+        <div>REGULAR</div>
+        <input type="text" id="fuel-position-12-regular-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-12-regular-close-volume" placeholder="Close Volume">
+      </div>
+      <div class="grades">
+        <div>PLUS</div>
+        <input type="text" id="fuel-position-12-plus-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-12-plus-close-volume" placeholder="Close Volume">
+      </div>
+      <div class="grades">
+        <div>SUPER</div>
+        <input type="text" id="fuel-position-12-super-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-12-super-close-volume" placeholder="Close Volume">
+      </div>
+    </div>
+    <div class="total-section">
+      <div>Total</div>
+      <input type="text" id="fuel-position-12-total-close-money" placeholder="Total Close Money">
+      <input type="text" id="fuel-position-12-total-close-volume" placeholder="Total Close Volume">
+    </div>
+  </div>
+ 
+ 
+
+  
+<!-- Special handling for positions 13 and 14 with only DIESEL -->
+
+  <!-- Fuel Positions 13 -->
+  <div class="fuel-position" id="fuel-position-13">
+    <h2>Fueling Position 13</h2>
+    <div class="grade-section">
+
+        <div class="input-labels">
+            <div class="grade-name-label">Grade Name</div>
+            <div class="close-money-label">Close Money</div>
+            <div class="close-volume-label">Close Volume</div>
+        </div>
+
+        <div class="grades">
+        <div>DIESEL</div>
+        <input type="text" id="fuel-position-13-diesel-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-13-diesel-close-volume" placeholder="Close Volume">
+      </div>
+    </div>
+    <div class="total-section">
+      <div>Total</div>
+      <input type="text" id="fuel-position-13-total-close-money" placeholder="Total Close Money">
+      <input type="text" id="fuel-position-13-total-close-volume" placeholder="Total Close Volume">
+    </div>
+  </div>
+
+  <!-- Fuel Positions 14 -->
+  <div class="fuel-position" id="fuel-position-14">
+    <h2>Fueling Position 14</h2>
+    <div class="grade-section">
+
+        <div class="input-labels">
+            <div class="grade-name-label">Grade Name</div>
+            <div class="close-money-label">Close Money</div>
+            <div class="close-volume-label">Close Volume</div>
+        </div>
+
+        <div class="grades">
+        <div>DIESEL</div>
+        <input type="text" id="fuel-position-14-diesel-close-money" placeholder="Close Money">
+        <input type="text" id="fuel-position-14-diesel-close-volume" placeholder="Close Volume">
+      </div>
+    </div>
+    <div class="total-section">
+      <div>Total</div>
+      <input type="text" id="fuel-position-14-total-close-money" placeholder="Total Close Money">
+      <input type="text" id="fuel-position-14-total-close-volume" placeholder="Total Close Volume">
+    </div>
+  </div>
+
+</div>
+<!-- End of fuel position sections -->
+
+<!-- Link back to index -->
+<a href="ReportTesting.html">Back to Index</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+<script src="processAndFill.js"></script> <!-- Make sure this is the correct path to your JS file -->
+
+</body>
+</html>

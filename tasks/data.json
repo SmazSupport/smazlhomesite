@@ -1,0 +1,166 @@
+{
+  "tasks": [
+    {
+      "title": "Girls Bathroom",
+      "assignee": "mark",
+      "priority": "medium",
+      "status": "todo",
+      "parent": null,
+      "notes": "",
+      "tags": [],
+      "dueDate": "2026-04-14",
+      "dueTime": null,
+      "createdAt": "2026-04-13T03:59:19.784Z",
+      "createdBy": "mark",
+      "updatedAt": "2026-04-13T03:59:19.784Z",
+      "id": "task_1776051934983_z64uo552c"
+    },
+    {
+      "title": "Hang Light",
+      "assignee": "mark",
+      "priority": "medium",
+      "status": "todo",
+      "parent": "task_1776051934983_z64uo552c",
+      "notes": "",
+      "tags": [],
+      "dueDate": "2026-04-14",
+      "dueTime": null,
+      "createdAt": "2026-04-13T04:01:56.284Z",
+      "createdBy": "mark",
+      "updatedAt": "2026-04-13T04:01:56.284Z",
+      "id": "task_1776052916284_2vqev4qob"
+    },
+    {
+      "title": "Hang Shower Curtain",
+      "assignee": "mark",
+      "priority": "medium",
+      "status": "todo",
+      "parent": "task_1776051934983_z64uo552c",
+      "notes": "",
+      "tags": [],
+      "dueDate": "2026-04-14",
+      "dueTime": null,
+      "createdAt": "2026-04-13T04:02:15.483Z",
+      "createdBy": "mark",
+      "updatedAt": "2026-04-13T04:02:15.483Z",
+      "id": "task_1776052935483_49uxbx2xb"
+    },
+    {
+      "title": "buy shower Curtain",
+      "assignee": "mark",
+      "priority": "medium",
+      "status": "todo",
+      "parent": "task_1776052935483_49uxbx2xb",
+      "notes": "",
+      "tags": [],
+      "dueDate": "2026-04-14",
+      "dueTime": null,
+      "createdAt": "2026-04-13T04:04:39.893Z",
+      "createdBy": "mark",
+      "updatedAt": "2026-04-13T04:04:39.893Z",
+      "id": "task_1776053079893_hjjn0eja8"
+    },
+    {
+      "title": "Clean Room",
+      "assignee": "kid1",
+      "priority": "medium",
+      "status": "todo",
+      "parent": null,
+      "notes": "",
+      "tags": [],
+      "dueDate": "2026-04-14",
+      "dueTime": null,
+      "createdAt": "2026-04-13T04:06:13.817Z",
+      "createdBy": "mark",
+      "updatedAt": "2026-04-13T04:06:13.817Z",
+      "id": "task_1776053173817_tn92y5ehb",
+      "points": 30
+    },
+    {
+      "title": "Do Homework",
+      "assignee": "kid1",
+      "priority": "medium",
+      "status": "todo",
+      "parent": null,
+      "notes": "",
+      "tags": [],
+      "dueDate": "2026-04-15",
+      "dueTime": null,
+      "createdAt": "2026-04-13T04:06:57.835Z",
+      "createdBy": "mark",
+      "updatedAt": "2026-04-13T04:06:57.835Z",
+      "id": "task_1776053217835_lkb3edlx5"
+    },
+    {
+      "title": "Vacuum Floor",
+      "assignee": "kid1",
+      "priority": "medium",
+      "status": "completed",
+      "parent": "task_1776053173817_tn92y5ehb",
+      "notes": "",
+      "tags": [],
+      "dueDate": "2026-04-14",
+      "dueTime": null,
+      "createdAt": "2026-04-13T04:07:26.817Z",
+      "createdBy": "mark",
+      "updatedAt": "2026-04-13T04:07:26.817Z",
+      "id": "task_1776053246817_qqdrdlgvx",
+      "completedAt": "2026-04-13T04:21:08.922Z",
+      "pointsAwarded": 15
+    }
+  ],
+  "archivedTasks": [],
+  "pointHistory": [
+    {
+      "id": "ph_1776056279392",
+      "userId": "kid1",
+      "userName": "Zadie",
+      "userAvatar": "🧜‍♀️",
+      "amount": -5,
+      "type": "manual_remove",
+      "description": "minecraft",
+      "newBalance": 0,
+      "timestamp": "2026-04-13T04:57:59.392Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "mark",
+      "name": "Mark",
+      "type": "adult",
+      "avatar": "👨"
+    },
+    {
+      "id": "spouse",
+      "name": "Alex",
+      "type": "adult",
+      "avatar": "👩"
+    },
+    {
+      "id": "kid1",
+      "name": "Zadie",
+      "type": "kid",
+      "avatar": "🧜‍♀️",
+      "pointsEarned": 0
+    },
+    {
+      "id": "kid2",
+      "name": "Maeva",
+      "type": "kid",
+      "avatar": "👧",
+      "pointsEarned": 0
+    },
+    {
+      "id": "user_1776051859501",
+      "name": "OG",
+      "type": "adult",
+      "avatar": "👵"
+    }
+  ],
+  "password": "0074",
+  "settings": {
+    "theme": "light",
+    "autoArchiveDays": 30,
+    "notifications": true
+  }
+}
