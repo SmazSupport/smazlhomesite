@@ -2,10 +2,10 @@
   "name": "mark-stevens-portfolio",
   "version": "1.0.0",
   "description": "Mark Stevens Portfolio with Task Manager",
-  "main": "tasks/api/server.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node tasks/api/server.js",
-    "dev": "nodemon tasks/api/server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "engines": {
     "node": ">=18.0.0"
