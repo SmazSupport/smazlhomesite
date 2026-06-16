@@ -47,25 +47,8 @@ function initResumeToggle() {
 }
 
 function initPrintResume() {
-    const printButton = document.getElementById('print-resume');
-    
-    if (!printButton) return;
-    
-    printButton.addEventListener('click', () => {
-        const wasDetailed = document.body.classList.contains('show-detailed');
-        
-        if (wasDetailed) {
-            document.body.classList.remove('show-detailed');
-        }
-        
-        window.print();
-        
-        if (wasDetailed) {
-            setTimeout(() => {
-                document.body.classList.add('show-detailed');
-            }, 100);
-        }
-    });
+    // Resume download is now handled by a direct <a href="/resume.pdf"> link
+    // PDF is generated server-side by Puppeteer from resume-print.html
 }
 
 function initSmoothScroll() {
