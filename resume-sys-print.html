@@ -3,187 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mark Stevens — Business Systems &amp; Operations Leader</title>
+    <title>Mark Stevens — Business Systems Leader</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 10pt;
-            line-height: 1.45;
-            color: #000;
-            background: white;
-        }
-
-        .resume-header {
-            border-bottom: 2px solid #222;
-            padding-bottom: 8px;
-            margin-bottom: 10px;
-        }
-
-        .resume-header h1 {
-            font-size: 20pt;
-            font-weight: 700;
-            margin-bottom: 3px;
-            letter-spacing: -0.3px;
-        }
-
-        .contact-info {
-            font-size: 9pt;
-            color: #333;
-            margin-bottom: 6px;
-        }
-
-        .contact-info a {
-            color: #000;
-            text-decoration: none;
-        }
-
-        .resume-summary {
-            font-size: 9.5pt;
-            color: #333;
-            line-height: 1.5;
-        }
-
-        h2 {
-            font-size: 10pt;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border-bottom: 1.5px solid #000;
-            padding-bottom: 2px;
-            margin: 12px 0 7px 0;
-        }
-
-        .job {
-            margin-bottom: 9px;
-        }
-
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
-
-        .job-header-left h3 {
-            font-size: 10.5pt;
-            font-weight: 700;
-            margin-bottom: 1px;
-        }
-
-        .company {
-            font-size: 9pt;
-            color: #444;
-            margin-bottom: 3px;
-        }
-
-        .date {
-            font-size: 9pt;
-            color: #555;
-            white-space: nowrap;
-            flex-shrink: 0;
-            padding-left: 8px;
-        }
-
-        ul {
-            margin: 3px 0 0 0;
-            padding-left: 16px;
-        }
-
-        li {
-            font-size: 9pt;
-            margin-bottom: 2px;
-            line-height: 1.4;
-        }
-
-        .company-group {
-            margin-bottom: 9px;
-        }
-
-        .company-group .group-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 4px;
-        }
-
-        .company-group .group-header h3 {
-            font-size: 10.5pt;
-            font-weight: 700;
-            margin-bottom: 1px;
-        }
-
-        .role {
-            margin: 5px 0 0 10px;
-            padding-left: 9px;
-            border-left: 1.5px solid #aaa;
-        }
-
-        .role-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-        }
-
-        .role-header h4 {
-            font-size: 10pt;
-            font-weight: 600;
-        }
-
-        .role-date {
-            font-size: 8.5pt;
-            color: #555;
-            white-space: nowrap;
-            padding-left: 8px;
-        }
-
-        .education-item {
-            margin-bottom: 5px;
-        }
-
-        .education-item h3 {
-            font-size: 10pt;
-            font-weight: 600;
-        }
-
-        .education-item p {
-            font-size: 9pt;
-            color: #444;
-            margin-top: 1px;
-        }
-
-        .skill-row {
-            margin-bottom: 3px;
-            font-size: 9pt;
-        }
-
-        .skill-row strong {
-            font-weight: 700;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, Helvetica, sans-serif; font-size: 10pt; line-height: 1.45; color: #000; background: white; }
+        
+        .resume-header { border-bottom: 2px solid #222; padding-bottom: 12px; margin-bottom: 12px; text-align: center; }
+        .resume-header h1 { font-size: 22pt; font-weight: 700; margin-bottom: 2px; letter-spacing: -0.5px; }
+        .title-main { font-size: 14pt; font-weight: 700; color: #2563eb; margin-bottom: 2px; }
+        .title-sub { font-size: 10pt; font-weight: 600; color: #475569; margin-bottom: 8px; letter-spacing: 0.5px; }
+        .contact-info { font-size: 9.5pt; color: #333; }
+        .contact-info a { color: #000; text-decoration: none; }
+        
+        h2 { font-size: 11pt; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1.5px solid #000; padding-bottom: 2px; margin: 16px 0 8px 0; }
+        
+        .resume-summary p { font-size: 9.5pt; color: #333; line-height: 1.5; margin-bottom: 6px; }
+        
+        .job { margin-bottom: 14px; }
+        .job-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 4px; }
+        .job-header-left h3 { font-size: 11pt; font-weight: 700; margin-bottom: 1px; }
+        .company { font-size: 9.5pt; color: #444; font-weight: 600; }
+        .date { font-size: 9.5pt; color: #555; white-space: nowrap; flex-shrink: 0; padding-left: 8px; font-weight: 600; }
+        
+        .job-summary { font-size: 9.5pt; color: #333; font-style: italic; margin-bottom: 6px; }
+        .key-contributions { font-size: 9pt; font-weight: 700; margin-bottom: 3px; color: #222; text-transform: uppercase; }
+        
+        ul { margin: 0 0 0 0; padding-left: 16px; }
+        li { font-size: 9.5pt; margin-bottom: 3px; line-height: 1.4; color: #222; }
+        
+        .company-group { margin-bottom: 14px; }
+        .company-group .group-header { margin-bottom: 8px; }
+        .company-group .group-header h3 { font-size: 11pt; font-weight: 700; margin-bottom: 1px; }
+        .company-group .company { font-size: 9.5pt; color: #444; font-weight: 600; }
+        
+        .role { margin: 0 0 10px 10px; padding-left: 10px; border-left: 1.5px solid #aaa; }
+        .role-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; }
+        .role-header h4 { font-size: 10pt; font-weight: 700; color: #222; }
+        .role-date { font-size: 9pt; color: #555; white-space: nowrap; padding-left: 8px; font-weight: 600; }
+        
+        .expertise-category { font-size: 9.5pt; font-weight: 700; margin-top: 8px; margin-bottom: 2px; color: #000; }
+        .expertise-items { font-size: 9.5pt; color: #333; line-height: 1.4; }
+        
+        .project-item { margin-bottom: 10px; }
+        .project-item h3 { font-size: 10pt; font-weight: 700; margin-bottom: 2px; color: #222; }
+        .project-item p { font-size: 9.5pt; color: #333; line-height: 1.4; }
+        
+        .education-item { margin-bottom: 5px; }
+        .education-item h3 { font-size: 10pt; font-weight: 700; color: #222; }
+        .education-item p { font-size: 9.5pt; color: #444; margin-top: 1px; }
     </style>
 </head>
 <body>
 
     <div class="resume-header">
         <h1>Mark Stevens</h1>
+        <p class="title-main">Business Systems Leader</p>
+        <p class="title-sub">Systems Integration &bull; Business Process Improvement &bull; Operations Technology</p>
         <div class="contact-info">
-            <a href="mailto:mstevens@smazl.com">mstevens@smazl.com</a>
-            &nbsp;&bull;&nbsp;
-            412-915-3010
-            &nbsp;&bull;&nbsp;
+            Raleigh, NC &bull; 412-915-3010 &bull; <a href="mailto:mstevens@smazl.com">mstevens@smazl.com</a><br>
             <a href="https://www.linkedin.com/in/mark-stevens-541215116">linkedin.com/in/mark-stevens-541215116</a>
-            &nbsp;&bull;&nbsp;
-            Raleigh, NC
         </div>
-        <p style="font-size: 11pt; font-weight: 600; margin-bottom: 8px; color: #2563eb; letter-spacing: 0.5px;">BUSINESS SYSTEMS LEADER <span style="color:#64748b; font-weight:400;">|</span> SYSTEMS INTEGRATION <span style="color:#64748b; font-weight:400;">|</span> OPERATIONS TECHNOLOGY</p>
-        <p class="resume-summary">Business Systems &amp; Operations Leader with 20+ years of experience bridging the gap between complex business operations and technology. Known for quickly mastering new platforms, challenging existing workflows, identifying operational bottlenecks, and implementing practical technology solutions that improve system performance and day-to-day operations. Comfortable leading both business and technical discussions &mdash; from warehouse floor process mapping to executive strategy, software architecture, and implementation planning. Consistent record of translating operational requirements into scalable technical solutions across eCommerce, logistics, fulfillment, and transportation &mdash; partnering with executives, warehouse teams, developers, and vendors to deliver measurable operational and business outcomes.</p>
     </div>
 
-    <h2>Experience</h2>
+    <h2>Professional Summary</h2>
+    <div class="resume-summary">
+        <p>Business Systems &amp; Operations Leader with 20+ years of experience transforming business operations through technology, process improvement, and systems integration. Known for quickly mastering new platforms, identifying operational bottlenecks, and designing practical solutions that improve efficiency, scalability, and visibility.</p>
+        <p>Experienced leading both business and technical initiatives&mdash;from warehouse process mapping and workflow redesign to software implementation, platform integration, automation, analytics, and executive reporting. Proven ability to translate business requirements into scalable technical solutions while partnering with executives, operations teams, developers, and software vendors to deliver measurable operational and business results.</p>
+    </div>
+
+    <h2>Professional Experience</h2>
 
     <div class="job">
         <div class="job-header">
@@ -193,14 +81,15 @@
             </div>
             <span class="date">June 2024 &ndash; Present</span>
         </div>
+        <p class="job-summary">Lead operations and business systems supporting a high-volume eCommerce fulfillment environment processing 2,000&ndash;13,000 orders per day, improving operational performance through automation, analytics, and system optimization.</p>
+        <div class="key-contributions">Key Contributions</div>
         <ul>
-            <li>Led operations and systems across a high-volume eCommerce fulfillment environment (2,000&ndash;13,000 orders/day), applying workflow analysis and process redesign to improve throughput, reduce errors, and scale operations efficiently</li>
-            <li>Designed and implemented fulfillment automation using Shopify APIs, webhooks, Python, and JavaScript &mdash; automating order routing, label generation, and exception handling to eliminate manual processes and improve end-to-end reliability</li>
-            <li>Configured, administered, and optimized Shopify B2B and DTC platforms, designing order routing logic and automation workflows; built integrations connecting ShipBlink, EasyPost, Airtable, and USPS to align platform behavior with operational business requirements</li>
-            <li>Collaborated with warehouse leadership, customer support, developers, and software vendors to identify operational pain points, prioritize system enhancements, and deploy solutions that improved fulfillment performance</li>
-            <li>Built and maintained inventory forecasting models and warehouse slotting strategies, analyzing demand patterns across 1,500+ SKUs to optimize pick path efficiency, reduce stockouts, and improve order cycle time</li>
-            <li>Developed KPI dashboards and operational reporting infrastructure used daily by warehouse leadership and executives to monitor throughput, labor efficiency, inventory accuracy, and fulfillment performance</li>
-            <li>Evaluated, implemented, and optimized third-party platforms including ShipBlink and EasyPost, managing requirements, configuration, user acceptance testing, and team training through full implementation cycles</li>
+            <li>Designed and implemented fulfillment automation using Shopify APIs, Webhooks, Python, and JavaScript, eliminating manual processes and improving operational reliability.</li>
+            <li>Configured, administered, and optimized Shopify B2B and DTC platforms, integrating ShipBlink, EasyPost, Airtable, and USPS into streamlined fulfillment workflows.</li>
+            <li>Built inventory forecasting models and warehouse slotting strategies supporting 1,500+ active SKUs, improving pick-path efficiency, inventory availability, and warehouse utilization.</li>
+            <li>Developed KPI dashboards and executive reporting used daily to monitor throughput, labor efficiency, inventory accuracy, and fulfillment performance.</li>
+            <li>Partnered with warehouse leadership, customer support, software vendors, and developers to identify operational bottlenecks, prioritize enhancements, and implement technology-driven process improvements.</li>
+            <li>Evaluated, implemented, and optimized third-party platforms including ShipBlink and EasyPost, leading requirements gathering, configuration, testing, user training, and rollout.</li>
         </ul>
     </div>
 
@@ -208,15 +97,18 @@
         <div class="job-header">
             <div class="job-header-left">
                 <h3>Independent Consultant</h3>
-                <p class="company">Self-employed &bull; Remote United States</p>
+                <p class="company">Self-Employed &bull; Remote</p>
             </div>
-            <span class="date">Sept 2021 &ndash; June 2024</span>
+            <span class="date">September 2021 &ndash; June 2024</span>
         </div>
+        <p class="job-summary">Provided consulting services focused on business systems, logistics technology, and operational improvement.</p>
+        <div class="key-contributions">Key Contributions</div>
         <ul>
-            <li>Delivered systems consulting and business analysis engagements for logistics and eCommerce clients &mdash; working with operators, dispatch teams, and executive stakeholders to understand requirements, redesign workflows, and implement technology solutions that reduced manual effort and improved scalability</li>
-            <li>Led requirements gathering and solution design for a delivery management platform, translating complex operational needs into technical specifications and coordinating between business stakeholders and engineering teams</li>
-            <li>Evaluated platforms, automation tools, and integration options across transportation management, route optimization, and reporting systems; recommended and implemented solutions aligned with client business objectives</li>
-            <li>Provided contract-based operations and technology leadership including IT infrastructure, system administration, and process improvement across transportation, warehouse, and eCommerce engagements</li>
+            <li>Analyzed existing workflows and redesigned business processes for logistics and eCommerce organizations.</li>
+            <li>Led requirements gathering, solution design, and implementation planning for transportation and delivery management platforms.</li>
+            <li>Acted as liaison between business stakeholders and engineering teams, translating operational needs into technical specifications.</li>
+            <li>Evaluated software platforms, integrations, automation opportunities, and reporting solutions to improve operational scalability.</li>
+            <li>Delivered technology leadership across IT infrastructure, system administration, and operational process improvement initiatives.</li>
         </ul>
     </div>
 
@@ -226,60 +118,60 @@
                 <h3>Director of Information Technology</h3>
                 <p class="company">Urban Shipper Technology &bull; Houston, TX</p>
             </div>
-            <span class="date">Dec 2021 &ndash; Mar 2023</span>
+            <span class="date">December 2021 &ndash; March 2023</span>
         </div>
+        <p class="job-summary">Directed development of a proprietary logistics management platform supporting nationwide transportation operations.</p>
+        <div class="key-contributions">Key Contributions</div>
         <ul>
-            <li>Led end-to-end planning and development of a proprietary logistics management platform &mdash; translating requirements from operators and executives into system architecture, data models, and API design, coordinating software engineers, QA, and business analysts through full development lifecycle</li>
-            <li>Designed database architecture, defined integration specifications, and managed development of features spanning dispatch operations, route management, driver tracking, and executive reporting across 65+ logistics locations processing 50,000+ daily deliveries</li>
-            <li>Served as primary bridge between business stakeholders and the development team, leading requirements gathering, UAT facilitation, and change management across a distributed organization</li>
-            <li>Managed cloud infrastructure, domain architecture, and business application administration supporting daily logistics operations</li>
-            <li>Directed vendor evaluation, platform selection, and third-party system integrations for critical business applications</li>
+            <li>Led software planning from business requirements through architecture, development, testing, and deployment.</li>
+            <li>Designed database structures, API integrations, and technical specifications supporting dispatch, routing, driver management, and executive reporting.</li>
+            <li>Coordinated software engineers, QA teams, and business analysts throughout the development lifecycle.</li>
+            <li>Served as primary liaison between business stakeholders and technical teams, leading requirements gathering, UAT, and change management.</li>
+            <li>Managed cloud infrastructure, domain architecture, and enterprise application administration.</li>
+            <li>Directed vendor evaluation and third-party platform integrations supporting logistics operations.</li>
         </ul>
     </div>
 
     <div class="company-group">
         <div class="group-header">
-            <div class="job-header-left">
-                <h3>Diligent Delivery Systems</h3>
-                <p class="company">Houston, TX / Raleigh, NC</p>
-            </div>
-            <span class="date">Dec 2016 &ndash; Sept 2021</span>
+            <h3>Diligent Delivery Systems</h3>
+            <p class="company">Houston, TX / Raleigh, NC</p>
         </div>
 
         <div class="role">
             <div class="role-header">
                 <h4>National Director of Operations</h4>
-                <span class="role-date">May 2017 &ndash; Sept 2021</span>
+                <span class="role-date">May 2017 &ndash; September 2021</span>
             </div>
             <ul>
-                <li>Increased freight net profit by 120% by redesigning nationwide operational workflows, implementing data-driven performance analytics, and improving carrier management through systematic KPI development and reporting</li>
-                <li>Led operational transformation across 65 locations through logistics systems analysis, process redesign, and implementation of courier management software &mdash; improving network visibility, consistency, and decision-making organization-wide</li>
-                <li>Secured $3M national contract by developing data-supported RFP documentation and operational performance reporting that translated logistics metrics into executive-level business case materials</li>
-                <li>Evaluated, configured, and administered courier management and operational reporting systems; managed rollout, user training, and ongoing optimization across a nationwide operation</li>
+                <li>Increased freight net profit by 120% through workflow redesign, KPI development, operational analytics, and carrier performance optimization.</li>
+                <li>Led operational transformation across 65 locations, implementing logistics software, reporting systems, and standardized operational processes.</li>
+                <li>Secured a $3 million national contract by developing executive reporting, operational analytics, and data-driven RFP strategies.</li>
+                <li>Implemented, configured, and optimized courier management platforms while leading nationwide rollout, user training, and ongoing process improvement.</li>
             </ul>
         </div>
 
         <div class="role">
             <div class="role-header">
-                <h4>Director of Business Intelligence</h4>
-                <span class="role-date">Aug 2019 &ndash; Sept 2021 (concurrent)</span>
+                <h4>Director of Business Intelligence <span style="font-weight: 400; font-size: 9.5pt; color: #555;">(Concurrent Role)</span></h4>
+                <span class="role-date">August 2019 &ndash; September 2021</span>
             </div>
             <ul>
-                <li>Led IT department and software development team as primary technical lead and business requirements translator; directed architecture, development, and delivery of a proprietary platform that became the operational backbone of a 65-location logistics network</li>
-                <li>Built operational reporting and analytics infrastructure from scratch &mdash; designing KPI frameworks, executive dashboards, and data pipelines that transformed raw logistics data into organization-wide decision-making tools</li>
-                <li>Designed database architecture and managed systems integration across transportation, operational, and financial platforms supporting nationwide operations</li>
-                <li>Managed vendor relationships, conducted platform evaluations, and directed technical implementation of mission-critical business systems</li>
+                <li>Directed software development and IT teams while serving as the primary translator between business operations and software engineering.</li>
+                <li>Designed reporting architecture, executive dashboards, KPI frameworks, and data pipelines supporting organization-wide decision making.</li>
+                <li>Led database design and systems integration across transportation, finance, and operational platforms.</li>
+                <li>Managed technology vendors, software evaluations, and implementation of mission-critical business systems.</li>
             </ul>
         </div>
 
         <div class="role">
             <div class="role-header">
                 <h4>North Carolina Operations Manager</h4>
-                <span class="role-date">Dec 2016 &ndash; May 2017</span>
+                <span class="role-date">December 2016 &ndash; May 2017</span>
             </div>
             <ul>
-                <li>Analyzed regional logistics workflows, optimized driver routing and dispatch systems, and implemented process improvements to increase operational efficiency across North Carolina</li>
-                <li>Built business partnerships and expanded regional service coverage, establishing the operational and systems foundation that supported rapid company growth</li>
+                <li>Improved regional logistics performance through workflow analysis, routing optimization, and dispatch process improvements.</li>
+                <li>Expanded regional operations by building operational partnerships and scalable transportation processes.</li>
             </ul>
         </div>
     </div>
@@ -290,12 +182,12 @@
                 <h3>Third Party Logistics Specialist</h3>
                 <p class="company">Courier Express US &bull; Greensboro, NC</p>
             </div>
-            <span class="date">Dec 2015 &ndash; Dec 2016</span>
+            <span class="date">December 2015 &ndash; December 2016</span>
         </div>
         <ul>
-            <li>Coordinated multi-mode logistics network (FTL, LTL, Final Mile) across vendor systems, analyzing routing data and cost structures to identify optimization opportunities and improve carrier performance</li>
-            <li>Developed competitive bid strategies using cost modeling and data analysis to maximize profitability and win new business</li>
-            <li>Built vendor relationships and operational processes to support network expansion across the Southeast</li>
+            <li>Coordinated FTL, LTL, and Final Mile transportation across multiple carrier networks.</li>
+            <li>Developed pricing models and competitive bid strategies through operational analysis and cost modeling.</li>
+            <li>Established scalable operational processes supporting regional network expansion.</li>
         </ul>
     </div>
 
@@ -305,34 +197,59 @@
                 <h3>Key Account Shipping Supervisor</h3>
                 <p class="company">Vietri Inc. &bull; Hillsborough, NC</p>
             </div>
-            <span class="date">Feb 2013 &ndash; Dec 2015</span>
+            <span class="date">February 2013 &ndash; December 2015</span>
         </div>
         <ul>
-            <li>Administered SAP Business One ERP for warehouse shipping and EDI operations, managing order workflows, carrier integrations, and data integrity across interconnected business systems supporting thousands of weekly shipments</li>
-            <li>Analyzed carrier pricing and performance data to negotiate LTL rates, identify cost reduction opportunities, and implement workflow improvements that reduced shipping errors and delays</li>
-            <li>Developed team procedures and process documentation to standardize operations and ensure consistent performance across time-sensitive distribution workflows</li>
+            <li>Administered SAP Business One ERP supporting warehouse shipping, EDI operations, carrier integrations, and order workflows.</li>
+            <li>Improved shipping performance through carrier analysis, workflow redesign, and cost optimization.</li>
+            <li>Developed operational procedures and documentation supporting consistent warehouse execution.</li>
         </ul>
     </div>
 
-    <h2>Key Projects</h2>
-
-    <div class="skill-row"><strong>Shopify B2B &amp; Systems Integration:</strong> Designed Shopify B2B workflows and integration strategies connecting order management, fulfillment, shipping, and ERP systems to streamline operations and reduce manual intervention.</div>
-    <div class="skill-row"><strong>Fulfillment Automation:</strong> Designed API and webhook-driven automation using Python and JavaScript to automate routing, exception handling, and operational workflows within high-volume fulfillment environments.</div>
-    <div class="skill-row"><strong>Warehouse System Architecture:</strong> Implemented EasyPost and ShipBlink integrations and built custom inventory forecasting, capacity planning, and warehouse slotting models.</div>
-    <div class="skill-row"><strong>Business Intelligence &amp; Analytics:</strong> Designed KPI dashboards, executive reporting systems, and data pipelines that transformed raw operational data into mission-critical decision-making tools for leadership.</div>
-
     <h2>Technical &amp; Systems Expertise</h2>
 
-    <div class="skill-row"><strong>Business Analysis:</strong> Business Process Analysis, Workflow Redesign, Requirements Gathering, Root Cause Analysis, Solution Design, UAT, System Documentation</div>
-    <div class="skill-row"><strong>Systems &amp; Platforms:</strong> Shopify Administration, Shopify B2B, ShipBlink, EasyPost, SAP Business One, Airtable, WMS, TMS, ERP</div>
-    <div class="skill-row"><strong>Integration &amp; Automation:</strong> REST APIs, Webhooks, Python, JavaScript, SQL, Database Design, System Integration</div>
-    <div class="skill-row"><strong>Leadership:</strong> Software Evaluation, Vendor Management, User Training, Cross-functional Leadership, Executive Communication, Change Management</div>
+    <div class="expertise-category">Business Analysis</div>
+    <div class="expertise-items">Business Process Analysis &bull; Requirements Gathering &bull; Workflow Design &bull; Process Improvement &bull; Root Cause Analysis &bull; Solution Design &bull; User Acceptance Testing &bull; Change Management</div>
+
+    <div class="expertise-category">Systems &amp; Platforms</div>
+    <div class="expertise-items">Shopify &bull; Shopify B2B &bull; ShipBlink &bull; EasyPost &bull; Airtable &bull; SAP Business One &bull; Warehouse Management Systems (WMS) &bull; Transportation Management Systems (TMS) &bull; ERP Platforms</div>
+
+    <div class="expertise-category">Integration &amp; Development</div>
+    <div class="expertise-items">REST APIs &bull; Webhooks &bull; Python &bull; JavaScript &bull; SQL &bull; Database Design &bull; Systems Integration &bull; Automation</div>
+
+    <div class="expertise-category">Analytics &amp; Reporting</div>
+    <div class="expertise-items">Business Intelligence &bull; KPI Development &bull; Dashboard Design &bull; Operational Reporting &bull; Inventory Forecasting &bull; Data Analysis</div>
+
+    <div class="expertise-category">Leadership</div>
+    <div class="expertise-items">Cross-functional Leadership &bull; Software Evaluation &bull; Vendor Management &bull; Executive Communication &bull; User Training &bull; Technical Documentation</div>
+
+    <h2>Selected Projects</h2>
+
+    <div class="project-item">
+        <h3>Shopify B2B &amp; Systems Integration</h3>
+        <p>Designed and implemented Shopify B2B workflows integrating order management, fulfillment, shipping, and business systems to streamline operations and reduce manual effort.</p>
+    </div>
+
+    <div class="project-item">
+        <h3>Fulfillment Automation</h3>
+        <p>Developed API and webhook-driven automation using Python and JavaScript to automate routing, exception handling, and fulfillment workflows supporting high-volume eCommerce operations.</p>
+    </div>
+
+    <div class="project-item">
+        <h3>Warehouse Optimization</h3>
+        <p>Designed inventory forecasting, warehouse slotting strategies, and operational improvements supporting over 1,500 active SKUs, increasing efficiency and improving inventory availability.</p>
+    </div>
+
+    <div class="project-item">
+        <h3>Business Intelligence &amp; Reporting</h3>
+        <p>Designed executive dashboards, KPI frameworks, reporting systems, and operational data pipelines that transformed business data into actionable decision-making tools.</p>
+    </div>
 
     <h2>Education</h2>
 
     <div class="education-item">
         <h3>Bachelor of Science &ndash; Information Networking &amp; Telecommunications (In Progress)</h3>
-        <p>Fort Hays State University &bull; Hays, KS &bull; Expected 2026</p>
+        <p>Fort Hays State University &bull; Expected 2026</p>
     </div>
 
 </body>
