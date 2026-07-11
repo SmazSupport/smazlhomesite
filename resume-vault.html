@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Resume Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0a0f;
+            color: #e2e8f0;
+            min-height: 100vh;
+            padding: 40px 20px 60px;
+        }
+
+        .vault-container {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        .vault-header {
+            border-bottom: 1px solid #1e2535;
+            padding-bottom: 24px;
+            margin-bottom: 36px;
+        }
+
+        .vault-header h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #f1f5f9;
+            letter-spacing: -0.3px;
+        }
+
+        .vault-header p {
+            font-size: 0.85rem;
+            color: #64748b;
+            margin-top: 4px;
+        }
+
+        .resume-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .resume-card {
+            background: #111827;
+            border: 1px solid #1e2535;
+            border-radius: 10px;
+            padding: 22px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            transition: border-color 0.2s;
+        }
+
+        .resume-card:hover {
+            border-color: #334155;
+        }
+
+        .card-label {
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            color: #3b82f6;
+            margin-bottom: 5px;
+        }
+
+        .card-info h2 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #f1f5f9;
+            margin-bottom: 4px;
+        }
+
+        .card-info p {
+            font-size: 0.82rem;
+            color: #94a3b8;
+            line-height: 1.5;
+            max-width: 480px;
+        }
+
+        .card-actions {
+            display: flex;
+            gap: 10px;
+            flex-shrink: 0;
+            align-items: center;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            border-radius: 7px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 500;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            transition: background 0.2s, color 0.2s;
+            white-space: nowrap;
+        }
+
+        .btn-preview {
+            background: #1e2535;
+            color: #cbd5e1;
+        }
+
+        .btn-preview:hover {
+            background: #273045;
+            color: #f1f5f9;
+        }
+
+        .btn-download {
+            background: #2563eb;
+            color: #fff;
+        }
+
+        .btn-download:hover {
+            background: #1d4ed8;
+        }
+
+        .divider {
+            height: 1px;
+            background: #1e2535;
+            margin: 8px 0;
+        }
+
+        .section-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #475569;
+            margin-bottom: 14px;
+            margin-top: 32px;
+        }
+
+        @media (max-width: 600px) {
+            .resume-card {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+            }
+
+            .card-actions {
+                width: 100%;
+            }
+
+            .btn {
+                flex: 1;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="vault-container">
+
+    <div class="vault-header">
+        <h1>Resume Library</h1>
+        <p>Mark Stevens &nbsp;&mdash;&nbsp; Private</p>
+    </div>
+
+    <div class="section-label">Available Resumes</div>
+
+    <div class="resume-grid">
+
+        <div class="resume-card">
+            <div class="card-info">
+                <div class="card-label">General</div>
+                <h2>Operations, Analytics &amp; Systems</h2>
+                <p>Full experience overview — operations leadership, analytics, automation, and systems integration across eCommerce, fulfillment, and transportation.</p>
+            </div>
+            <div class="card-actions">
+                <a href="/resume-print.html" target="_blank" class="btn btn-preview">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                    Preview
+                </a>
+                <a href="/resume.pdf" class="btn btn-download">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+                    Download PDF
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
