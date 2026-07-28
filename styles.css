@@ -1049,6 +1049,102 @@ body.show-detailed .detailed-info {
     color: var(--text-tertiary);
 }
 
+.career-narrative {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.career-era {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 2rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.career-era:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.era-meta {
+    padding-top: 0.25rem;
+}
+
+.era-label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--accent-primary);
+    margin-bottom: 0.5rem;
+}
+
+.era-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.3;
+}
+
+.era-content p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.era-content p:last-child {
+    margin-bottom: 0;
+}
+
+.how-i-work-section {
+    background: var(--bg-secondary);
+    padding: 6rem 0;
+}
+
+.principles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.principle {
+    background: var(--bg-primary);
+    border-radius: 12px;
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+}
+
+.principle h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+}
+
+.principle p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .career-era {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .principles-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media print {
     * {
         -webkit-print-color-adjust: exact;
@@ -1076,7 +1172,8 @@ body.show-detailed .detailed-info {
     .contact,
     .footer,
     .scroll-indicator,
-    .section-header {
+    .section-header,
+    .how-i-work-section {
         display: none !important;
     }
     

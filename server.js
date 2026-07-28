@@ -86,7 +86,7 @@ app.get('/resume.pdf', async (req, res) => {
 });
 
 // General PDF route for resume vault — /resume-pdf?file=resume-print
-const ALLOWED_RESUME_FILES = ['resume-print', 'resume-sys-print'];
+const ALLOWED_RESUME_FILES = ['resume-print', 'resume-sys-print', 'resume-ncsu-print'];
 app.get('/resume-pdf', async (req, res) => {
     const file = req.query.file;
     if (!file || !ALLOWED_RESUME_FILES.includes(file)) {
