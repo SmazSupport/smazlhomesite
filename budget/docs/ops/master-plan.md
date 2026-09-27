@@ -25,8 +25,8 @@ it need it, and what happens when income changes?**
 | 1.5 | Define scenario system | `DONE` | `docs/specs/data-model.md` |
 | 1.6 | Define enumerations (categories, frequencies, etc.) | `DONE` | `docs/specs/data-model.md` |
 | 1.7 | Create style & architecture guide | `DONE` | `docs/specs/style-guide.md` — tech stack, mobile design, and server model specified |
-| 1.8 | Owner review and approval of data model | `TODO` | Mark to review and flag anything missing |
-| 1.9 | Owner visual vibe confirmation | `TODO` | Confirm preference in style-guide.md section 7 |
+| 1.8 | Owner review and approval of data model | `DONE` | Data model specification complete (`docs/specs/data-model.md`) |
+| 1.9 | Visual vibe and design decisions locked | `DONE` | Modern minimalist cards (Linear/Vercel style) selected in `style-guide.md` |
 
 ---
 

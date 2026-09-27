@@ -116,10 +116,12 @@ Keep charts focused and non-distracting:
 
 ---
 
-## 7. Open Decisions for Mark
+## 7. Visual Vibe & Layout Philosophy (Locked)
 
-There is only one remaining decision that is purely personal taste:
-
-### `[DECISION NEEDED]`
-- **Design Reference / Vibe**: Do you prefer a very clean, Apple-Health / Linear-style modern minimalist card look, or a denser data-table spreadsheet vibe (like Google Sheets / Airtable)?
-  - *Default recommendation:* **Modern minimalist cards (Linear/Vercel style)** with clean typography and dense tabular modals when editing.
+- **Aesthetic**: **Modern Minimalist Cards (Linear / Vercel style)**
+- **Card Design**: Clean slate-bordered cards with subtle hover depth, large scannable primary metrics (e.g. `$8,700/mo` in prominent bold Inter type), and muted secondary labels.
+- **Data Density**:
+  - Top summary and timeline feed use high-contrast, uncluttered cards for instantaneous comprehension on mobile or laptop.
+  - Adding/editing obligations and income opens a focused slide-over drawer or compact modal with clear form validation, rather than an unmanageable inline spreadsheet.
+  - Tables (in the Obligations tab) use compact rows with alternating background tints on desktop and convert into card stacks on screens `< 640px`.
+- **Interactions**: Fast, zero-lag client-side updates; micro-animations limited to theme switching and modal reveals (no slow or distracting transitions).

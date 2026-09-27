@@ -22,6 +22,14 @@ of the log (newest first).
 
 ## Log
 
+### 2026-09-27 — Visual design decisions locked (Linear/Vercel minimalist card aesthetic)
+- **What:** Finalized Section 7 of `docs/specs/style-guide.md`. Locked in modern minimalist card layout (Linear/Vercel style) with high-contrast metrics, clean slate borders, and slide-over edit sheets. Marked Phase 1 complete in `master-plan.md`. Zero open decision items remaining in specifications.
+- **Why:** Owner requested Devin's recommendation on visual style and layout approach.
+- **Files changed:** `docs/specs/style-guide.md`, `docs/ops/master-plan.md`, `docs/ops/changelog.md`
+- **By:** Agent (Devin)
+
+---
+
 ### 2026-09-27 — Architecture, mobile design, and tech stack finalized
 - **What:** Refined `docs/specs/style-guide.md` into a full Style & Architecture Guide. Locked in decisions:
   - **Server model:** Isolated Docker container on port 3050 (`budget.smazl.com`), completely decoupled from port 3000 (`www.smazl.com`).

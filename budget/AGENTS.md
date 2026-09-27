@@ -128,6 +128,8 @@ Follow `docs/ops/change-request-process.md`:
 
 ## Current Status (last updated: 2026-09-27)
 
-Phase: **Data Model & Requirements** — no app or code yet. The data model spec
-is complete and ready for implementation. Style guide created for owner to fill
-in preferences.
+- **Phase 1 (Specs & Architecture): COMPLETE**
+  - Data model spec (`docs/specs/data-model.md`): All obligations, income, accounts, runway, and scenarios defined.
+  - Style & architecture guide (`docs/specs/style-guide.md`): Tech stack, server model (:3050 isolated container), mobile layout, and Linear/Vercel visual vibe locked in. Zero open decisions remaining.
+- **Next Phase: Phase 2 (Data Entry) or Phase 3 (App Build)**
+  - Ready for data entry of household numbers or direct scaffolding of the React+Express app.
