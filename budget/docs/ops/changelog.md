@@ -22,6 +22,19 @@ of the log (newest first).
 
 ## Log
 
+### 2026-09-27 — Architecture, mobile design, and tech stack finalized
+- **What:** Refined `docs/specs/style-guide.md` into a full Style & Architecture Guide. Locked in decisions:
+  - **Server model:** Isolated Docker container on port 3050 (`budget.smazl.com`), completely decoupled from port 3000 (`www.smazl.com`).
+  - **Tech stack:** React (Vite) + Tailwind CSS + Lucide icons frontend, lightweight Node/Express API backend.
+  - **Data storage:** SQLite (`better-sqlite3`) for ACID durability + automated JSON snapshot exports on write for human readability/backups.
+  - **Mobile:** First-class responsive UI (bottom nav, 2x2 KPI grid, vertical timeline cards, touch FAB for quick-entry).
+  - **Only 1 open decision left:** Card-style (Linear/Vercel) vs dense spreadsheet view.
+- **Why:** Provide clear engineering direction for any agent or developer building Phase 3 without ambiguity.
+- **Files changed:** `docs/specs/style-guide.md`, `docs/ops/master-plan.md`, `docs/ops/changelog.md`
+- **By:** Agent (Devin)
+
+---
+
 ### 2026-09-27 — Moved into smazlmedia/website/budget/ + style guide
 - **What:** Moved budget project from standalone `Dev-Projects/Budget/` into `smazlmedia/website/budget/` so it lives alongside the smazl.com site. Created `docs/specs/style-guide.md` with design decisions (inherit smazl.com fonts/colors, dashboard layout, financial status colors, tech stack options). Updated AGENTS.md with architecture/hosting notes. Updated parent smazlmedia AGENTS.md and README.md to reference the budget sub-project.
 - **Why:** Owner wants budget app under the website project. Will be hosted at `budget.smazl.com` (own subdomain behind Cloudflare Access), not as a path on smazl.com.
