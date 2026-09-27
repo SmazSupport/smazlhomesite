@@ -22,6 +22,14 @@ of the log (newest first).
 
 ## Log
 
+### 2026-09-27 — Fixed stale docs; clarified actuals, auth, seed.json, and deployment details
+- **What:** Updated AGENTS.md architecture section to reflect the locked decision (isolated :3050 container) instead of stale "TBD" language. Added actuals history table spec to data-model.md section 8 (each payment is its own row — enables trend, seasonal learning, accuracy tracking). Clarified Phase 2 uses `seed.json` for data entry before app exists. Expanded Phase 4 with container, CNAME, tunnel route, and Access tasks. Documented: Cloudflare Access allows all 3 household emails (same policy as media server), no in-app auth needed.
+- **Why:** Another agent flagged stale text in AGENTS.md and asked clarifying questions about actuals storage, data entry workflow, and auth scope. All questions resolved.
+- **Files changed:** `AGENTS.md`, `docs/specs/data-model.md`, `docs/ops/master-plan.md`, `docs/ops/changelog.md`
+- **By:** Agent (Devin)
+
+---
+
 ### 2026-09-27 — Visual design decisions locked (Linear/Vercel minimalist card aesthetic)
 - **What:** Finalized Section 7 of `docs/specs/style-guide.md`. Locked in modern minimalist card layout (Linear/Vercel style) with high-contrast metrics, clean slate borders, and slide-over edit sheets. Marked Phase 1 complete in `master-plan.md`. Zero open decision items remaining in specifications.
 - **Why:** Owner requested Devin's recommendation on visual style and layout approach.

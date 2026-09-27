@@ -49,20 +49,32 @@ what obligations exist, what they cost, when they hit, and what income covers th
 
 ---
 
-## Architecture & Hosting
+## Architecture & Hosting (DECIDED)
 
-This app lives inside the smazl.com website project (`smazlmedia/website/`) as
-its own sub-folder. However, it will be served on its **own subdomain**:
+The budget app runs as its **own isolated Docker container** on port `:3050`,
+completely decoupled from the portfolio site on port `:3000`. Source code lives
+in `smazlmedia/website/budget/` but deployment is independent.
 
-- **`budget.smazl.com`** — behind Cloudflare Access (email OTP authentication)
-- **`www.smazl.com`** must NOT be affected — that's the portfolio site
-- Same Cloudflare Tunnel + Access pattern used for `media.postedus.com` and
-  `dash.postedus.com` (see `smazlmedia/docs/ops/runbooks/remote-access.md`)
+```
+[ User (Phone / Laptop) ]
+           │
+    [ Cloudflare Access: Email OTP — mstevens@smazl.com, alexstevens@smazl.com, lisachir@aol.com ]
+           │
+    [ Cloudflare Tunnel (cloudflared on 192.168.68.70) ]
+           │
+           ├── budget.smazl.com ──► localhost:3050  (budget container)
+           ├── www.smazl.com    ──► localhost:3000  (smazlsite — untouched)
+           ├── media.postedus.com ──► localhost:5055 (Overseerr)
+           └── dash.postedus.com  ──► localhost:3100 (Homepage dashboard)
+```
 
-The parent Express server (`website/server.js`) currently serves the portfolio
-and sub-apps (`/tasks/`, `/formjet/`, `/landing-page/`). The budget app could
-either be added as another Express route or run as its own service — decision
-to be made in Phase 3.
+### Key decisions (locked):
+- **Server**: Same Ubuntu machine (192.168.68.70) as the media stack
+- **Container port**: `:3050` — not published to WAN, only reachable via Cloudflare Tunnel
+- **Tech stack**: React (Vite) + Tailwind CSS frontend, Node/Express REST API, SQLite (`better-sqlite3`) + automatic JSON snapshot backups
+- **Auth**: Cloudflare Access only (email OTP, 3-user allow list). No in-app auth — the Express API is only reachable via `localhost:3050` on the server, so it's already locked down
+- **Data persistence**: Host-side at `/opt/docker/budget/data/` so container rebuilds never lose data
+- **`www.smazl.com` must NOT be affected** — completely separate container, zero coupling
 
 ---
 
@@ -128,8 +140,18 @@ Follow `docs/ops/change-request-process.md`:
 
 ## Current Status (last updated: 2026-09-27)
 
-- **Phase 1 (Specs & Architecture): COMPLETE**
-  - Data model spec (`docs/specs/data-model.md`): All obligations, income, accounts, runway, and scenarios defined.
-  - Style & architecture guide (`docs/specs/style-guide.md`): Tech stack, server model (:3050 isolated container), mobile layout, and Linear/Vercel visual vibe locked in. Zero open decisions remaining.
-- **Next Phase: Phase 2 (Data Entry) or Phase 3 (App Build)**
-  - Ready for data entry of household numbers or direct scaffolding of the React+Express app.
+- **Phase 1 (Specs & Architecture): COMPLETE** — zero open decisions.
+- **Phase 2 (Data Entry)**: Not started. Will use a `seed.json` file matching
+  the data model spec. The app imports this on first run to populate SQLite.
+- **Phase 3 (App Build)**: Not started. Tech stack locked: React (Vite) +
+  Tailwind CSS + Lucide, Express API, SQLite + auto JSON snapshots.
+- **Phase 4 (Hosting)**: Not started. Isolated Docker container on `:3050`,
+  `budget.smazl.com` via Cloudflare Tunnel + Access (3-user email OTP).
+
+### Architecture clarifications (for agents):
+- **Actuals are a history table**, not an overwrite. Each recorded payment is its
+  own row (obligation_id, date, amount, notes). See data-model.md section 8.
+- **No in-app auth.** Cloudflare Access handles authentication. The Express API
+  is unauthenticated — it's only reachable via `localhost:3050` on the server.
+- **Phase 2 and 3 can run in parallel.** Create `seed.json` for data entry while
+  scaffolding the app. The app's first-run import reads `seed.json` into SQLite.

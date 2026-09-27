@@ -379,6 +379,30 @@ For any expense or income, the system should track or calculate three values:
   accuracy over time and helps adjust future estimates.
 - **Normalized monthly** is always calculated, never manually entered.
 
+### Actuals Storage: History Table
+
+Actuals are stored as a **history table** (one row per recorded payment), not as
+an overwrite of the obligation's expected amount. Each actual entry contains:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `obligation_id` or `income_id` | reference | Which obligation or income source this is for |
+| `date` | date | When the actual payment occurred or paycheck landed |
+| `amount` | decimal | The real amount |
+| `notes` | string | Optional — anything unusual about this specific instance |
+
+This approach preserves the full history, which enables:
+- **Seasonal pattern learning**: After a year of gas bill actuals, the system can
+  auto-suggest seasonal patterns instead of relying on manual estimates.
+- **Actual vs expected accuracy**: Show how close estimates are to reality and
+  suggest adjustments.
+- **Trend analysis**: Detect if a variable bill is creeping up over time.
+- **Runway accuracy**: Use real data instead of estimates for projections.
+
+The obligation/income record itself keeps the `amount` (expected) unchanged. The
+latest actual informs the dashboard display, but never silently overwrites the
+expected value.
+
 ---
 
 ## 9. Data Entry Guidance

@@ -30,35 +30,38 @@ it need it, and what happens when income changes?**
 
 ---
 
-## Phase 2: Data Entry
+## Phase 2: Data Entry (via `seed.json`)
 
-> Enter all known household obligations, income sources, and account balances.
-> This can be done in a spreadsheet, JSON file, database, or whatever format the
-> eventual app will use. The point is to get everything recorded.
+> Enter all known household obligations, income sources, and account balances
+> into a `seed.json` file matching the data model spec. The app will import
+> this file on first run to populate the SQLite database. This lets data entry
+> happen now without waiting for the UI to be built.
 
 | # | Task | Status | Notes |
 |---|------|--------|-------|
-| 2.1 | Enter all known monthly bills (housing, utilities, internet, etc.) | `TODO` | |
-| 2.2 | Enter all loan / debt payments (car, financing, credit cards) | `TODO` | |
-| 2.3 | Enter all subscriptions (streaming, software, memberships) | `TODO` | |
-| 2.4 | Enter all insurance payments | `TODO` | |
-| 2.5 | Enter non-monthly / irregular expenses (annual, quarterly, seasonal) | `TODO` | |
-| 2.6 | Enter all income sources with pay schedules | `TODO` | |
-| 2.7 | Enter account balances | `TODO` | |
-| 2.8 | Review for missing obligations (see data-model.md section 7) | `TODO` | |
-| 2.9 | Tag variable/seasonal expenses with ranges | `TODO` | |
+| 2.1 | Create `seed.json` schema/template matching data-model.md | `TODO` | |
+| 2.2 | Enter all known monthly bills (housing, utilities, internet, etc.) | `TODO` | |
+| 2.3 | Enter all loan / debt payments (car, financing, credit cards) | `TODO` | |
+| 2.4 | Enter all subscriptions (streaming, software, memberships) | `TODO` | |
+| 2.5 | Enter all insurance payments | `TODO` | |
+| 2.6 | Enter non-monthly / irregular expenses (annual, quarterly, seasonal) | `TODO` | |
+| 2.7 | Enter all income sources with pay schedules | `TODO` | |
+| 2.8 | Enter account balances | `TODO` | |
+| 2.9 | Review for missing obligations (see data-model.md section 7) | `TODO` | |
+| 2.10 | Tag variable/seasonal expenses with ranges | `TODO` | |
 
 ---
 
 ## Phase 3: App — Design & Build
 
-> Build the actual application. Technology TBD — could be a web app, desktop
-> app, or start as a CLI tool. Decision should be made at the start of this phase.
+> React (Vite) + Tailwind CSS frontend, Node/Express API, SQLite backend.
+> Runs as isolated Docker container on port :3050.
+> See `docs/specs/style-guide.md` for full architecture and visual spec.
 
 | # | Task | Status | Notes |
 |---|------|--------|-------|
 | 3.1 | Choose technology stack | `DONE` | React + Tailwind (Vite), Express API, SQLite + auto JSON snapshots (see style-guide.md) |
-| 3.2 | Implement data storage (database schema from data model) | `TODO` | |
+| 3.2 | Implement data storage (SQLite schema from data model + seed.json import) | `TODO` | Include actuals history table |
 | 3.3 | Build data entry / management UI | `TODO` | |
 | 3.4 | Implement core calculations (monthly need, surplus, etc.) | `TODO` | |
 | 3.5 | Build dashboard / summary view | `TODO` | |
@@ -76,10 +79,12 @@ it need it, and what happens when income changes?**
 
 | # | Task | Status | Notes |
 |---|------|--------|-------|
-| 4.1 | Set up subdomain (e.g. `budget.smazl.com`) | `TODO` | Must not affect www.smazl.com |
-| 4.2 | Configure Cloudflare Tunnel route | `TODO` | Same pattern as media.postedus.com |
-| 4.3 | Add Cloudflare Access authentication (email OTP) | `TODO` | |
-| 4.4 | Test remote access end-to-end | `TODO` | |
+| 4.1 | Create Dockerfile and docker-compose.yml for budget container (:3050) | `TODO` | Host data at `/opt/docker/budget/data/` |
+| 4.2 | Deploy container on Ubuntu server (192.168.68.70) | `TODO` | Must not affect www.smazl.com (:3000) |
+| 4.3 | Set up `budget.smazl.com` subdomain (CNAME) | `TODO` | |
+| 4.4 | Add Cloudflare Tunnel route: `budget.smazl.com` → `localhost:3050` | `TODO` | Same pattern as media.postedus.com |
+| 4.5 | Add Cloudflare Access app (email OTP: Mark, Alex, Lisa) | `TODO` | Reuse existing 3-email policy |
+| 4.6 | Test remote access end-to-end from phone | `TODO` | |
 
 ---
 
@@ -115,3 +120,4 @@ it need it, and what happens when income changes?**
 |------|-------------|-----|
 | 2026-09-27 | Plan created; Phase 1 data model spec written | Agent (Devin) |
 | 2026-09-27 | Moved into smazlmedia/website/budget/; added style guide; updated parent AGENTS.md + README | Agent (Devin) |
+| 2026-09-27 | Fixed stale AGENTS.md architecture section; clarified actuals as history table in data model; Phase 2 uses seed.json; Phase 4 expanded with container + Access details; Cloudflare Access: 3-user allow list (Mark, Alex, Lisa) | Agent (Devin) |
