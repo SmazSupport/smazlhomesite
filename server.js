@@ -19,9 +19,10 @@ app.use(cookieParser());
 // --- class.smazl.com password gate ---
 const CLASS_PASSWORD = process.env.CLASS_PASSWORD || 'timber29ocean64spark';
 const CLASS_COOKIE = 'class_auth';
-const CLASS_VISIT_LOG = path.join(__dirname, 'class-visits.log');
+const CLASS_VISIT_LOG = path.join(__dirname, 'logs', 'class-visits.log');
+fs.mkdir(path.dirname(CLASS_VISIT_LOG), { recursive: true }).catch(() => {});
 
-function classLoginPage(msg) {
+function classLoginPage(msg, redirect = '/') {
     return `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfolio — Password Required</title>
@@ -35,7 +36,7 @@ function classLoginPage(msg) {
 <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:1.5rem;">Mark Stevens — Enter password to continue</p>
 ${msg ? `<p style="color:#f87171;font-size:0.85rem;margin-bottom:1rem;">${msg}</p>` : ''}
 <form method="POST" action="/class-auth">
-<input type="hidden" name="redirect" value="/">
+<input type="hidden" name="redirect" value="${redirect}">
 <input type="password" name="password" placeholder="Password" autofocus
   style="width:100%;padding:0.7rem 1rem;border-radius:8px;border:1px solid var(--border-color);background:var(--bg-primary);color:var(--text-primary);font-size:1rem;margin-bottom:1rem;font-family:inherit;">
 <button type="submit" class="btn btn-primary" style="width:100%;font-size:1rem;padding:0.7rem;">Enter</button>
@@ -48,11 +49,61 @@ ${msg ? `<p style="color:#f87171;font-size:0.85rem;margin-bottom:1rem;">${msg}</
 // Auth endpoint
 app.post('/class-auth', (req, res) => {
     if (req.body.password === CLASS_PASSWORD) {
-        res.cookie(CLASS_COOKIE, 'ok', { maxAge: 30 * 24 * 60 * 60 * 1000, httpOnly: true, sameSite: 'lax' });
+        const opts = { maxAge: 30 * 24 * 60 * 60 * 1000, httpOnly: true, sameSite: 'lax' };
+        if (req.hostname.endsWith('.smazl.com')) opts.domain = 'smazl.com'; // shared with smazl.com/visitorlog
+        res.cookie(CLASS_COOKIE, 'ok', opts);
         const redirect = req.body.redirect || '/';
         return res.redirect(redirect);
     }
     res.status(401).send(classLoginPage('Incorrect password'));
+});
+
+// Visitor log dashboard — same password, works on class.smazl.com or smazl.com
+app.get('/visitorlog', async (req, res) => {
+    if (req.cookies[CLASS_COOKIE] !== 'ok') {
+        return res.status(401).send(classLoginPage(null, '/visitorlog'));
+    }
+    let lines = [];
+    try {
+        lines = (await fs.readFile(CLASS_VISIT_LOG, 'utf8')).trim().split('\n').filter(Boolean);
+    } catch (e) { /* no log yet */ }
+    const visits = lines.map(l => {
+        const [ts, ip, path, ua] = l.split(' | ');
+        return { ts, ip, path, ua };
+    }).reverse();
+    const uniqueIps = new Set(visits.map(v => v.ip)).size;
+    const rows = visits.slice(0, 500).map(v =>
+        `<tr><td>${v.ts}</td><td>${v.ip}</td><td>${v.path}</td><td class="ua">${v.ua || '-'}</td></tr>`
+    ).join('');
+    res.send(`<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Visitor Log — class.smazl.com</title>
+<link rel="stylesheet" href="/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body{padding:3rem 1.5rem;font-family:'Inter',sans-serif;}
+.vwrap{max-width:960px;margin:0 auto;}
+.stats{display:flex;gap:1rem;margin:1.5rem 0;}
+.stat{background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:10px;padding:1rem 1.5rem;flex:1;}
+.stat b{display:block;font-size:1.6rem;}
+.stat span{color:var(--text-secondary);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.5px;}
+table{width:100%;border-collapse:collapse;font-size:0.82rem;}
+th{text-align:left;padding:0.6rem;border-bottom:2px solid var(--border-color);color:var(--text-secondary);text-transform:uppercase;font-size:0.7rem;letter-spacing:0.5px;}
+td{padding:0.55rem 0.6rem;border-bottom:1px solid var(--border-color);vertical-align:top;}
+.ua{color:var(--text-tertiary);max-width:340px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.empty{color:var(--text-secondary);padding:2rem;text-align:center;}
+</style></head><body>
+<div class="vwrap">
+<h1>Visitor Log</h1>
+<p style="color:var(--text-secondary);">Authenticated visits to class.smazl.com</p>
+<div class="stats">
+<div class="stat"><b>${visits.length}</b><span>Total visits</span></div>
+<div class="stat"><b>${uniqueIps}</b><span>Unique IPs</span></div>
+</div>
+${rows ? `<table><thead><tr><th>Time (UTC)</th><th>IP</th><th>Path</th><th>Browser</th></tr></thead><tbody>${rows}</tbody></table>` : '<p class="empty">No visits logged yet.</p>'}
+</div>
+</body></html>`);
 });
 
 // Visitor logging helper
