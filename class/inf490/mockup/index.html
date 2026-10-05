@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Inventory & Interface Monitor — Capstone Demo</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: #f4f6f9;
+            color: #333;
+        }
+        header {
+            background: #1a3a5c;
+            color: white;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        header h1 { font-size: 1.4rem; }
+        header .status {
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .live-dot {
+            width: 10px;
+            height: 10px;
+            background: #4ade80;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+        .container { padding: 30px; max-width: 1400px; margin: 0 auto; }
+
+        /* Tabs */
+        .tabs {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+        .tab {
+            padding: 10px 20px;
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px 8px 0 0;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        .tab.active {
+            background: #1a3a5c;
+            color: white;
+            border-color: #1a3a5c;
+        }
+        .tab:hover:not(.active) { background: #f0f0f0; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        /* Stats */
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .stat-card {
+            background: white;
+            padding: 18px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .stat-card:hover { transform: translateY(-2px); }
+        .stat-card .label { font-size: 0.75rem; color: #666; text-transform: uppercase; }
+        .stat-card .value { font-size: 1.7rem; font-weight: bold; margin-top: 5px; transition: color 0.3s; }
+        .stat-card .sub { font-size: 0.7rem; color: #999; margin-top: 5px; }
+        .stat-card.alert .value { color: #f87171; }
+        .stat-card .value.flash { animation: flash 0.5s; }
+        @keyframes flash {
+            0% { background: #fbbf24; }
+            100% { background: transparent; }
+        }
+
+        /* Sections */
+        .section {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+            overflow: hidden;
+        }
+        .section-header {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-bottom: 1px solid #e0e0e0;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .section-header .badge {
+            background: #1a3a5c;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+        }
+        .section-header .badge.alert { background: #dc2626; }
+        .section-header .badge.warning { background: #f59e0b; }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th {
+            text-align: left;
+            padding: 12px 20px;
+            background: #f8f9fa;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            color: #666;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        td {
+            padding: 12px 20px;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 0.88rem;
+        }
+        tr:hover { background: #f9f9f9; }
+        tr.new-row { animation: slideIn 0.5s; }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        /* Status indicators */
+        .status-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 6px;
+        }
+        .online { background: #4ade80; }
+        .offline { background: #f87171; }
+        .warning { background: #fbbf24; }
+        .rogue { background: #a855f7; }
+
+        .rogue-badge {
+            background: #fce7f3;
+            color: #a855f7;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            border: 1px solid #a855f7;
+        }
+        .approved-badge {
+            background: #dcfce7;
+            color: #16a34a;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        /* Search */
+        .search-bar {
+            padding: 15px 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            gap: 10px;
+        }
+        .search-bar input, .search-bar select {
+            padding: 8px 12px;
+            border: 1px solid #d0d0d0;
+            border-radius: 6px;
+            font-size: 0.85rem;
+        }
+        .search-bar input { flex: 1; }
+
+        /* Network Map */
+        .network-map {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .network-box {
+            display: inline-block;
+            padding: 25px 35px;
+            border-radius: 10px;
+            margin: 0 30px;
+            vertical-align: middle;
+            transition: transform 0.3s;
+        }
+        .network-box:hover { transform: scale(1.05); }
+        .client-box { background: #dbeafe; border: 2px solid #3b82f6; }
+        .property-box { background: #fef3c7; border: 2px solid #f59e0b; }
+        .arrow {
+            display: inline-block;
+            vertical-align: middle;
+            color: #666;
+            font-size: 2rem;
+            margin: 0 15px;
+            animation: flow 2s infinite;
+        }
+        @keyframes flow {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(5px); }
+        }
+        .interface-flow {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .flow-item {
+            background: #f8f9fa;
+            padding: 12px 18px;
+            border-radius: 6px;
+            font-size: 0.82rem;
+            border-left: 3px solid #3b82f6;
+        }
+        .flow-item.property-side { border-left-color: #f59e0b; }
+
+        /* Alert feed */
+        .alert-feed {
+            padding: 0;
+        }
+        .alert-item {
+            padding: 15px 20px;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 0.88rem;
+        }
+        .alert-item.new { animation: slideIn 0.5s; background: #fffbeb; }
+        .alert-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+        .alert-critical { background: #fef2f2; }
+        .alert-critical .alert-icon { background: #f87171; color: white; }
+        .alert-warning { background: #fffbeb; }
+        .alert-warning .alert-icon { background: #fbbf24; color: white; }
+        .alert-info { background: #f0f9ff; }
+        .alert-info .alert-icon { background: #3b82f6; color: white; }
+        .alert-time {
+            color: #999;
+            font-size: 0.75rem;
+            margin-left: auto;
+            white-space: nowrap;
+        }
+
+        /* Change log */
+        .change-log {
+            padding: 0;
+        }
+        .change-item {
+            padding: 12px 20px;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .change-item.new { animation: slideIn 0.5s; background: #f0fdf4; }
+        .change-time {
+            color: #999;
+            font-size: 0.75rem;
+            width: 80px;
+            flex-shrink: 0;
+        }
+        .change-type {
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            width: 90px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        .change-vlan { background: #dbeafe; color: #2563eb; }
+        .change-port { background: #fce7f3; color: #a855f7; }
+        .change-ip { background: #dcfce7; color: #16a34a; }
+        .change-status { background: #fef3c7; color: #d97706; }
+
+        /* Bandwidth bars */
+        .bw-bar-container {
+            width: 120px;
+            background: #f0f0f0;
+            border-radius: 4px;
+            height: 8px;
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        .bw-bar {
+            height: 100%;
+            background: #3b82f6;
+            border-radius: 4px;
+            transition: width 0.5s;
+        }
+        .bw-bar.high { background: #f87171; }
+        .bw-bar.med { background: #fbbf24; }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #999;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Client Network — Inventory &amp; Interface Monitor</h1>
+    <div class="status">
+        <span class="live-dot"></span>
+        <span id="last-updated">Live - Last updated: just now</span>
+    </div>
+</header>
+
+<div class="container">
+
+    <!-- Tabs -->
+    <div class="tabs">
+        <div class="tab active" onclick="switchTab('dashboard')">Dashboard</div>
+        <div class="tab" onclick="switchTab('alerts')">Alerts <span id="alert-count" style="background:#dc2626;color:white;border-radius:10px;padding:1px 7px;font-size:0.7rem;margin-left:4px;">3</span></div>
+        <div class="tab" onclick="switchTab('rogue')">Rogue Devices</div>
+        <div class="tab" onclick="switchTab('changes')">Change Log</div>
+    </div>
+
+    <!-- DASHBOARD TAB -->
+    <div id="dashboard" class="tab-content active">
+
+        <!-- Stats -->
+        <div class="stats-row">
+            <div class="stat-card">
+                <div class="label">Total Clients</div>
+                <div class="value" id="stat-total">18</div>
+                <div class="sub">On the client network</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Online</div>
+                <div class="value" id="stat-online" style="color:#4ade80">17</div>
+                <div class="sub">Active in last 5 min</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Offline</div>
+                <div class="value" id="stat-offline" style="color:#f87171">1</div>
+                <div class="sub">No response</div>
+            </div>
+            <div class="stat-card alert">
+                <div class="label">Rogue Devices</div>
+                <div class="value" id="stat-rogue" style="color:#a855f7">2</div>
+                <div class="sub">Unknown MAC detected</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Cross-Boundary Flows</div>
+                <div class="value" id="stat-flows">4</div>
+                <div class="sub">Client ↔ Property interfaces</div>
+            </div>
+        </div>
+
+        <!-- Network Map -->
+        <div class="section">
+            <div class="section-header">
+                Network Boundary Map
+                <span class="badge">Client ↔ Property</span>
+            </div>
+            <div class="network-map">
+                <div class="network-box client-box">
+                    <strong>Client Network</strong><br>
+                    <small>15 computers, 2 APs, 1 switch</small>
+                </div>
+                <span class="arrow">⬌</span>
+                <div class="network-box property-box">
+                    <strong>Property Guest Wi-Fi</strong><br>
+                    <small>Piggyback connection</small>
+                </div>
+                <div class="interface-flow">
+                    <div class="flow-item">Port 3 (Switch) → Property AP | <span id="flow1">2.4 Mbps</span></div>
+                    <div class="flow-item property-side">Property Guest → Port 1 | <span id="flow2">1.1 Mbps</span></div>
+                    <div class="flow-item">VLAN 10 → Property VLAN 200 | <span id="flow3">0.8 Mbps</span></div>
+                    <div class="flow-item property-side">Guest Wi-Fi → AP-02 | <span id="flow4">0.3 Mbps</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Client Inventory -->
+        <div class="section">
+            <div class="section-header">
+                Client Inventory
+                <span class="badge" id="inventory-badge">18 devices</span>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search by name, IP, or MAC..." onkeyup="filterTable('client-table', this.value)">
+                <select onchange="filterVlan(this.value)">
+                    <option value="">All VLANs</option>
+                    <option value="VLAN 10">VLAN 10 (Staff)</option>
+                    <option value="VLAN 20">VLAN 20 (PMS)</option>
+                    <option value="VLAN 30">VLAN 30 (Guest)</option>
+                </select>
+                <select onchange="filterSide(this.value)">
+                    <option value="">All Sides</option>
+                    <option value="Client">Client</option>
+                    <option value="Boundary">Boundary</option>
+                </select>
+            </div>
+            <table id="client-table">
+                <thead>
+                    <tr>
+                        <th>Status</th>
+                        <th>Device Name</th>
+                        <th>IP Address</th>
+                        <th>MAC Address</th>
+                        <th>Switch / Port</th>
+                        <th>VLAN</th>
+                        <th>Bandwidth</th>
+                        <th>Network Side</th>
+                        <th>Approved</th>
+                    </tr>
+                </thead>
+                <tbody id="client-body">
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Active Interface Flows -->
+        <div class="section">
+            <div class="section-header">
+                Active Interface Flows (Client ↔ Property)
+                <span class="badge">4 active</span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Interface</th>
+                        <th>Direction</th>
+                        <th>Source</th>
+                        <th>Destination</th>
+                        <th>Traffic</th>
+                        <th>Last Seen</th>
+                    </tr>
+                </thead>
+                <tbody id="flows-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- ALERTS TAB -->
+    <div id="alerts" class="tab-content">
+        <div class="section">
+            <div class="section-header">
+                Live Alert Feed
+                <span class="badge alert">Auto-refreshing</span>
+            </div>
+            <div class="alert-feed" id="alert-feed">
+            </div>
+        </div>
+    </div>
+
+    <!-- ROGUE TAB -->
+    <div id="rogue" class="tab-content">
+        <div class="section">
+            <div class="section-header">
+                Rogue Device Detection
+                <span class="badge alert">2 unknown devices</span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Detected</th>
+                        <th>MAC Address</th>
+                        <th>IP Address</th>
+                        <th>Switch / Port</th>
+                        <th>VLAN</th>
+                        <th>Manufacturer (OUI)</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="rogue-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- CHANGES TAB -->
+    <div id="changes" class="tab-content">
+        <div class="section">
+            <div class="section-header">
+                Device Change Tracking Log
+                <span class="badge warning">Monitoring</span>
+            </div>
+            <div class="change-log" id="change-log">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    Network Inventory & Interface Monitor | Stevens Networking Solution | INF 490 Capstone — Interactive Demo
+</footer>
+
+<script>
+// ---- DATA ----
+const approvedMacs = [
+    '00:1A:2B:3C:4D:01','00:1A:2B:3C:4D:02','00:1A:2B:3C:4D:03',
+    '00:1A:2B:3C:4D:04','00:1A:2B:3C:4D:05','00:1A:2B:3C:4D:06',
+    '00:1A:2B:3C:4D:07','00:1A:2B:3C:4D:08','00:1A:2B:3C:4D:09',
+    '00:1A:2B:3C:4D:0A','00:1A:2B:3C:4D:0B','00:1A:2B:3C:4D:0C',
+    '00:1A:2B:3C:4D:0D','00:1A:2B:3C:4D:0E','00:1A:2B:3C:4D:0F'
+];
+
+let clients = [
+    { name: 'FRONT-DESK-01', ip: '10.10.1.15', mac: '00:1A:2B:3C:4D:01', port: 'SW-01 / Port 5', vlan: 'VLAN 10 (Staff)', side: 'Client', online: true, bw: 1.2, approved: true },
+    { name: 'FRONT-DESK-02', ip: '10.10.1.16', mac: '00:1A:2B:3C:4D:02', port: 'SW-01 / Port 6', vlan: 'VLAN 10 (Staff)', side: 'Client', online: true, bw: 0.8, approved: true },
+    { name: 'BACKOFFICE-PC', ip: '10.10.1.20', mac: '00:1A:2B:3C:4D:03', port: 'SW-01 / Port 8', vlan: 'VLAN 10 (Staff)', side: 'Client', online: true, bw: 3.5, approved: true },
+    { name: 'PMS-SERVER', ip: '10.10.1.5', mac: '00:1A:2B:3C:4D:04', port: 'SW-01 / Port 2', vlan: 'VLAN 20 (PMS)', side: 'Client', online: true, bw: 8.2, approved: true },
+    { name: 'AP-01', ip: '10.10.1.50', mac: '00:1A:2B:3C:4D:05', port: 'SW-01 / Port 1', vlan: 'VLAN 30 (Guest)', side: 'Client', online: true, bw: 5.1, approved: true },
+    { name: 'AP-02', ip: '10.10.1.51', mac: '00:1A:2B:3C:4D:06', port: 'SW-01 / Port 3', vlan: 'VLAN 30 (Guest)', side: 'Boundary', online: true, bw: 2.4, approved: true },
+    { name: 'STORAGE-PC', ip: '10.10.1.25', mac: '00:1A:2B:3C:4D:07', port: 'SW-01 / Port 12', vlan: 'VLAN 10 (Staff)', side: 'Client', online: false, bw: 0, approved: true },
+    { name: 'MANAGER-OFFICE', ip: '10.10.1.30', mac: '00:1A:2B:3C:4D:08', port: 'SW-01 / Port 10', vlan: 'VLAN 10 (Staff)', side: 'Client', online: true, bw: 0.5, approved: true },
+    { name: 'CONF-ROOM-PC', ip: '10.10.1.35', mac: '00:1A:2B:3C:4D:09', port: 'SW-01 / Port 11', vlan: 'VLAN 10 (Staff)', side: 'Client', online: true, bw: 0.3, approved: true },
+    { name: 'PRINTER-01', ip: '10.10.1.40', mac: '00:1A:2B:3C:4D:0A', port: 'SW-01 / Port 14', vlan: 'VLAN 10 (Staff)', side: 'Client', online: true, bw: 0.1, approved: true },
+    { name: 'CAMERA-NVR', ip: '10.10.2.10', mac: '00:1A:2B:3C:4D:0B', port: 'SW-01 / Port 7', vlan: 'VLAN 40 (IoT)', side: 'Client', online: true, bw: 4.2, approved: true },
+    { name: 'CAM-01', ip: '10.10.2.11', mac: '00:1A:2B:3C:4D:0C', port: 'SW-01 / Port 15', vlan: 'VLAN 40 (IoT)', side: 'Client', online: true, bw: 1.8, approved: true },
+    { name: 'CAM-02', ip: '10.10.2.12', mac: '00:1A:2B:3C:4D:0D', port: 'SW-01 / Port 16', vlan: 'VLAN 40 (IoT)', side: 'Client', online: true, bw: 1.5, approved: true },
+    { name: 'GUEST-KIOSK', ip: '10.10.3.20', mac: '00:1A:2B:3C:4D:0E', port: 'SW-01 / Port 4', vlan: 'VLAN 30 (Guest)', side: 'Boundary', online: true, bw: 0.9, approved: true },
+    { name: 'MAINT-PC', ip: '10.10.1.45', mac: '00:1A:2B:3C:4D:0F', port: 'SW-01 / Port 13', vlan: 'VLAN 10 (Staff)', side: 'Client', online: true, bw: 0.2, approved: true },
+    // Rogue devices
+    { name: 'UNKNOWN-DEVICE', ip: '10.10.3.55', mac: 'AA:BB:CC:DD:EE:01', port: 'SW-01 / Port 9', vlan: 'VLAN 30 (Guest)', side: 'Boundary', online: true, bw: 0.6, approved: false },
+    { name: 'UNKNOWN-DEVICE', ip: '10.10.1.99', mac: 'FF:FF:FF:00:00:02', port: 'SW-01 / Port 17', vlan: 'VLAN 10 (Staff)', side: 'Client', online: true, bw: 2.1, approved: false },
+];
+
+let alerts = [
+    { type: 'critical', icon: '!', text: '<strong>ROGUE DEVICE DETECTED</strong> - Unknown MAC AA:BB:CC:DD:EE:01 joined VLAN 30 (Guest) on SW-01 Port 9', time: '2 min ago' },
+    { type: 'critical', icon: '!', text: '<strong>ROGUE DEVICE DETECTED</strong> - Unknown MAC FF:FF:FF:00:00:02 joined VLAN 10 (Staff) on SW-01 Port 17', time: '5 min ago' },
+    { type: 'warning', icon: '⚠', text: '<strong>DEVICE OFFLINE</strong> - STORAGE-PC (10.10.1.25) stopped responding on SW-01 Port 12', time: '12 min ago' },
+    { type: 'warning', icon: '⚠', text: '<strong>VLAN CHANGE</strong> - BACKOFFICE-PC moved from VLAN 10 (Staff) to VLAN 30 (Guest)', time: '18 min ago' },
+    { type: 'info', icon: 'i', text: '<strong>PORT CHANGE</strong> - FRONT-DESK-02 moved from Port 6 to Port 7', time: '35 min ago' },
+    { type: 'info', icon: 'i', text: '<strong>CROSS-BOUNDARY TRAFFIC</strong> - Bandwidth spike on Port 3 (Client → Property): 8.2 Mbps', time: '1 hr ago' },
+];
+
+let changes = [
+    { time: '14:02', type: 'VLAN', class: 'change-vlan', text: 'BACKOFFICE-PC changed from VLAN 10 (Staff) → VLAN 30 (Guest)' },
+    { time: '13:48', type: 'Status', class: 'change-status', text: 'STORAGE-PC went OFFLINE (was Online for 3 days)' },
+    { time: '13:30', type: 'Port', class: 'change-port', text: 'FRONT-DESK-02 moved from Port 6 → Port 7' },
+    { time: '12:15', type: 'IP', class: 'change-ip', text: 'GUEST-KIOSK IP changed 10.10.3.19 → 10.10.3.20' },
+    { time: '11:42', type: 'VLAN', class: 'change-vlan', text: 'CAMERA-NVR moved from VLAN 10 (Staff) → VLAN 40 (IoT)' },
+    { time: '10:05', type: 'Port', class: 'change-port', text: 'AP-02 moved from Port 2 → Port 3' },
+];
+
+// ---- RENDER FUNCTIONS ----
+function renderClients() {
+    const tbody = document.getElementById('client-body');
+    tbody.innerHTML = '';
+    clients.forEach(c => {
+        const bwClass = c.bw > 5 ? 'high' : c.bw > 2 ? 'med' : '';
+        const bwPct = Math.min(c.bw * 10, 100);
+        const approvedBadge = c.approved
+            ? '<span class="approved-badge">Approved</span>'
+            : '<span class="rogue-badge">ROGUE</span>';
+        const statusDot = c.online
+            ? '<span class="status-dot online"></span>Online'
+            : '<span class="status-dot offline"></span>Offline';
+        tbody.innerHTML += `
+            <tr>
+                <td>${statusDot}</td>
+                <td>${c.name}</td>
+                <td>${c.ip}</td>
+                <td>${c.mac}</td>
+                <td>${c.port}</td>
+                <td>${c.vlan}</td>
+                <td>
+                    <div class="bw-bar-container"><div class="bw-bar ${bwClass}" style="width:${bwPct}%"></div></div>
+                    ${c.bw} Mbps
+                </td>
+                <td>${c.side}</td>
+                <td>${approvedBadge}</td>
+            </tr>
+        `;
+    });
+}
+
+function renderFlows() {
+    const tbody = document.getElementById('flows-body');
+    const flows = [
+        { iface: 'SW-01 Port 3', dir: 'Client → Property', src: 'AP-02 (10.10.1.51)', dst: 'Property Guest Wi-Fi', traffic: '2.4 Mbps', seen: '1 min ago' },
+        { iface: 'SW-01 Port 1', dir: 'Property → Client', src: 'Property Guest Wi-Fi', dst: 'AP-01 (10.10.1.50)', traffic: '1.1 Mbps', seen: '2 min ago' },
+        { iface: 'VLAN 10 → 200', dir: 'Client → Property', src: 'BACKOFFICE-PC', dst: 'Property Gateway', traffic: '0.8 Mbps', seen: '3 min ago' },
+        { iface: 'Guest Wi-Fi → AP-02', dir: 'Property → Client', src: 'Property Guest Client', dst: 'AP-02 (10.10.1.51)', traffic: '0.3 Mbps', seen: '5 min ago' },
+    ];
+    tbody.innerHTML = '';
+    flows.forEach(f => {
+        tbody.innerHTML += `
+            <tr>
+                <td>${f.iface}</td>
+                <td>${f.dir}</td>
+                <td>${f.src}</td>
+                <td>${f.dst}</td>
+                <td>${f.traffic}</td>
+                <td>${f.seen}</td>
+            </tr>
+        `;
+    });
+}
+
+function renderAlerts() {
+    const feed = document.getElementById('alert-feed');
+    feed.innerHTML = '';
+    alerts.forEach(a => {
+        feed.innerHTML += `
+            <div class="alert-item alert-${a.type}">
+                <div class="alert-icon">${a.icon}</div>
+                <div>${a.text}</div>
+                <div class="alert-time">${a.time}</div>
+            </div>
+        `;
+    });
+}
+
+function renderRogue() {
+    const tbody = document.getElementById('rogue-body');
+    tbody.innerHTML = '';
+    clients.filter(c => !c.approved).forEach(c => {
+        tbody.innerHTML += `
+            <tr>
+                <td><span class="status-dot rogue"></span>Active</td>
+                <td>${c.mac}</td>
+                <td>${c.ip}</td>
+                <td>${c.port}</td>
+                <td>${c.vlan}</td>
+                <td>Unknown Manufacturer</td>
+                <td><button style="padding:4px 10px;background:#16a34a;color:white;border:none;border-radius:4px;cursor:pointer;">Approve</button> <button style="padding:4px 10px;background:#dc2626;color:white;border:none;border-radius:4px;cursor:pointer;margin-left:4px;">Block</button></td>
+            </tr>
+        `;
+    });
+}
+
+function renderChanges() {
+    const log = document.getElementById('change-log');
+    log.innerHTML = '';
+    changes.forEach(c => {
+        log.innerHTML += `
+            <div class="change-item">
+                <div class="change-time">${c.time}</div>
+                <div class="change-type ${c.class}">${c.type}</div>
+                <div>${c.text}</div>
+            </div>
+        `;
+    });
+}
+
+// ---- TAB SWITCHING ----
+function switchTab(tabId) {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    event.target.closest('.tab').classList.add('active');
+    document.getElementById(tabId).classList.add('active');
+}
+
+// ---- FILTERS ----
+function filterTable(tableId, query) {
+    const rows = document.querySelectorAll(`#${tableId} tbody tr`);
+    rows.forEach(row => {
+        const text = row.textContent.toLowerCase();
+        row.style.display = text.includes(query.toLowerCase()) ? '' : 'none';
+    });
+}
+function filterVlan(vlan) { /* simplified for demo */ }
+function filterSide(side) { /* simplified for demo */ }
+
+// ---- LIVE SIMULATION ----
+function updateTimestamp() {
+    const now = new Date();
+    const time = now.toLocaleTimeString();
+    document.getElementById('last-updated').textContent = `Live - Last updated: ${time}`;
+}
+
+function simulateBandwidthChanges() {
+    clients.forEach(c => {
+        if (c.online) {
+            c.bw = Math.max(0.1, c.bw + (Math.random() - 0.5) * 2);
+            c.bw = Math.round(c.bw * 10) / 10;
+        }
+    });
+    renderClients();
+
+    // Update flow rates
+    const flows = ['flow1','flow2','flow3','flow4'];
+    flows.forEach((id, i) => {
+        const val = Math.max(0.1, Math.random() * 5).toFixed(1);
+        document.getElementById(id).textContent = `${val} Mbps`;
+    });
+}
+
+function simulateNewAlert() {
+    const possibleAlerts = [
+        { type: 'warning', icon: '⚠', text: '<strong>BANDWIDTH SPIKE</strong> - PMS-SERVER traffic jumped to 9.8 Mbps' },
+        { type: 'info', icon: 'i', text: '<strong>NEW CLIENT</strong> - Device joined VLAN 30 (Guest): 10.10.3.62' },
+        { type: 'warning', icon: '⚠', text: '<strong>CROSS-BOUNDARY TRAFFIC</strong> - Unusual activity on Client → Property interface' },
+        { type: 'critical', icon: '!', text: '<strong>ROGUE DEVICE</strong> - Unknown MAC detected on VLAN 10 (Staff)' },
+        { type: 'info', icon: 'i', text: '<strong>PORT CHANGE</strong> - Device moved from Port 8 to Port 9' },
+    ];
+    const alert = possibleAlerts[Math.floor(Math.random() * possibleAlerts.length)];
+    alert.time = 'just now';
+    alerts.unshift(alert);
+    if (alerts.length > 15) alerts.pop();
+    renderAlerts();
+
+    // Update alert count
+    document.getElementById('alert-count').textContent = alerts.filter(a => a.type === 'critical' || a.type === 'warning').length;
+}
+
+function simulateNewChange() {
+    const possibleChanges = [
+        { type: 'VLAN', class: 'change-vlan', text: 'CONF-ROOM-PC changed from VLAN 10 (Staff) → VLAN 30 (Guest)' },
+        { type: 'Port', class: 'change-port', text: 'PRINTER-01 moved from Port 14 → Port 15' },
+        { type: 'IP', class: 'change-ip', text: 'MANAGER-OFFICE IP changed 10.10.1.30 → 10.10.1.31' },
+        { type: 'Status', class: 'change-status', text: 'CAM-02 went OFFLINE briefly, recovered' },
+        { type: 'VLAN', class: 'change-vlan', text: 'GUEST-KIOSK moved from VLAN 30 (Guest) → VLAN 10 (Staff)' },
+    ];
+    const change = possibleChanges[Math.floor(Math.random() * possibleChanges.length)];
+    const now = new Date();
+    change.time = now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+    changes.unshift(change);
+    if (changes.length > 12) changes.pop();
+    renderChanges();
+}
+
+// ---- INIT ----
+renderClients();
+renderFlows();
+renderAlerts();
+renderRogue();
+renderChanges();
+
+// ---- RUN SIMULATION ----
+setInterval(updateTimestamp, 1000);
+setInterval(simulateBandwidthChanges, 3000);
+setInterval(simulateNewAlert, 12000);
+setInterval(simulateNewChange, 15000);
+</script>
+
+</body>
+</html>

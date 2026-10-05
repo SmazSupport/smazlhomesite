@@ -86,7 +86,7 @@ app.get('/resume.pdf', async (req, res) => {
 });
 
 // General PDF route for resume vault — /resume-pdf?file=resume-print
-const ALLOWED_RESUME_FILES = ['resume-print', 'resume-sys-print', 'resume-ncsu-print'];
+const ALLOWED_RESUME_FILES = ['resume-print', 'resume-sys-print', 'resume-ncsu-print', 'resume-inf490-print'];
 app.get('/resume-pdf', async (req, res) => {
     const file = req.query.file;
     if (!file || !ALLOWED_RESUME_FILES.includes(file)) {
@@ -94,7 +94,7 @@ app.get('/resume-pdf', async (req, res) => {
     }
     try {
         const pdf = await generatePdf(file);
-        const label = file.replace('resume-', '').replace(/-/g, '-');
+        const label = file === 'resume-inf490-print' ? 'Networking' : file.replace('resume-', '').replace(/-/g, '-');
         res.setHeader('Content-Type', 'application/pdf');
         res.setHeader('Content-Disposition', `attachment; filename="Mark-Stevens-${label}.pdf"`);
         res.send(pdf);
@@ -108,6 +108,17 @@ app.get('/resume-pdf', async (req, res) => {
 app.get('/ms-hub', (req, res) => {
     res.sendFile(path.join(__dirname, 'resume-vault.html'));
 });
+
+// Class subdomain — class.smazl.com serves class/ at its root.
+// Misses fall through to the main site so shared assets (styles.css, script.js, images/) resolve.
+const classStatic = express.static(path.join(__dirname, 'class'));
+app.use((req, res, next) => {
+    if (req.hostname === 'class.smazl.com' || req.hostname === 'class.localhost') {
+        return classStatic(req, res, next);
+    }
+    next();
+});
+app.use('/class', express.static(path.join(__dirname, 'class')));
 
 // Serve static files for different sections
 app.use('/tasks', express.static(path.join(__dirname, 'tasks')));

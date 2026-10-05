@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Stevens — Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10pt;
+            line-height: 1.45;
+            color: #000;
+            background: white;
+        }
+
+        .resume-header {
+            border-bottom: 2px solid #222;
+            padding-bottom: 8px;
+            margin-bottom: 10px;
+        }
+
+        .resume-header h1 {
+            font-size: 20pt;
+            font-weight: 700;
+            margin-bottom: 3px;
+            letter-spacing: -0.3px;
+        }
+
+        .contact-info {
+            font-size: 9pt;
+            color: #333;
+            margin-bottom: 6px;
+        }
+
+        .contact-info a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .resume-summary {
+            font-size: 9.5pt;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        h2 {
+            font-size: 10pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1.5px solid #000;
+            padding-bottom: 2px;
+            margin: 12px 0 7px 0;
+        }
+
+        .job {
+            margin-bottom: 9px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .job-header-left h3 {
+            font-size: 10.5pt;
+            font-weight: 700;
+            margin-bottom: 1px;
+        }
+
+        .company {
+            font-size: 9pt;
+            color: #444;
+            margin-bottom: 3px;
+        }
+
+        .date {
+            font-size: 9pt;
+            color: #555;
+            white-space: nowrap;
+            flex-shrink: 0;
+            padding-left: 8px;
+        }
+
+        ul {
+            margin: 3px 0 0 0;
+            padding-left: 16px;
+        }
+
+        li {
+            font-size: 9pt;
+            margin-bottom: 2px;
+            line-height: 1.4;
+        }
+
+        .company-group {
+            margin-bottom: 9px;
+        }
+
+        .company-group .group-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 4px;
+        }
+
+        .company-group .group-header h3 {
+            font-size: 10.5pt;
+            font-weight: 700;
+            margin-bottom: 1px;
+        }
+
+        .role {
+            margin: 5px 0 0 10px;
+            padding-left: 9px;
+            border-left: 1.5px solid #aaa;
+        }
+
+        .role-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .role-header h4 {
+            font-size: 10pt;
+            font-weight: 600;
+        }
+
+        .role-date {
+            font-size: 8.5pt;
+            color: #555;
+            white-space: nowrap;
+            padding-left: 8px;
+        }
+
+        .education-item {
+            margin-bottom: 5px;
+        }
+
+        .education-item h3 {
+            font-size: 10pt;
+            font-weight: 600;
+        }
+
+        .education-item p {
+            font-size: 9pt;
+            color: #444;
+            margin-top: 1px;
+        }
+
+        .skill-row {
+            margin-bottom: 3px;
+            font-size: 9pt;
+        }
+
+        .skill-row strong {
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-header">
+        <h1>Mark Stevens</h1>
+        <div class="contact-info">
+            <a href="mailto:mstevens@smazl.com">mstevens@smazl.com</a>
+            &nbsp;&bull;&nbsp;
+            412-915-3010
+            &nbsp;&bull;&nbsp;
+            <a href="https://www.linkedin.com/in/mark-stevens-541215116">linkedin.com/in/mark-stevens-541215116</a>
+            &nbsp;&bull;&nbsp;
+            <a href="https://github.com/SmazSupport">github.com/SmazSupport</a>
+            &nbsp;&bull;&nbsp;
+            Raleigh, NC
+        </div>
+        <p class="resume-summary">Information Networking &amp; Telecommunications student (BS expected 2026) with 20+ years of operations, systems, and technology experience. Sole developer of a network client inventory and interface monitoring tool built on the Cisco Meraki Dashboard API for a hotel management client. Combines networking coursework with deep software delivery, systems integration, and analytics experience.</p>
+    </div>
+
+    <h2>Capstone Project</h2>
+
+    <div class="job">
+        <div class="job-header">
+            <div class="job-header-left">
+                <h3>Stevens Networking Solution — Network Client Inventory &amp; Interface Monitoring Tool</h3>
+                <p class="company">INF 490 Capstone Seminar in Informatics &bull; Fort Hays State University</p>
+            </div>
+            <span class="date">Fall 2026 &ndash; In Progress</span>
+        </div>
+        <ul>
+            <li>Sole developer and project owner for a hotel management company remotely operating the network at a branded hotel property (~15&ndash;20 computers, multiple APs, VLANs for Staff, PMS, Guest, and IoT)</li>
+            <li>Building a monitoring tool that pulls client, device, interface, and VLAN data from the Cisco Meraki Dashboard API into a Python backend and SQL database, surfaced in a custom web dashboard</li>
+            <li>Feature set includes live device inventory, switch port and MAC tracking, OUI manufacturer lookup, rogue device detection, change history logging, cross-boundary monitoring between client and property guest networks, and automated alerts</li>
+            <li>Own the full engagement lifecycle: client discovery, requirements, scope, proposal, MOU, design, build, testing, documentation, and client communication</li>
+        </ul>
+    </div>
+
+    <h2>Experience</h2>
+
+    <div class="job">
+        <div class="job-header">
+            <div class="job-header-left">
+                <h3>Operations Manager</h3>
+                <p class="company">The Woobles &bull; Durham, NC</p>
+            </div>
+            <span class="date">June 2024 &ndash; Present</span>
+        </div>
+        <ul>
+            <li>Lead high-volume eCommerce fulfillment operations (2,000&ndash;13,000 orders/day), overseeing multi-zone warehouse workflows, labor planning, and order throughput optimization</li>
+            <li>Designed and built custom internal warehouse (WMS) and transportation (TMS) management tools supporting picking, packing, shipping, and carrier operations</li>
+            <li>Develop KPI dashboards and operational reporting used daily by leadership; manage inventory planning and SKU placement across 1,500+ SKUs using demand forecasting</li>
+            <li>Build workflow automation with Shopify APIs, webhooks, Python, and JavaScript, integrating ShipBlink, EasyPost, Airtable, and USPS</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-header">
+            <div class="job-header-left">
+                <h3>Independent Consultant</h3>
+                <p class="company">Self-employed &bull; Remote United States</p>
+            </div>
+            <span class="date">Sept 2021 &ndash; June 2024</span>
+        </div>
+        <ul>
+            <li>Delivered project-based consulting for logistics operations, process improvement, systems integration, and IT infrastructure</li>
+            <li>Led operational analysis and system implementation projects, including delivery management platform development and workflow automation</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-header">
+            <div class="job-header-left">
+                <h3>Director of Information Technology</h3>
+                <p class="company">Urban Shipper Technology &bull; Houston, TX</p>
+            </div>
+            <span class="date">Dec 2021 &ndash; Mar 2023</span>
+        </div>
+        <ul>
+            <li>Led planning and development of proprietary logistics management platform, coordinating software engineers and business analysts</li>
+            <li>Managed IT infrastructure including cloud systems, domain architecture, and business application administration</li>
+            <li>Designed database structures, API integrations, and technical specifications for dispatch, routing, driver management, and executive reporting</li>
+        </ul>
+    </div>
+
+    <div class="company-group">
+        <div class="group-header">
+            <div class="job-header-left">
+                <h3>Diligent Delivery Systems</h3>
+                <p class="company">Houston, TX / Raleigh, NC</p>
+            </div>
+            <span class="date">Dec 2016 &ndash; Sept 2021</span>
+        </div>
+
+        <div class="role">
+            <div class="role-header">
+                <h4>National Director of Operations</h4>
+                <span class="role-date">May 2017 &ndash; Sept 2021</span>
+            </div>
+            <ul>
+                <li>Directed nationwide operations across 65 locations; increased freight net profit 120% through data-driven process improvements and performance analytics</li>
+                <li>Secured $3M national contract through strategic RFP development supported by operational data and performance metrics</li>
+            </ul>
+        </div>
+
+        <div class="role">
+            <div class="role-header">
+                <h4>Director of Business Intelligence</h4>
+                <span class="role-date">Aug 2019 &ndash; Sept 2021 (concurrent)</span>
+            </div>
+            <ul>
+                <li>Led IT department and software development team, directing architecture and development of proprietary delivery management platform</li>
+                <li>Designed reporting architecture, KPI frameworks, database design, and systems integration supporting nationwide operations</li>
+            </ul>
+        </div>
+
+        <div class="role">
+            <div class="role-header">
+                <h4>North Carolina Operations Manager</h4>
+                <span class="role-date">Dec 2016 &ndash; May 2017</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="job">
+        <div class="job-header">
+            <div class="job-header-left">
+                <h3>Earlier roles</h3>
+                <p class="company">Courier Express US &bull; Vietri Inc. &bull; Protege Delivery</p>
+            </div>
+            <span class="date">2004 &ndash; 2016</span>
+        </div>
+        <ul>
+            <li>3PL specialist coordinating FTL/LTL/Final Mile carrier networks; SAP Business One ERP administration; warehouse operations and key account shipping supervision</li>
+        </ul>
+    </div>
+
+    <h2>Education</h2>
+
+    <div class="education-item">
+        <h3>Bachelor of Science in Information Networking &amp; Telecommunications</h3>
+        <p>Fort Hays State University &bull; Hays, KS &bull; Expected 2026</p>
+    </div>
+
+    <h2>Certifications</h2>
+
+    <div class="education-item">
+        <h3>Cisco Networking Academy</h3>
+        <p>CCNA: Introduction to Networks &bull; Networking Essentials &mdash; Certificates of Completion</p>
+    </div>
+
+    <h2>Core Competencies</h2>
+
+    <div class="skill-row"><strong>Networking:</strong> Cisco Meraki Dashboard &amp; API, VLANs, Network Monitoring, Rogue Device Detection, OUI/MAC Analysis, Switching &amp; Routing Fundamentals</div>
+    <div class="skill-row"><strong>Development &amp; Integration:</strong> Python, JavaScript, SQL, REST APIs, HTML/CSS, Database Design, Git/GitHub, Docker, Cloudflare</div>
+    <div class="skill-row"><strong>Systems &amp; Analytics:</strong> Systems Integration, Workflow Automation, API Integrations, Reporting &amp; KPI Development, Business Intelligence</div>
+    <div class="skill-row"><strong>Platforms &amp; Tools:</strong> SAP ERP, Shopify Administration, Airtable, EasyPost, Office 365, Microsoft Excel (Advanced)</div>
+    <div class="skill-row"><strong>Operations &amp; Leadership:</strong> Operations Leadership, Warehouse Operations, Process Improvement, Team Management, Client Communication</div>
+
+</body>
+</html>

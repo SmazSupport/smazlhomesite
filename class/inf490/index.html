@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="INF 490 Capstone — Network Client Inventory & Interface Monitoring Tool built on the Cisco Meraki Dashboard API. Mark Stevens, Fort Hays State University.">
+    <title>INF 490 Capstone — Stevens Networking Solution | Mark Stevens</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">Smazl<span class="logo-sub">/class</span></a>
+            <div class="nav-links">
+                <a href="/">← Coursework</a>
+                <a href="https://smazl.com/about.html">Portfolio</a>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"/>
+                    <line x1="12" y1="1" x2="12" y2="3"/>
+                    <line x1="12" y1="21" x2="12" y2="23"/>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                    <line x1="21" y1="12" x2="23" y2="12"/>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                </svg>
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <header class="page-hero">
+        <div class="container">
+            <p class="eyebrow">INF 490 · Capstone Seminar in Informatics · Fort Hays State University</p>
+            <h1>Stevens Networking Solution</h1>
+            <p class="lede">Network Client Inventory &amp; Interface Monitoring Tool</p>
+            <div class="hero-meta">
+                <span class="meta-pill">Fall 2026</span>
+                <span class="meta-pill">Sole Developer</span>
+                <span class="meta-pill meta-pill-accent">In Progress</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="detail-section">
+        <div class="container">
+            <div class="detail-block">
+                <h2 class="section-title">The Problem</h2>
+                <p class="detail-lead">A hotel management company remotely operates the network at a branded hotel property in Houston, TX — roughly 15–20 computers, several access points, and multiple VLANs (Staff, PMS, Guest, IoT) running on Cisco Meraki cloud-managed equipment. The company's network shares infrastructure with the property's guest Wi-Fi, creating a boundary between two networks.</p>
+                <p>Today the IT team has no centralized view of what's connected to the network, where devices are plugged in, or what's changed. Hotel environments mean guests and contractors are constantly connecting equipment, but there's no rogue device detection, no change history for "what changed?" troubleshooting, and no visibility into traffic crossing the boundary to the property's guest network. Everything is manual digging through the Meraki dashboard.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="detail-section alt">
+        <div class="container">
+            <div class="detail-block">
+                <h2 class="section-title">The Solution</h2>
+                <p class="detail-lead">A custom monitoring tool that pulls client, device, interface, and VLAN data from the Cisco Meraki Dashboard API into a Python backend and SQL database, then surfaces it in a purpose-built web dashboard.</p>
+                <div class="highlight-box">
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>📋 Live device inventory — every client on the network in one searchable view</li>
+                        <li>🔌 Switch port and MAC address tracking with OUI manufacturer lookup</li>
+                        <li>🚨 Rogue device detection — automatic flagging of unknown devices</li>
+                        <li>🗂️ VLAN visibility across Staff, PMS, Guest, and IoT networks</li>
+                        <li>⬌ Cross-boundary monitoring between the client network and the property's guest Wi-Fi</li>
+                        <li>🔔 Automated alerts for rogue devices, offline events, bandwidth spikes, and boundary anomalies</li>
+                        <li>📝 Change history log for "what changed?" troubleshooting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="detail-section">
+        <div class="container">
+            <h2 class="section-title">My Role</h2>
+            <p class="detail-lead" style="margin-bottom: 2rem;">Sole developer and project owner — every phase of this project is mine, working directly with the client's IT/network manager.</p>
+            <div class="principles-grid">
+                <div class="principle">
+                    <h3>Discovery &amp; requirements</h3>
+                    <p>Working directly with the client to understand the network environment and what information is actually useful to the IT team.</p>
+                </div>
+                <div class="principle">
+                    <h3>Architecture &amp; build</h3>
+                    <p>Designing and building the full stack — Meraki API integration, Python backend, database schema, and web dashboard.</p>
+                </div>
+                <div class="principle">
+                    <h3>Testing &amp; documentation</h3>
+                    <p>Validating detection logic and data accuracy against the real network, and documenting the system for client handoff.</p>
+                </div>
+                <div class="principle">
+                    <h3>Client communication</h3>
+                    <p>Scope management, proposal, MOU, progress updates, and deliverable review — the full client relationship.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="detail-section alt">
+        <div class="container">
+            <div class="detail-block">
+                <h2 class="section-title">Planned Outcomes</h2>
+                <p class="detail-lead">This project is in progress — the goal is a single place to see the network:</p>
+                <div class="highlight-box">
+                    <h3>Goals</h3>
+                    <ul>
+                        <li>🎯 A real-time device inventory that replaces manual Meraki dashboard lookups</li>
+                        <li>🎯 Automatic identification of unknown devices and issues instead of manual discovery</li>
+                        <li>🎯 A change history that answers "what changed?" during troubleshooting</li>
+                        <li>🎯 Visibility into traffic and devices crossing the boundary to the property's guest network</li>
+                        <li>🎯 An always-current network baseline the IT team can rely on</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="detail-section">
+        <div class="container">
+            <h2 class="section-title">Artifacts &amp; Links</h2>
+            <div class="portfolio-grid">
+
+                <div class="portfolio-card">
+                    <div class="card-badge">Live Demo</div>
+                    <div class="card-content">
+                        <div class="card-icon">📊</div>
+                        <h3>Dashboard Mockup</h3>
+                        <p>Interactive prototype of the monitoring dashboard — live client inventory, network boundary map, rogue device detection, alert feed, and change log.</p>
+                        <div class="tech-tags">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>Prototype</span>
+                        </div>
+                        <a href="/inf490/mockup/" class="card-link">
+                            Open Mockup →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="card-content">
+                        <div class="card-icon">💻</div>
+                        <h3>GitHub Repository</h3>
+                        <p>Project source code, documentation, and development history as the tool is built.</p>
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>Meraki API</span>
+                            <span>Source</span>
+                        </div>
+                        <a href="https://github.com/SmazSupport/CapstoneINF490" target="_blank" class="card-link">
+                            View Repo →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="card-content">
+                        <div class="card-icon">📄</div>
+                        <h3>Resume — Networking Focus</h3>
+                        <p>Resume variant tailored to networking and informatics work, including this capstone project.</p>
+                        <div class="tech-tags">
+                            <span>PDF</span>
+                            <span>Resume</span>
+                        </div>
+                        <a href="/resume-pdf?file=resume-inf490-print" class="card-link">
+                            Download PDF →
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Mark Stevens · INF 490 Capstone Seminar in Informatics</p>
+            <p class="footer-note"><a href="/">Coursework</a> · <a href="https://smazl.com">smazl.com</a></p>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
