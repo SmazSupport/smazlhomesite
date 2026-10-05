@@ -106,9 +106,10 @@ ${rows ? `<table><thead><tr><th>Time (UTC)</th><th>IP</th><th>Path</th><th>Brows
 </body></html>`);
 });
 
-// Visitor logging helper
+// Visitor logging helper — real client IP comes through Cloudflare headers
 function logClassVisit(req) {
-    const line = `${new Date().toISOString()} | ${req.ip} | ${req.hostname}${req.originalUrl} | ${req.get('user-agent') || '-'}\n`;
+    const ip = req.get('cf-connecting-ip') || (req.get('x-forwarded-for') || '').split(',')[0].trim() || req.ip;
+    const line = `${new Date().toISOString()} | ${ip} | ${req.hostname}${req.originalUrl} | ${req.get('user-agent') || '-'}\n`;
     fs.appendFile(CLASS_VISIT_LOG, line).catch(() => {});
 }
 
