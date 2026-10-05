@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="INF 490 Capstone — Network Client Inventory & Interface Monitoring Tool built on the Cisco Meraki Dashboard API. Mark Stevens, Fort Hays State University.">
-    <title>INF 490 Capstone — Stevens Networking Solution | Mark Stevens</title>
+    <meta name="description" content="Mark Stevens — Professional portfolio. Operations, networking, analytics, and systems development. BS Information Networking & Telecommunications, Fort Hays State University.">
+    <title>Mark Stevens — Professional Portfolio</title>
     <link rel="stylesheet" href="/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,10 +13,12 @@
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="/" class="logo">Smazl<span class="logo-sub">/class</span></a>
+            <a href="/inf490/" class="logo">Mark Stevens</a>
             <div class="nav-links">
-                <a href="/">← Coursework</a>
-                <a href="https://smazl.com/about.html">Portfolio</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
             </div>
             <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
                 <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -36,155 +38,284 @@
         </div>
     </nav>
 
-    <header class="page-hero">
+    <!-- 1. PERSONAL INTRODUCTION -->
+    <section id="about" class="page-hero">
         <div class="container">
-            <p class="eyebrow">INF 490 · Capstone Seminar in Informatics · Fort Hays State University</p>
-            <h1>Stevens Networking Solution</h1>
-            <p class="lede">Network Client Inventory &amp; Interface Monitoring Tool</p>
+            <img src="/images/headshot.jpg" alt="Mark Stevens" class="hero-avatar">
+            <h1>Mark Stevens</h1>
+            <p class="lede">Operations, Networking &amp; Systems</p>
             <div class="hero-meta">
-                <span class="meta-pill">Fall 2026</span>
-                <span class="meta-pill">Sole Developer</span>
-                <span class="meta-pill meta-pill-accent">In Progress</span>
-            </div>
-        </div>
-    </header>
-
-    <section class="detail-section">
-        <div class="container">
-            <div class="detail-block">
-                <h2 class="section-title">The Problem</h2>
-                <p class="detail-lead">A hotel management company remotely operates the network at a branded hotel property in Houston, TX — roughly 15–20 computers, several access points, and multiple VLANs (Staff, PMS, Guest, IoT) running on Cisco Meraki cloud-managed equipment. The company's network shares infrastructure with the property's guest Wi-Fi, creating a boundary between two networks.</p>
-                <p>Today the IT team has no centralized view of what's connected to the network, where devices are plugged in, or what's changed. Hotel environments mean guests and contractors are constantly connecting equipment, but there's no rogue device detection, no change history for "what changed?" troubleshooting, and no visibility into traffic crossing the boundary to the property's guest network. Everything is manual digging through the Meraki dashboard.</p>
+                <span class="meta-pill">BS Information Networking &amp; Telecommunications</span>
+                <span class="meta-pill">Fort Hays State University · 2026</span>
             </div>
         </div>
     </section>
 
+    <section class="detail-section">
+        <div class="container">
+            <div class="detail-block">
+                <p class="detail-lead">I've spent 20+ years in operations, logistics, and fulfillment — and over time the work shifted from managing processes to building the systems behind them. Today I sit at the intersection of operations and technology: taking complex business problems and using data, automation, and software to make them visible and manageable.</p>
+                <p>I'm currently completing a BS in Information Networking &amp; Telecommunications at Fort Hays State University while working as Operations Manager at The Woobles, where I manage a fulfillment operation processing 2,000–13,000 orders per day. My capstone project applies networking and API development skills to a real client engagement.</p>
+                <p>Whether the need is operational leadership, network monitoring, process improvement, data analysis, system integrations, or software development, I bring a practical perspective built from hands-on experience and a habit of building the thing rather than requesting it.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. DOWNLOADABLE RESUME -->
     <section class="detail-section alt">
-        <div class="container">
-            <div class="detail-block">
-                <h2 class="section-title">The Solution</h2>
-                <p class="detail-lead">A custom monitoring tool that pulls client, device, interface, and VLAN data from the Cisco Meraki Dashboard API into a Python backend and SQL database, then surfaces it in a purpose-built web dashboard.</p>
-                <div class="highlight-box">
-                    <h3>Key Features</h3>
-                    <ul>
-                        <li>📋 Live device inventory — every client on the network in one searchable view</li>
-                        <li>🔌 Switch port and MAC address tracking with OUI manufacturer lookup</li>
-                        <li>🚨 Rogue device detection — automatic flagging of unknown devices</li>
-                        <li>🗂️ VLAN visibility across Staff, PMS, Guest, and IoT networks</li>
-                        <li>⬌ Cross-boundary monitoring between the client network and the property's guest Wi-Fi</li>
-                        <li>🔔 Automated alerts for rogue devices, offline events, bandwidth spikes, and boundary anomalies</li>
-                        <li>📝 Change history log for "what changed?" troubleshooting</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="container" style="text-align:center;">
+            <h2 class="section-title">Resume</h2>
+            <p class="section-subtitle" style="margin-bottom:2rem;">Download my resume as a PDF</p>
+            <a href="/resume-pdf?file=resume-inf490-print" class="btn btn-primary" style="font-size:1rem;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:6px;">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                    <line x1="12" y1="18" x2="12" y2="12"/>
+                    <line x1="9" y1="15" x2="15" y2="15"/>
+                </svg>
+                Download Resume (PDF)
+            </a>
         </div>
     </section>
 
-    <section class="detail-section">
+    <!-- 3. WORK SAMPLES & SHOWCASE (3-5 projects) -->
+    <section id="projects" class="portfolio">
         <div class="container">
-            <h2 class="section-title">My Role</h2>
-            <p class="detail-lead" style="margin-bottom: 2rem;">Sole developer and project owner — every phase of this project is mine, working directly with the client's IT/network manager.</p>
-            <div class="principles-grid">
-                <div class="principle">
-                    <h3>Discovery &amp; requirements</h3>
-                    <p>Working directly with the client to understand the network environment and what information is actually useful to the IT team.</p>
-                </div>
-                <div class="principle">
-                    <h3>Architecture &amp; build</h3>
-                    <p>Designing and building the full stack — Meraki API integration, Python backend, database schema, and web dashboard.</p>
-                </div>
-                <div class="principle">
-                    <h3>Testing &amp; documentation</h3>
-                    <p>Validating detection logic and data accuracy against the real network, and documenting the system for client handoff.</p>
-                </div>
-                <div class="principle">
-                    <h3>Client communication</h3>
-                    <p>Scope management, proposal, MOU, progress updates, and deliverable review — the full client relationship.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            <h2 class="section-title">Work Samples</h2>
+            <p class="section-subtitle">Selected projects showcasing technical skills and problem-solving approach</p>
 
-    <section class="detail-section alt">
-        <div class="container">
-            <div class="detail-block">
-                <h2 class="section-title">Planned Outcomes</h2>
-                <p class="detail-lead">This project is in progress — the goal is a single place to see the network:</p>
-                <div class="highlight-box">
-                    <h3>Goals</h3>
-                    <ul>
-                        <li>🎯 A real-time device inventory that replaces manual Meraki dashboard lookups</li>
-                        <li>🎯 Automatic identification of unknown devices and issues instead of manual discovery</li>
-                        <li>🎯 A change history that answers "what changed?" during troubleshooting</li>
-                        <li>🎯 Visibility into traffic and devices crossing the boundary to the property's guest network</li>
-                        <li>🎯 An always-current network baseline the IT team can rely on</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="detail-section">
-        <div class="container">
-            <h2 class="section-title">Artifacts &amp; Links</h2>
             <div class="portfolio-grid">
 
-                <div class="portfolio-card">
-                    <div class="card-badge">Live Demo</div>
+                <!-- Project 1: Capstone -->
+                <div class="portfolio-card featured">
+                    <div class="card-badge">Capstone · In Progress</div>
                     <div class="card-content">
-                        <div class="card-icon">📊</div>
-                        <h3>Dashboard Mockup</h3>
-                        <p>Interactive prototype of the monitoring dashboard — live client inventory, network boundary map, rogue device detection, alert feed, and change log.</p>
+                        <div class="card-icon">�</div>
+                        <h3>Network Client Inventory &amp; Interface Monitoring Tool</h3>
+                        <p><strong>Problem:</strong> A hotel management company remotely operates the network at a branded hotel property in Houston, TX. The IT team has no centralized view of devices on the network, no rogue device detection, and no change history for troubleshooting — everything requires manual digging through the Meraki dashboard.</p>
+                        <p><strong>Solution:</strong> Custom monitoring tool that pulls client, device, interface, and VLAN data from the Cisco Meraki Dashboard API into a Python backend and SQL database, surfaced in a web dashboard with live inventory, rogue device detection, change tracking, and automated alerts.</p>
+                        <p><strong>Role:</strong> Sole developer and project owner — discovery, requirements, scope, architecture, build, testing, documentation, and client communication.</p>
+                        <p><strong>Status:</strong> In progress. Goal is a real-time inventory replacing manual lookups, automated rogue detection, change history for troubleshooting, and cross-boundary network visibility.</p>
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>Cisco Meraki API</span>
+                            <span>SQL</span>
+                            <span>Web Dashboard</span>
+                            <span>Networking</span>
+                        </div>
+                        <a href="https://github.com/SmazSupport/CapstoneINF490" target="_blank" class="card-link">
+                            View Repository →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Woobles WMS & TMS -->
+                <div class="portfolio-card">
+                    <div class="card-content">
+                        <div class="card-icon">🏭</div>
+                        <h3>Warehouse &amp; Transportation Management Systems</h3>
+                        <p><strong>Problem:</strong> A high-volume eCommerce fulfillment operation processing 2,000–13,000 orders/day across 1,500+ SKUs needed custom tooling to manage warehouse workflows, inventory, and carrier operations beyond what off-the-shelf platforms offered.</p>
+                        <p><strong>Solution:</strong> Built custom WMS and TMS tools integrating Shopify APIs, webhooks, and third-party carrier systems to support picking, packing, shipping, inventory planning, and transportation management.</p>
+                        <p><strong>Role:</strong> Sole developer — designed and built both systems while serving as Operations Manager at The Woobles.</p>
+                        <p><strong>Outcome:</strong> Operational tooling used daily to manage warehouse fulfillment and shipping across a 20-person team.</p>
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>JavaScript</span>
+                            <span>SQL</span>
+                            <span>Shopify APIs</span>
+                            <span>Logistics</span>
+                        </div>
+                        <span class="card-note">Internal tools — not publicly accessible</span>
+                    </div>
+                </div>
+
+                <!-- Project 3: FormJet -->
+                <div class="portfolio-card">
+                    <div class="card-content">
+                        <div class="card-icon">🚀</div>
+                        <h3>FormJet</h3>
+                        <p><strong>Problem:</strong> Manual data entry from PDF documents into web forms was consuming hours of repetitive work.</p>
+                        <p><strong>Solution:</strong> Browser extension that parses PDF data and automates form-filling, eliminating manual transcription.</p>
+                        <p><strong>Role:</strong> Sole developer — design, build, and testing.</p>
+                        <p><strong>Outcome:</strong> Working extension that reduces form-filling time from minutes to seconds per document.</p>
+                        <div class="tech-tags">
+                            <span>JavaScript</span>
+                            <span>Web Extensions API</span>
+                            <span>PDF.js</span>
+                        </div>
+                        <a href="https://smazl.com/formjet/" target="_blank" class="card-link">
+                            View Project →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4: Budget App -->
+                <div class="portfolio-card">
+                    <div class="card-content">
+                        <div class="card-icon">💰</div>
+                        <h3>Household Budget App</h3>
+                        <p><strong>Problem:</strong> Needed a way to manage household financial obligations, recurring bills, and spending across multiple accounts in one place.</p>
+                        <p><strong>Solution:</strong> Full-stack web application with a custom dashboard for tracking bills, accounts, and financial obligations. Self-hosted with Docker.</p>
+                        <p><strong>Role:</strong> Sole developer — backend API, frontend, database, Docker deployment.</p>
+                        <p><strong>Outcome:</strong> Active tool used by the household to manage finances daily.</p>
+                        <div class="tech-tags">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>JavaScript</span>
+                            <span>Docker</span>
+                        </div>
+                        <a href="https://smazl.com/budget/" target="_blank" class="card-link">
+                            View App →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 5: NDS Logistics -->
+                <div class="portfolio-card">
+                    <div class="card-content">
+                        <div class="card-icon">🌐</div>
+                        <h3>NDS Logistics</h3>
+                        <p><strong>Problem:</strong> A logistics company needed a professional web presence to represent their transportation and logistics services.</p>
+                        <p><strong>Solution:</strong> Designed and built a full business website from concept through deployment.</p>
+                        <p><strong>Role:</strong> Sole developer — design, development, and deployment.</p>
+                        <p><strong>Outcome:</strong> Live production website representing the company to clients and partners.</p>
                         <div class="tech-tags">
                             <span>HTML/CSS</span>
                             <span>JavaScript</span>
-                            <span>Prototype</span>
+                            <span>Web Design</span>
                         </div>
-                        <a href="/inf490/mockup/" class="card-link">
-                            Open Mockup →
+                        <a href="https://www.ndslog.net/" target="_blank" class="card-link">
+                            View Site →
                         </a>
                     </div>
                 </div>
 
-                <div class="portfolio-card">
-                    <div class="card-content">
-                        <div class="card-icon">💻</div>
-                        <h3>GitHub Repository</h3>
-                        <p>Project source code, documentation, and development history as the tool is built.</p>
-                        <div class="tech-tags">
-                            <span>Python</span>
-                            <span>Meraki API</span>
-                            <span>Source</span>
-                        </div>
-                        <a href="https://github.com/SmazSupport/CapstoneINF490" target="_blank" class="card-link">
-                            View Repo →
-                        </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. TECHNICAL SKILLS & CREDENTIALS -->
+    <section id="skills" class="detail-section alt">
+        <div class="container">
+            <h2 class="section-title">Technical Skills &amp; Credentials</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming &amp; Development</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">REST APIs</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express</span>
                     </div>
                 </div>
-
-                <div class="portfolio-card">
-                    <div class="card-content">
-                        <div class="card-icon">📄</div>
-                        <h3>Resume — Networking Focus</h3>
-                        <p>Resume variant tailored to networking and informatics work, including this capstone project.</p>
-                        <div class="tech-tags">
-                            <span>PDF</span>
-                            <span>Resume</span>
-                        </div>
-                        <a href="/resume-pdf?file=resume-inf490-print" class="card-link">
-                            Download PDF →
-                        </a>
+                <div class="skill-category">
+                    <h3>Networking &amp; Infrastructure</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Cisco Meraki Dashboard &amp; API</span>
+                        <span class="tag">VLANs</span>
+                        <span class="tag">Network Monitoring</span>
+                        <span class="tag">Switching &amp; Routing</span>
+                        <span class="tag">DNS</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Linux Server Administration</span>
+                        <span class="tag">Cloudflare</span>
                     </div>
                 </div>
+                <div class="skill-category">
+                    <h3>Tools &amp; Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Git/GitHub</span>
+                        <span class="tag">SAP ERP</span>
+                        <span class="tag">Shopify Administration</span>
+                        <span class="tag">Airtable</span>
+                        <span class="tag">Microsoft Excel (Advanced)</span>
+                        <span class="tag">Office 365</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Operations &amp; Analytics</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Warehouse Management</span>
+                        <span class="tag">Fulfillment Operations</span>
+                        <span class="tag">Transportation &amp; Logistics</span>
+                        <span class="tag">Process Improvement</span>
+                        <span class="tag">KPI Development &amp; Reporting</span>
+                        <span class="tag">Demand Forecasting</span>
+                        <span class="tag">Workflow Automation</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Education &amp; Certifications</h3>
+                    <div class="skill-tags">
+                        <span class="tag">BS Information Networking &amp; Telecommunications — Fort Hays State University (2026)</span>
+                        <span class="tag">Cisco Networking Academy — CCNA: Introduction to Networks</span>
+                        <span class="tag">Cisco Networking Academy — Networking Essentials</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- 4. PROFESSIONAL CONTACT & SOCIAL LINKS -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </div>
+                    <h3>Email</h3>
+                    <a href="mailto:mstevens@smazl.com">mstevens@smazl.com</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/mark-stevens-541215116" target="_blank">Connect with me</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                        </svg>
+                    </div>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/SmazSupport" target="_blank">@SmazSupport</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                    </div>
+                    <h3>Phone</h3>
+                    <a href="tel:4129153010">412-915-3010</a>
+                </div>
             </div>
         </div>
     </section>
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Mark Stevens · INF 490 Capstone Seminar in Informatics</p>
-            <p class="footer-note"><a href="/">Coursework</a> · <a href="https://smazl.com">smazl.com</a></p>
+            <p>&copy; 2026 Mark Stevens</p>
+            <p class="footer-note">Fort Hays State University · BS Information Networking &amp; Telecommunications</p>
         </div>
     </footer>
 
