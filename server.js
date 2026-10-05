@@ -3,6 +3,7 @@ const express = require('express');
 const fs = require('fs').promises;
 const path = require('path');
 const cors = require('cors');
+const cookieParser = require('cookie-parser');
 const puppeteer = require('puppeteer-core');
 
 const app = express();
@@ -12,6 +13,53 @@ const TASKS_DATA_FILE = path.join(__dirname, 'tasks', 'data.json');
 // Middleware
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
+
+// --- class.smazl.com password gate ---
+const CLASS_PASSWORD = process.env.CLASS_PASSWORD || 'timber29ocean64spark';
+const CLASS_COOKIE = 'class_auth';
+const CLASS_VISIT_LOG = path.join(__dirname, 'class-visits.log');
+
+function classLoginPage(msg) {
+    return `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Password Required</title>
+<link rel="stylesheet" href="/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head><body>
+<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;">
+<div style="max-width:380px;width:100%;padding:2.5rem;background:var(--bg-secondary);border-radius:12px;border:1px solid var(--border-color);text-align:center;">
+<h2 style="margin-bottom:0.5rem;">Portfolio</h2>
+<p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:1.5rem;">Mark Stevens — Enter password to continue</p>
+${msg ? `<p style="color:#f87171;font-size:0.85rem;margin-bottom:1rem;">${msg}</p>` : ''}
+<form method="POST" action="/class-auth">
+<input type="hidden" name="redirect" value="/">
+<input type="password" name="password" placeholder="Password" autofocus
+  style="width:100%;padding:0.7rem 1rem;border-radius:8px;border:1px solid var(--border-color);background:var(--bg-primary);color:var(--text-primary);font-size:1rem;margin-bottom:1rem;font-family:inherit;">
+<button type="submit" class="btn btn-primary" style="width:100%;font-size:1rem;padding:0.7rem;">Enter</button>
+</form>
+</div></div>
+<script src="/script.js"></script>
+</body></html>`;
+}
+
+// Auth endpoint
+app.post('/class-auth', (req, res) => {
+    if (req.body.password === CLASS_PASSWORD) {
+        res.cookie(CLASS_COOKIE, 'ok', { maxAge: 30 * 24 * 60 * 60 * 1000, httpOnly: true, sameSite: 'lax' });
+        const redirect = req.body.redirect || '/';
+        return res.redirect(redirect);
+    }
+    res.status(401).send(classLoginPage('Incorrect password'));
+});
+
+// Visitor logging helper
+function logClassVisit(req) {
+    const line = `${new Date().toISOString()} | ${req.ip} | ${req.hostname}${req.originalUrl} | ${req.get('user-agent') || '-'}\n`;
+    fs.appendFile(CLASS_VISIT_LOG, line).catch(() => {});
+}
 
 // API Routes for tasks app
 app.post('/api/save-data.php', async (req, res) => {
@@ -110,14 +158,19 @@ app.get('/ms-hub', (req, res) => {
 });
 
 // Class subdomain — class.smazl.com serves class/ at its root.
-// Misses fall through to the main site so shared assets (styles.css, script.js, images/) resolve.
+// Password-gated; misses fall through to main site so shared assets resolve.
 const classStatic = express.static(path.join(__dirname, 'class'));
-app.use((req, res, next) => {
-    if (req.hostname === 'class.smazl.com' || req.hostname === 'class.localhost') {
-        return classStatic(req, res, next);
-    }
-    next();
-});
+function classGate(req, res, next) {
+    const isClassHost = req.hostname === 'class.smazl.com' || req.hostname === 'class.localhost';
+    if (!isClassHost) return next();
+    // Allow shared assets (css/js/images/fonts) and the auth endpoint through without password
+    if (/^\/(styles\.css|script\.js|images\/|resume-pdf|class-auth)/.test(req.path)) return next();
+    if (req.cookies[CLASS_COOKIE] !== 'ok') return res.send(classLoginPage());
+    logClassVisit(req);
+    classStatic(req, res, next);
+}
+app.use(classGate);
+// Also available at smazl.com/class/ (no password — internal/dev access)
 app.use('/class', express.static(path.join(__dirname, 'class')));
 
 // Serve static files for different sections
