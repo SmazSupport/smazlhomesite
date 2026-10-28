@@ -186,7 +186,7 @@ app.get('/resume.pdf', async (req, res) => {
 });
 
 // General PDF route for resume vault — /resume-pdf?file=resume-print
-const ALLOWED_RESUME_FILES = ['resume-print', 'resume-sys-print', 'resume-ncsu-print', 'resume-inf490-print'];
+const ALLOWED_RESUME_FILES = ['resume-print', 'resume-sys-print', 'resume-ncsu-print', 'resume-inf490-print', 'resume-chicknlegs-print'];
 app.get('/resume-pdf', async (req, res) => {
     const file = req.query.file;
     if (!file || !ALLOWED_RESUME_FILES.includes(file)) {
@@ -194,7 +194,11 @@ app.get('/resume-pdf', async (req, res) => {
     }
     try {
         const pdf = await generatePdf(file);
-        const label = file === 'resume-inf490-print' ? 'Networking' : file.replace('resume-', '').replace(/-/g, '-');
+        const labels = {
+            'resume-inf490-print': 'Networking',
+            'resume-chicknlegs-print': 'Fulfillment-Operations'
+        };
+        const label = labels[file] || file.replace('resume-', '').replace(/-/g, '-');
         res.setHeader('Content-Type', 'application/pdf');
         res.setHeader('Content-Disposition', `attachment; filename="Mark-Stevens-${label}.pdf"`);
         res.send(pdf);
